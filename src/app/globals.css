@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg-main: #ffffff;
+    --fg-main: #09090b;
+    --fg-muted: #71717a;
+    --border-subtle: #e4e4e7;
+    --card-bg: #f8fafc;
+    --card-border: #e2e8f0;
+  }
+
+  .dark {
+    --bg-main: #0a0a0c;
+    --fg-main: #f4f4f5;
+    --fg-muted: #a1a1aa;
+    --border-subtle: #27272a;
+    --card-bg: #121215;
+    --card-border: #1f1f23;
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--fg-main);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for minimalist sleek feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(161, 161, 170, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(161, 161, 170, 0.5);
+}
+
+::selection {
+  background-color: rgba(161, 161, 170, 0.2);
+  color: inherit;
 }
