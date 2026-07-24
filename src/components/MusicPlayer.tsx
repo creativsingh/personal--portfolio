@@ -7,7 +7,6 @@ import { Music, Play, Pause, Disc, Volume2, VolumeX, Sparkles, Guitar } from "lu
 export function MusicPlayer() {
   const [activeTrackId, setActiveTrackId] = useState<string>(PERSONA_DATA.music.sampleTracks[0].id);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
-  const [audioMuted, setAudioMuted] = useState<boolean>(false);
   const audioContextRef = useRef<AudioContext | null>(null);
   const oscillatorRef = useRef<OscillatorNode | null>(null);
   const gainNodeRef = useRef<GainNode | null>(null);
@@ -101,10 +100,10 @@ export function MusicPlayer() {
         </div>
 
         {/* Music Player Container */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-zinc-900 text-white dark:bg-[#121215] dark:text-zinc-100 border border-zinc-800 shadow-2xl relative overflow-hidden">
+        <div className="p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] text-zinc-900 dark:text-zinc-100 border border-zinc-200/80 dark:border-zinc-800/80 shadow-xl relative overflow-hidden">
           
           {/* Top Bar / Now Playing */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-zinc-800">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-zinc-200 dark:border-zinc-800">
             <div className="flex items-center gap-4">
               {/* Spinning Disc visualizer */}
               <div className={`w-14 h-14 rounded-full bg-gradient-to-tr from-amber-500 to-rose-500 flex items-center justify-center shadow-lg ${isPlaying ? "animate-spin" : ""}`} style={{ animationDuration: "6s" }}>
@@ -113,17 +112,17 @@ export function MusicPlayer() {
 
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-[11px] font-mono text-amber-400 uppercase tracking-wider">Now Playing</span>
+                  <span className="text-[11px] font-mono text-amber-600 dark:text-amber-400 uppercase tracking-wider font-semibold">Now Playing</span>
                   {isPlaying && (
                     <span className="flex items-center gap-1">
-                      <span className="w-1 h-3 bg-amber-400 animate-pulse"></span>
-                      <span className="w-1 h-4 bg-amber-400 animate-pulse delay-75"></span>
-                      <span className="w-1 h-2 bg-amber-400 animate-pulse delay-150"></span>
+                      <span className="w-1 h-3 bg-amber-500 animate-pulse"></span>
+                      <span className="w-1 h-4 bg-amber-500 animate-pulse delay-75"></span>
+                      <span className="w-1 h-2 bg-amber-500 animate-pulse delay-150"></span>
                     </span>
                   )}
                 </div>
-                <h3 className="text-lg font-bold text-white">{currentTrack.title}</h3>
-                <p className="text-xs font-mono text-zinc-400">{currentTrack.genre} • {currentTrack.instrument}</p>
+                <h3 className="text-lg font-bold text-zinc-900 dark:text-white">{currentTrack.title}</h3>
+                <p className="text-xs font-mono text-zinc-500 dark:text-zinc-400">{currentTrack.genre} • {currentTrack.instrument}</p>
               </div>
             </div>
 
@@ -147,13 +146,13 @@ export function MusicPlayer() {
           </div>
 
           {/* Track Description */}
-          <div className="py-4 text-xs sm:text-sm text-zinc-300 italic border-b border-zinc-800/80">
+          <div className="py-4 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300 italic border-b border-zinc-200/80 dark:border-zinc-800/80">
             &ldquo;{currentTrack.description}&rdquo;
           </div>
 
           {/* Playlist Selection */}
           <div className="pt-6 space-y-3">
-            <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider block">
+            <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-wider block">
               Sample Tracks &amp; Compositions
             </span>
             <div className="space-y-2">
@@ -166,21 +165,21 @@ export function MusicPlayer() {
                   }}
                   className={`cursor-pointer p-3.5 rounded-xl border flex items-center justify-between transition-all ${
                     activeTrackId === track.id
-                      ? "bg-zinc-800/90 border-amber-500/50 text-white"
-                      : "bg-zinc-900/50 border-zinc-800/60 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/40"
+                      ? "bg-white border-amber-500/60 text-zinc-900 dark:bg-zinc-800/90 dark:border-amber-500/50 dark:text-white shadow-xs"
+                      : "bg-white/60 border-zinc-200/60 text-zinc-600 hover:text-zinc-900 hover:bg-white dark:bg-zinc-900/50 dark:border-zinc-800/60 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800/40"
                   }`}
                 >
                   <div className="flex items-center gap-3">
-                    <span className="font-mono text-xs text-zinc-500">
+                    <span className="font-mono text-xs text-amber-500 font-bold">
                       {track.id === activeTrackId && isPlaying ? "►" : "•"}
                     </span>
                     <div>
-                      <div className="text-sm font-semibold text-zinc-200">{track.title}</div>
+                      <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-200">{track.title}</div>
                       <div className="text-xs font-mono text-zinc-500">{track.genre}</div>
                     </div>
                   </div>
 
-                  <span className="text-xs font-mono text-zinc-400">{track.duration}</span>
+                  <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400">{track.duration}</span>
                 </div>
               ))}
             </div>
@@ -188,9 +187,9 @@ export function MusicPlayer() {
 
           {/* Music tags */}
           <div className="pt-6 flex flex-wrap items-center gap-2">
-            <span className="text-xs font-mono text-zinc-500">Instruments &amp; Setup:</span>
+            <span className="text-xs font-mono text-zinc-500">Setup:</span>
             {PERSONA_DATA.music.instruments.map((inst) => (
-              <span key={inst} className="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">
+              <span key={inst} className="text-[11px] font-mono px-2.5 py-1 rounded bg-white dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/50 shadow-2xs">
                 {inst}
               </span>
             ))}

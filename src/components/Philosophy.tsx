@@ -54,26 +54,26 @@ export function Philosophy() {
         </div>
 
         {/* Transition Card: Product Designer -> Design Engineer */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-zinc-900 to-zinc-800 text-white dark:from-[#141419] dark:to-[#09090b] border border-zinc-800 shadow-xl relative overflow-hidden">
+        <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-zinc-100 to-zinc-50 dark:from-[#141419] dark:to-[#09090b] text-zinc-900 dark:text-white border border-zinc-200 dark:border-zinc-800/80 shadow-md relative overflow-hidden">
           <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div className="space-y-2 max-w-xl">
-              <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider block">
+              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-wider block">
                 Future Brand Direction
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-white">
+              <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-white">
                 Transitioning to Design Engineering
               </h3>
-              <p className="text-sm text-zinc-300 leading-relaxed">
+              <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
                 {PERSONA_DATA.subheading}. Moving beyond static Figma mockups into production Next.js &amp; Tailwind CSS code to ensure zero fidelity loss between design intent and user execution.
               </p>
             </div>
 
             <div className="flex items-center gap-3 font-mono text-xs shrink-0">
-              <span className="px-3 py-2 rounded-lg bg-zinc-800/80 border border-zinc-700 text-zinc-300">
+              <span className="px-3 py-2 rounded-lg bg-white dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-800 dark:text-zinc-300 shadow-xs">
                 Figma / UX
               </span>
-              <ArrowRight className="w-4 h-4 text-emerald-400" />
-              <span className="px-3 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/40 text-emerald-300">
+              <ArrowRight className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+              <span className="px-3 py-2 rounded-lg bg-emerald-500/10 dark:bg-emerald-500/20 border border-emerald-500/30 dark:border-emerald-500/40 text-emerald-700 dark:text-emerald-300 font-semibold">
                 Next.js / Code
               </span>
             </div>
