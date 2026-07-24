@@ -34,6 +34,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# AI & Agent instructions
+CLAUDE.md
+claude.md
+AGENTS.md
+agents.md
+
 # OS generated files
 .DS_Store
 .DS_Store?
