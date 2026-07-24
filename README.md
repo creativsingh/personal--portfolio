@@ -1,4 +1,4 @@
-# CreativSingh — Personal Portfolio & Design Engineering Showcase
+# CreativSingh — Personal Portfolio
 
 ## 💻 Getting Started Locally
 
