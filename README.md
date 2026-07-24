@@ -49,8 +49,6 @@ npm run start
 │   │   └── ThemeProvider.tsx # Client theme context
 │   └── data/
 │       └── persona.ts       # Structured data store for portfolio content
-├── creativsingh-persona.md  # Brand persona source document
-├── design.md                # Design analysis & editorial guidelines
 ├── public/                  # Static assets
 └── package.json             # Project dependencies & scripts
 ```
