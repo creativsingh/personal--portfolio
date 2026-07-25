@@ -34,7 +34,9 @@ export interface Track {
   instrument: string;
   duration: string;
   description: string;
-  audioPlaceholderUrl?: string;
+  coverImage?: string;
+  audioUrl?: string;
+  spotifyUrl?: string;
 }
 
 export const PERSONA_DATA = {
@@ -192,9 +194,9 @@ export const PERSONA_DATA = {
       "Guest speaker sessions & panel discussions"
     ],
     stats: [
-      { label: "Community Members", value: "1,500+" },
+      { label: "Community Members", value: "8000+" },
       { label: "Meetups & Workshops", value: "25+" },
-      { label: "Designers Mentored", value: "200+" }
+      { label: "Designers Mentored", value: "100+" }
     ]
   },
 
@@ -264,33 +266,23 @@ export const PERSONA_DATA = {
   ],
 
   music: {
-    intro: "Beyond pixels and code, music is my creative sanctuary. As a singer, guitarist, and music producer, I explore rhythm, acoustic melodies, and sound design.",
-    genres: ["Acoustic", "Indie Pop", "Lo-Fi", "Ambient"],
+    artistName: "Invin",
+    spotifyArtistUrl: "https://open.spotify.com/artist/1qcYNoMSWiByxu5i5HNFVM",
+    artistAvatar: "https://i.scdn.co/image/ab6761610000e5ebbcc755e1b8adc4348912b3e7",
+    intro: "Beyond pixels and code, music is my creative sanctuary. Releasing music under the artist moniker Invin on Spotify.",
+    genres: ["Indie", "Alternative", "Ambient"],
     instruments: ["Guitar", "Vocals", "Logic Pro", "Acoustic Production"],
     sampleTracks: [
       {
-        id: "track-1",
-        title: "Acoustic Reverie",
-        genre: "Acoustic Fingerstyle",
-        instrument: "Guitar & Ambient Pad",
-        duration: "2:45",
-        description: "A calm acoustic melody composed during late-night coding sessions."
-      },
-      {
-        id: "track-2",
-        title: "Delhi Dusk (Lo-Fi)",
-        genre: "Chill Lo-Fi Beat",
-        instrument: "Guitar / Synth Beats",
-        duration: "3:12",
-        description: "Mellow guitar chords over a relaxing lo-fi rhythm."
-      },
-      {
-        id: "track-3",
-        title: "Echoes in Code",
-        genre: "Indie Ambient",
-        instrument: "Vocals & Acoustic",
-        duration: "2:50",
-        description: "Vocal harmonics layered over organic acoustic guitar work."
+        id: "track-time",
+        title: "TIME",
+        genre: "Indie / Alternative",
+        instrument: "Acoustic Guitar & Vocals",
+        duration: "Single • 2025",
+        description: "Official release by Invin on Spotify. Atmospheric indie single blending ambient acoustic guitar textures with spacious vocals.",
+        coverImage: "https://i.scdn.co/image/ab67616d00001e0235e07c3314f099016deb7b7a",
+        audioUrl: "https://p.scdn.co/mp3-preview/45c6fbddb3d496997e93e2c199b4df36dc2572a3",
+        spotifyUrl: "https://open.spotify.com/track/7pS0XYWxK5JXORSK7TH6Fb"
       }
     ] as Track[]
   },
@@ -301,6 +293,7 @@ export const PERSONA_DATA = {
     linkedin: "https://linkedin.com/in/creativsingh",
     github: "https://github.com/creativsingh",
     figma: "https://figma.com/@creativsingh",
-    pixelpeps: "https://pixelpeps.com"
+    pixelpeps: "https://pixelpeps.com",
+    spotify: "https://open.spotify.com/artist/1qcYNoMSWiByxu5i5HNFVM"
   }
 };

@@ -11,7 +11,7 @@ import { Footer } from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-white dark:bg-[#051209] text-zinc-900 dark:text-zinc-100 font-sans transition-colors duration-200">
+    <div className="min-h-screen flex flex-col bg-white dark:bg-[#0a0a0c] text-zinc-900 dark:text-zinc-100 font-sans transition-colors duration-200">
       <Navbar />
       <main className="flex-1">
         <Hero />
