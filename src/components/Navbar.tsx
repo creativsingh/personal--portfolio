@@ -41,9 +41,12 @@ export function Navbar() {
           href="#"
           className="group flex items-center gap-2.5 text-zinc-900 dark:text-zinc-100 font-semibold tracking-tight text-base"
         >
-          <span className="w-8 h-8 rounded-full bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 flex items-center justify-center font-mono text-xs font-bold transition-transform group-hover:scale-105">
-            CS
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/icon.svg"
+            alt="CreativSingh Logo"
+            className="w-8 h-8 rounded-lg transition-transform group-hover:scale-105"
+          />
           <div className="flex flex-col">
             <span className="font-sans leading-none">{PERSONA_DATA.brand}</span>
             <span className="text-[11px] font-mono text-zinc-500 dark:text-zinc-400 font-normal leading-tight mt-0.5">

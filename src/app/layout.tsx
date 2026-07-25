@@ -29,6 +29,11 @@ export const metadata: Metadata = {
     "Next.js Tailwind Portfolio",
   ],
   authors: [{ name: PERSONA_DATA.name, url: PERSONA_DATA.website }],
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   openGraph: {
     title: `${PERSONA_DATA.brand} — Product Designer & Design Engineer`,
     description: PERSONA_DATA.oneLiner,

@@ -27,30 +27,25 @@ export function Hero() {
 
         {/* Hero Title */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 leading-[1.1] mb-6">
-          Designing & building digital products.
+          Designing &amp; building digital products.
         </h1>
 
         {/* Hero Subtitle / Editorial Bio */}
         <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-300 max-w-3xl leading-relaxed mb-8">
-          Hi, I&apos;m <span className="font-semibold text-zinc-900 dark:text-zinc-100">{PERSONA_DATA.name}</span> ({PERSONA_DATA.brand}) <span className="font-mono text-sm px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100">Design Engineer</span> based in Delhi, India. I design & build products that look good, work beautifully, and scale effortlessly.
+          Hi, I&apos;m <span className="font-semibold text-zinc-900 dark:text-zinc-100">{PERSONA_DATA.name}</span> ({PERSONA_DATA.brand}) <span className="font-mono text-sm px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100">Design Engineer</span> based in Delhi, India. I design &amp; build products that look good, work beautifully, and scale effortlessly.
         </p>
-
-        {/* Brand One-liner quote card */}
-        {/* <div className="p-4 sm:p-5 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 mb-10">
-          <p className="text-sm sm:text-base font-mono text-zinc-700 dark:text-zinc-300 italic">
-            &ldquo;{PERSONA_DATA.oneLiner}&rdquo;
-          </p>
-        </div> */}
 
         {/* Primary CTA Buttons */}
         <div className="flex flex-wrap items-center gap-4 mb-14">
-          <a
-            href="#work"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm hover:opacity-90 transition-opacity"
-          >
-            View Selected Work
-            <ArrowDown className="w-4 h-4" />
-          </a>
+          <div className="star-revolve-wrapper">
+            <a
+              href="#work"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-[calc(0.6rem-2px)] bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 font-bold text-sm hover:brightness-105 transition-all shadow-sm z-10"
+            >
+              View Selected Work
+              <ArrowDown className="w-4 h-4 text-zinc-950" />
+            </a>
+          </div>
 
           <a
             href="#contact"

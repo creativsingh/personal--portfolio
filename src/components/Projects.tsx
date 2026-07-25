@@ -41,7 +41,7 @@ export function Projects() {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-mono transition-all ${
                   selectedCategory === cat
-                    ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold"
+                    ? "bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 font-bold shadow-xs"
                     : "bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 border border-zinc-200/60 dark:border-zinc-800/60"
                 }`}
               >

@@ -36,6 +36,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Revolving broken-star border animation for primary buttons */
+.star-revolve-wrapper {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  padding: 2px;
+  isolation: isolate;
+}
+
+.star-revolve-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 280deg,
+    #89FFB4 310deg,
+    #ffffff 335deg,
+    #80FFC6 360deg
+  );
+  transform: translate(-50%, -50%);
+  animation: star-revolve-spin 8s linear infinite;
+  z-index: 0;
+}
+
+@keyframes star-revolve-spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 /* Custom scrollbar for minimalist sleek feel */
 ::-webkit-scrollbar {
   width: 6px;

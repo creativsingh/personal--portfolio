@@ -183,7 +183,7 @@ export function Contact() {
                     placeholder="Jane Doe"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600 transition-colors"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-emerald-500 transition-colors"
                   />
                 </div>
 
@@ -197,7 +197,7 @@ export function Contact() {
                     placeholder="jane@example.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600 transition-colors"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-emerald-500 transition-colors"
                   />
                 </div>
 
@@ -211,16 +211,18 @@ export function Contact() {
                     placeholder="Tell me about your project, idea, or role..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600 transition-colors resize-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-emerald-500 transition-colors resize-none"
                   ></textarea>
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full py-3 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
-                >
-                  <Send className="w-4 h-4" /> Send Message
-                </button>
+                <div className="star-revolve-wrapper w-full">
+                  <button
+                    type="submit"
+                    className="w-full py-3 rounded-[calc(0.6rem-2px)] bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 text-sm font-bold hover:brightness-105 transition-all flex items-center justify-center gap-2 shadow-sm z-10"
+                  >
+                    <Send className="w-4 h-4 text-zinc-950" /> Send Message
+                  </button>
+                </div>
               </form>
             )}
           </div>
