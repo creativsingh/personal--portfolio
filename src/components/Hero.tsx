@@ -37,10 +37,10 @@ export function Hero() {
 
         {/* Primary CTA Buttons */}
         <div className="flex flex-wrap items-center gap-4 mb-14">
-          <div className="star-revolve-wrapper">
+          <div className="border-comet-btn">
             <a
               href="#work"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-[calc(0.6rem-2px)] bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 font-bold text-sm hover:brightness-105 transition-all shadow-sm z-10"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-[calc(0.65rem-2px)] bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 font-bold text-sm hover:brightness-105 transition-all shadow-sm z-10"
             >
               View Selected Work
               <ArrowDown className="w-4 h-4 text-zinc-950" />

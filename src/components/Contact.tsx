@@ -215,10 +215,10 @@ export function Contact() {
                   ></textarea>
                 </div>
 
-                <div className="star-revolve-wrapper w-full">
+                <div className="border-comet-btn w-full">
                   <button
                     type="submit"
-                    className="w-full py-3 rounded-[calc(0.6rem-2px)] bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 text-sm font-bold hover:brightness-105 transition-all flex items-center justify-center gap-2 shadow-sm z-10"
+                    className="w-full py-3 rounded-[calc(0.65rem-2px)] bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 text-sm font-bold hover:brightness-105 transition-all flex items-center justify-center gap-2 shadow-sm z-10"
                   >
                     <Send className="w-4 h-4 text-zinc-950" /> Send Message
                   </button>

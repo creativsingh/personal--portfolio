@@ -36,42 +36,42 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Revolving broken-star border animation for primary buttons */
-.star-revolve-wrapper {
+/* Pure CSS Single Orbiting Glowing Comet Beam Border */
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.border-comet-btn {
+  --border-angle: 0deg;
   position: relative;
   display: inline-flex;
-  overflow: hidden;
-  border-radius: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.65rem;
   padding: 2px;
+  background-image: conic-gradient(
+    from var(--border-angle),
+    transparent 0%,
+    transparent 70%,
+    rgba(137, 255, 180, 0.08) 75%,
+    rgba(137, 255, 180, 0.35) 85%,
+    rgba(137, 255, 180, 0.75) 93%,
+    #ffffff 98%,
+    #89FFB4 100%
+  );
+  animation: border-comet-orbit 4s linear infinite;
   isolation: isolate;
 }
 
-.star-revolve-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300%;
-  height: 300%;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0deg,
-    transparent 280deg,
-    #89FFB4 310deg,
-    #ffffff 335deg,
-    #80FFC6 360deg
-  );
-  transform: translate(-50%, -50%);
-  animation: star-revolve-spin 8s linear infinite;
-  z-index: 0;
+.border-comet-btn:hover {
+  box-shadow: 0 0 20px rgba(137, 255, 180, 0.35);
 }
 
-@keyframes star-revolve-spin {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+@keyframes border-comet-orbit {
+  to {
+    --border-angle: 360deg;
   }
 }
 
