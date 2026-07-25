@@ -15,10 +15,10 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <Philosophy />
+        <ToolStack />
         <Projects />
         <CommunitySpeaking />
-        <ToolStack />
+
         <MusicPlayer />
         <Contact />
       </main>

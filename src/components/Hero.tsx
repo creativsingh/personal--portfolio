@@ -46,7 +46,7 @@ export function Hero() {
         <div className="flex flex-wrap items-center gap-4 mb-14">
           <a
             href="#work"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm hover:opacity-90 transition-opacity"
           >
             View Selected Work
             <ArrowDown className="w-4 h-4" />
@@ -70,20 +70,20 @@ export function Hero() {
         {/* Quick Highlights Metrics Bar */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-zinc-200/60 dark:border-zinc-800/60 text-left">
           <div className="space-y-1">
-            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">4+</div>
-            <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Shipped Case Studies</div>
+            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">10+</div>
+            <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Shipped Products</div>
           </div>
           <div className="space-y-1">
-            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">1,500+</div>
-            <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">PixelPeps Members</div>
+            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">2000+</div>
+            <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">People Mentored</div>
           </div>
           <div className="space-y-1">
-            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">5+</div>
+            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">20+</div>
             <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Talks &amp; Workshops</div>
           </div>
           <div className="space-y-1">
-            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">Design+Code</div>
-            <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">AI-Assisted Workflow</div>
+            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">8k+</div>
+            <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Community Members</div>
           </div>
         </div>
 
