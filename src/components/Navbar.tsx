@@ -21,20 +21,19 @@ export function Navbar() {
   const navLinks = [
     { label: "About", href: "#about" },
     { label: "Work", href: "#work" },
-    { label: "Philosophy", href: "#philosophy" },
-    { label: "Community", href: "#community" },
-    { label: "Speaking", href: "#speaking" },
-    { label: "Music", href: "#music" },
+    // { label: "Philosophy", href: "#philosophy" },
+    // { label: "Community", href: "#community" },
+    //  { label: "Speaking", href: "#speaking" },
+    // { label: "Music", href: "#music" },
     { label: "Contact", href: "#contact" },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
-        scrolled
-          ? "bg-white/80 dark:bg-[#0a0a0c]/80 backdrop-blur-md border-b border-zinc-200/80 dark:border-zinc-800/80 py-3 shadow-xs"
-          : "bg-transparent py-5"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${scrolled
+        ? "bg-white/80 dark:bg-[#0a0a0c]/80 backdrop-blur-md border-b border-zinc-200/80 dark:border-zinc-800/80 py-3 shadow-xs"
+        : "bg-transparent py-5"
+        }`}
     >
       <div className="max-w-4xl mx-auto px-6 flex items-center justify-between">
         {/* Brand */}

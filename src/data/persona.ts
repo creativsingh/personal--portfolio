@@ -44,10 +44,10 @@ export const PERSONA_DATA = {
   subheading: "Evolving toward Design Engineering",
   location: "Delhi, India",
   website: "https://creativsingh.com",
-  oneLiner: "I design thoughtful digital products, build design communities, and share knowledge to help people grow.",
+  oneLiner: "I design & build thoughtful digital products, build design communities, and share knowledge to help people grow.",
   brandPromise: "Designs products that balance user empathy, business goals, and technical feasibility.",
-  statusText: "Available for Design Engineering & Product Strategy",
-  
+  statusText: "Available for Design Engineer & Product Designer Roles",
+
   aboutBio: `I'm a Product Designer based in Delhi, India, bridging the space between UX design, frontend code, and human empathy. As the organizer of the PixelPeps design community, I actively mentor designers and host workshops. Currently, I am evolving into a Design Engineer—building production-grade user interfaces with precision, clarity, and AI-assisted workflows.`,
 
   corePrinciples: [

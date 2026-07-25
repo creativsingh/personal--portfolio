@@ -84,7 +84,7 @@ export function MusicPlayer() {
   return (
     <section id="music" className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80">
       <div className="max-w-4xl mx-auto px-6">
-        
+
         {/* Section Header */}
         <div className="mb-10">
           <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block mb-2">
@@ -101,12 +101,12 @@ export function MusicPlayer() {
 
         {/* Music Player Container */}
         <div className="p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] text-zinc-900 dark:text-zinc-100 border border-zinc-200/80 dark:border-zinc-800/80 shadow-xl relative overflow-hidden">
-          
+
           {/* Top Bar / Now Playing */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-zinc-200 dark:border-zinc-800">
             <div className="flex items-center gap-4">
               {/* Spinning Disc visualizer */}
-              <div className={`w-14 h-14 rounded-full bg-gradient-to-tr from-amber-500 to-rose-500 flex items-center justify-center shadow-lg ${isPlaying ? "animate-spin" : ""}`} style={{ animationDuration: "6s" }}>
+              <div className={`w-14 h-14 rounded-full bg-linear-to-tr from-amber-500 to-rose-500 flex items-center justify-center shadow-lg ${isPlaying ? "animate-spin" : ""}`} style={{ animationDuration: "6s" }}>
                 <Disc className="w-7 h-7 text-zinc-900" />
               </div>
 
@@ -163,11 +163,10 @@ export function MusicPlayer() {
                     setActiveTrackId(track.id);
                     if (!isPlaying) togglePlay();
                   }}
-                  className={`cursor-pointer p-3.5 rounded-xl border flex items-center justify-between transition-all ${
-                    activeTrackId === track.id
+                  className={`cursor-pointer p-3.5 rounded-xl border flex items-center justify-between transition-all ${activeTrackId === track.id
                       ? "bg-white border-amber-500/60 text-zinc-900 dark:bg-zinc-800/90 dark:border-amber-500/50 dark:text-white shadow-xs"
                       : "bg-white/60 border-zinc-200/60 text-zinc-600 hover:text-zinc-900 hover:bg-white dark:bg-zinc-900/50 dark:border-zinc-800/60 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800/40"
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center gap-3">
                     <span className="font-mono text-xs text-amber-500 font-bold">

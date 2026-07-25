@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section id="about" className="pt-32 pb-16 md:pt-40 md:pb-24 border-b border-zinc-200/80 dark:border-zinc-800/80">
       <div className="max-w-4xl mx-auto px-6">
-        
+
         {/* Availability Badge & Location */}
         <div className="flex flex-wrap items-center gap-3 mb-6">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
@@ -27,26 +27,26 @@ export function Hero() {
 
         {/* Hero Title */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 leading-[1.1] mb-6">
-          Designing thoughtful digital products &amp; building communities.
+          Designing & building digital products.
         </h1>
 
         {/* Hero Subtitle / Editorial Bio */}
         <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-300 max-w-3xl leading-relaxed mb-8">
-          Hi, I&apos;m <span className="font-semibold text-zinc-900 dark:text-zinc-100">{PERSONA_DATA.name}</span> ({PERSONA_DATA.brand}). I&apos;m a <span className="underline underline-offset-4 decoration-zinc-300 dark:decoration-zinc-700">Product Designer</span> and community organizer based in Delhi, evolving toward <span className="font-mono text-sm px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100">Design Engineering</span>.
+          Hi, I&apos;m <span className="font-semibold text-zinc-900 dark:text-zinc-100">{PERSONA_DATA.name}</span> ({PERSONA_DATA.brand}) <span className="font-mono text-sm px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100">Design Engineer</span> based in Delhi, India. I design & build products that look good, work beautifully, and scale effortlessly.
         </p>
 
         {/* Brand One-liner quote card */}
-        <div className="p-4 sm:p-5 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 mb-10">
+        {/* <div className="p-4 sm:p-5 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 mb-10">
           <p className="text-sm sm:text-base font-mono text-zinc-700 dark:text-zinc-300 italic">
             &ldquo;{PERSONA_DATA.oneLiner}&rdquo;
           </p>
-        </div>
+        </div> */}
 
         {/* Primary CTA Buttons */}
         <div className="flex flex-wrap items-center gap-4 mb-14">
           <a
             href="#work"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-medium text-sm hover:opacity-90 transition-opacity"
           >
             View Selected Work
             <ArrowDown className="w-4 h-4" />
