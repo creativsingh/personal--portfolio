@@ -1,19 +1,24 @@
 "use client";
 
 import React, { useState } from "react";
-import { PERSONA_DATA, Project } from "../data/persona";
-import { ProjectModal } from "./ProjectModal";
-import { ArrowUpRight, Sparkles, Layers, CheckCircle2 } from "lucide-react";
+import Link from "next/link";
+import { PERSONA_DATA } from "../data/persona";
+import { ArrowUpRight, ArrowRight } from "lucide-react";
 
-export function Projects() {
+interface ProjectsProps {
+  isWorkPage?: boolean;
+}
+
+export function Projects({ isWorkPage = false }: ProjectsProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
-  const [activeProject, setActiveProject] = useState<Project | null>(null);
 
   const categories = ["All", "AI & Healthcare", "SaaS & Community", "Consumer Apps", "Design Systems"];
 
   const filteredProjects = selectedCategory === "All"
     ? PERSONA_DATA.projects
     : PERSONA_DATA.projects.filter(p => p.category === selectedCategory);
+
+  const displayedProjects = isWorkPage ? filteredProjects : filteredProjects.slice(0, 3);
 
   return (
     <section id="work" className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80">
@@ -23,10 +28,10 @@ export function Projects() {
         <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
             <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block mb-2">
-              02 / Selected Case Studies
+              {isWorkPage ? "Selected Case Studies" : "02 / Selected Case Studies"}
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-              Shipped work &amp; product design engineering.
+              {isWorkPage ? "All Projects & Case Studies" : "Shipped work & product design engineering."}
             </h2>
             <p className="text-zinc-600 dark:text-zinc-400 mt-2 text-base max-w-xl">
               Each project reflects user empathy, business goals, and production-ready frontend thinking.
@@ -53,11 +58,11 @@ export function Projects() {
 
         {/* Projects Cards List */}
         <div className="space-y-6">
-          {filteredProjects.map((project) => (
-            <div
+          {displayedProjects.map((project) => (
+            <Link
               key={project.id}
-              onClick={() => setActiveProject(project)}
-              className="group cursor-pointer p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-200 relative overflow-hidden"
+              href={`/work/${project.id}`}
+              className="block group p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-200 relative overflow-hidden"
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                 
@@ -102,23 +107,30 @@ export function Projects() {
                   </div>
                 </div>
 
-                {/* Read Case Study Button */}
+                {/* Read Case Study Link */}
                 <div className="shrink-0 self-start md:self-center">
                   <span className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-zinc-800 dark:text-zinc-200 group-hover:underline">
-                    Case Study &rarr;
+                    Read Case Study &rarr;
                   </span>
                 </div>
 
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
-        {/* Modal */}
-        <ProjectModal
-          project={activeProject}
-          onClose={() => setActiveProject(null)}
-        />
+        {/* View More Button (Secondary styling, only shown on homepage) */}
+        {!isWorkPage && (
+          <div className="mt-10 flex justify-center">
+            <Link
+              href="/work"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-mono font-semibold bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200/80 dark:border-zinc-700/80 hover:bg-zinc-200 dark:hover:bg-zinc-700 hover:text-zinc-900 dark:hover:text-zinc-100 transition-all shadow-xs"
+            >
+              View More Projects
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+        )}
 
       </div>
     </section>
