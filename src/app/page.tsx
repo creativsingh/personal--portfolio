@@ -3,7 +3,8 @@ import { Navbar } from "../components/Navbar";
 import { Hero } from "../components/Hero";
 import { Philosophy } from "../components/Philosophy";
 import { Projects } from "../components/Projects";
-import { CommunitySpeaking } from "../components/CommunitySpeaking";
+import { PixelPeps } from "../components/PixelPeps";
+import { PublicSpeaking } from "../components/PublicSpeaking";
 import { ToolStack } from "../components/ToolStack";
 import { MusicPlayer } from "../components/MusicPlayer";
 import { Contact } from "../components/Contact";
@@ -17,8 +18,8 @@ export default function Home() {
         <Hero />
         <ToolStack />
         <Projects />
-        <CommunitySpeaking />
-
+        <PixelPeps />
+        <PublicSpeaking />
         <MusicPlayer />
         <Contact />
       </main>

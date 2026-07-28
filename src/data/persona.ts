@@ -333,14 +333,14 @@ export const PERSONA_DATA = {
     role: "Founder & Community Lead",
     description: "A thriving design community focused on peer learning, design crits, workshops, and networking for designers & developers across India.",
     activities: [
-      "Monthly in-person design meetups & crits",
-      "Hands-on Figma & Framer workshops",
-      "Career transition & portfolio reviews",
-      "Guest speaker sessions & panel discussions"
+      "Networking Meetups",
+      "Expert Talks",
+      "Collaboration Events",
+      "Hands-on Workshops",
     ],
     stats: [
-      { label: "Community Members", value: "1,500+" },
-      { label: "Meetups & Workshops", value: "25+" },
+      { label: "Community Members", value: "8000+" },
+      { label: "Meetups & Workshops", value: "10+" },
       { label: "Designers Mentored", value: "200+" }
     ]
   },
