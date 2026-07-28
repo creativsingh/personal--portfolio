@@ -15,7 +15,7 @@ export function CommunitySpeaking({ isSpeakingPage = false }: CommunitySpeakingP
   return (
     <section id="community" className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80 overflow-x-hidden">
       <div className="max-w-4xl mx-auto px-6 space-y-16">
-        
+
         {/* PixelPeps Community Section (Only shown on homepage, hidden on full /speaking page) */}
         {!isSpeakingPage && (
           <div>
@@ -36,7 +36,7 @@ export function CommunitySpeaking({ isSpeakingPage = false }: CommunitySpeakingP
               </div>
 
               <a
-                href={PERSONA_DATA.socials.pixelpeps}
+                href="https://www.commudle.com/communities/pixelpeps"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-xs font-mono font-semibold hover:opacity-90 transition-opacity shrink-0"

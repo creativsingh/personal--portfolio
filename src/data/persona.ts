@@ -104,7 +104,7 @@ export const PERSONA_DATA = {
     {
       id: "genesis-ai",
       title: "Genesis AI",
-      category: "AI, Enterprise SaaS",
+      category: "Ecommerce",
       tagline: "Platform designed to help sales and operations teams efficiently create, manage, and present product configurations to enterprise clients.",
       role: "Sr. Product Designer & Frontend Collaborator",
       roleDescription: "Product discovery with CEO & stakeholders • Creating clarity out of chaos (auditing legacy flows) • Designing a scalable system across End-User & Admin panels • Facilitating cross-functional workshops • Collaborating deeply with PM & VP of Design • Establishing feasibility with dev architects • Final handoff and implementation QA.",
@@ -178,7 +178,7 @@ export const PERSONA_DATA = {
     {
       id: "commudle",
       title: "Commudle",
-      category: "Enterprise SaaS",
+      category: "Event Hosting",
       tagline: "All-in-one community management and tech event hosting platform.",
       role: "UX Designer & Frontend Collaborator",
       roleDescription: "Served as UX Designer & Frontend Collaborator. Streamlined event ticketing, 1-click QR check-in flows, speaker schedule builders, and automated certificate generation engines supporting 120K+ event attendees across tech communities in India.",
@@ -220,7 +220,7 @@ export const PERSONA_DATA = {
     {
       id: "prana-ai",
       title: "Prana AI",
-      category: "AI, Healthcare",
+      category: "Healthcare",
       tagline: "AI-powered wellness platform designed to help users improve their physical and mental well-being through personalized insights, guided routines, and real-time feedback.",
       role: "Lead Product Designer",
       roleDescription: "Lead Product Designer & Prototyper. Designed dark-mode native telemetry visualizers, real-time vital trend charts, and empathetic conversational AI interfaces.",
@@ -261,7 +261,7 @@ export const PERSONA_DATA = {
     {
       id: "hunger-express",
       title: "Hunger Express",
-      category: "Consumer Apps",
+      category: "Food Delivery",
       tagline: "Food delivery platform designed to connect customers, restaurants, and delivery partners through a seamless, scalable ecosystem.",
       role: "Product Designer",
       roleDescription: "Product Designer. Conducted 15 contextual inquiry sessions with local riders and users, redesigned progressive checkout drawers, and crafted 12 micro-animations for live order tracking.",
@@ -295,7 +295,7 @@ export const PERSONA_DATA = {
     {
       id: "scalie",
       title: "Scalie",
-      category: "Enterprise SaaS",
+      category: "HR Tech",
       tagline: "Resource allocation platform designed to help organizations efficiently track, allocate, and utilize available talent across projects.",
       role: "Design Engineer",
       roleDescription: "Design Engineer. Built automated design token sync pipeline translating Figma variables to type-safe Tailwind and CSS variables for cross-platform engineering teams.",
@@ -333,15 +333,15 @@ export const PERSONA_DATA = {
     role: "Founder & Community Lead",
     description: "A thriving design community focused on peer learning, design crits, workshops, and networking for designers & developers across India.",
     activities: [
-      "Monthly in-person design meetups & crits",
-      "Hands-on Figma & Framer workshops",
-      "Career transition & portfolio reviews",
-      "Guest speaker sessions & panel discussions"
+      "Collaboration Events",
+      "Networking Meetups",
+      "Expert Talks",
+      "Design Discussions"
     ],
     stats: [
-      { label: "Community Members", value: "1,500+" },
-      { label: "Meetups & Workshops", value: "25+" },
-      { label: "Designers Mentored", value: "200+" }
+      { label: "Community Members", value: "8000+" },
+      { label: "Meetups & Workshops", value: "10+" },
+      { label: "Average Attendees", value: "100+" }
     ]
   },
 
@@ -447,6 +447,8 @@ export const PERSONA_DATA = {
     linkedin: "https://linkedin.com/in/creativsingh",
     github: "https://github.com/creativsingh",
     figma: "https://figma.com/@creativsingh",
+    medium: "https://medium.com/@creativsingh",
+    commudle: "https://commudle.com/users/creativsingh",
     pixelpeps: "https://pixelpeps.com",
     spotify: "https://open.spotify.com/artist/1qcYNoMSWiByxu5i5HNFVM"
   }

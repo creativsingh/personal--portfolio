@@ -117,11 +117,11 @@ export function ToolStack() {
   return (
     <section className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80">
       <div className="max-w-4xl mx-auto px-6 space-y-12">
-        
+
         {/* Section Header */}
         <div>
           <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block mb-2">
-            05 / Technical Stack &amp; Tools
+            01 / Technical Stack &amp; Tools
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
             The tools behind every interface I build.

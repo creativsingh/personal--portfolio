@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { PERSONA_DATA } from "../data/persona";
-import { Mail, Copy, Check, Send, ArrowUpRight } from "lucide-react";
+import { Mail, Copy, Check, Send, ArrowUpRight, Loader2, AlertCircle, RefreshCw } from "lucide-react";
 
 // Brand SVG Components
 function TwitterIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -37,9 +37,27 @@ function FigmaIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+function MediumIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+    </svg>
+  );
+}
+
+function CommudleIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+    </svg>
+  );
+}
+
 export function Contact() {
   const [copied, setCopied] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
   const handleCopyEmail = () => {
@@ -48,12 +66,43 @@ export function Contact() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.email || !formData.message) return;
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
-    setFormData({ name: "", email: "", message: "" });
+
+    setIsSubmitting(true);
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "22c32745-786c-47e6-bb47-d3714b56ba39",
+          name: formData.name || "Portfolio Visitor",
+          email: formData.email,
+          message: formData.message,
+          subject: `New Portfolio Message from ${formData.name || formData.email}`,
+          from_name: formData.name || "CreativSingh Portfolio",
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setErrorMsg(data.message || "Failed to send email. Please try again.");
+      }
+    } catch {
+      setErrorMsg("Network error. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -98,7 +147,7 @@ export function Contact() {
                     </>
                   ) : (
                     <>
-                      <Copy className="w-3.5 h-3.5" /> Copy
+                      <Copy className="w-3.5 h-3.5" /> Copy Email
                     </>
                   )}
                 </button>
@@ -150,6 +199,26 @@ export function Contact() {
                   <FigmaIcon className="w-4 h-4 text-purple-500" /> Figma Profile
                   <ArrowUpRight className="w-3 h-3 text-zinc-400 ml-auto" />
                 </a>
+
+                <a
+                  href={PERSONA_DATA.socials.medium}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2.5 p-3 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 text-xs font-mono text-zinc-700 dark:text-zinc-300 transition-colors"
+                >
+                  <MediumIcon className="w-4 h-4 text-emerald-500" /> Medium
+                  <ArrowUpRight className="w-3 h-3 text-zinc-400 ml-auto" />
+                </a>
+
+                <a
+                  href={PERSONA_DATA.socials.commudle}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2.5 p-3 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 text-xs font-mono text-zinc-700 dark:text-zinc-300 transition-colors"
+                >
+                  <CommudleIcon className="w-4 h-4 text-indigo-500" /> Commudle
+                  <ArrowUpRight className="w-3 h-3 text-zinc-400 ml-auto" />
+                </a>
               </div>
             </div>
 
@@ -158,20 +227,37 @@ export function Contact() {
           {/* Right Column: Contact Form */}
           <div className="p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80">
             {submitted ? (
-              <div className="py-12 text-center space-y-3">
+              <div className="py-12 text-center space-y-4">
                 <div className="w-12 h-12 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center mx-auto">
                   <Check className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">Message Sent!</h3>
-                <p className="text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                  Thank you for reaching out. Ajeet will get back to you shortly.
-                </p>
+                <div className="space-y-1">
+                  <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">Message Sent!</h3>
+                  <p className="text-xs font-mono text-zinc-500 dark:text-zinc-400 max-w-xs mx-auto">
+                    Thank you for reaching out. Your message has been delivered directly to Ajeet&apos;s inbox.
+                  </p>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setSubmitted(false)}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-mono font-medium bg-zinc-200/60 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-300 dark:hover:bg-zinc-700 transition-colors mt-2 cursor-pointer"
+                >
+                  <RefreshCw className="w-3.5 h-3.5" /> Send Another Message
+                </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
                   Send a Message
                 </h3>
+
+                {errorMsg && (
+                  <div className="p-3 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-600 dark:text-rose-400 text-xs font-mono flex items-start gap-2">
+                    <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
+                    <span>{errorMsg}</span>
+                  </div>
+                )}
 
                 <div>
                   <label className="block text-xs font-mono text-zinc-500 dark:text-zinc-400 mb-1">
@@ -215,12 +301,21 @@ export function Contact() {
                   ></textarea>
                 </div>
 
-                <div className="border-comet-btn w-full">
+                <div className={isSubmitting ? "w-full" : "border-comet-btn w-full"}>
                   <button
                     type="submit"
-                    className="w-full py-3 rounded-[calc(0.65rem-2px)] bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 text-sm font-bold hover:brightness-105 transition-all flex items-center justify-center gap-2 shadow-sm z-10"
+                    disabled={isSubmitting}
+                    className="w-full py-3 rounded-[calc(0.65rem-2px)] bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 text-sm font-bold hover:brightness-105 transition-all flex items-center justify-center gap-2 shadow-sm z-10 disabled:opacity-80 cursor-pointer"
                   >
-                    <Send className="w-4 h-4 text-zinc-950" /> Send Message
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="w-4 h-4 text-zinc-950 animate-spin" /> Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-4 h-4 text-zinc-950" /> Send Message
+                      </>
+                    )}
                   </button>
                 </div>
               </form>
