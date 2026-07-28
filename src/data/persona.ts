@@ -7,9 +7,7 @@ export interface SectionItem {
   title: string;
   description?: string;
   paragraphs?: string[];
-  bullets?: string[];
   quotes?: string[];
-  impactNote?: string;
   image?: string;
   imageCaption?: string;
   isPlaceholderImage?: boolean;
@@ -23,7 +21,7 @@ export interface ToolItem {
 export interface Project {
   id: string;
   title: string;
-  category: 'AI & Healthcare' | 'SaaS & Community' | 'Consumer Apps' | 'Design Systems';
+  category: string;
   tagline: string;
   role: string;
   roleDescription?: string;
@@ -36,12 +34,9 @@ export interface Project {
   summary: string;
   problem: string;
   solution: string;
-  keyFeatures: string[];
   tools: string[];
-  color: string;
   coverImage?: string;
   sections?: SectionItem[];
-  highlights: string[];
 }
 
 export interface Talk {
@@ -75,10 +70,7 @@ export const PERSONA_DATA = {
   location: "Delhi, India",
   website: "https://creativsingh.com",
   oneLiner: "I design & build thoughtful digital products, build design communities, and share knowledge to help people grow.",
-  brandPromise: "Designs products that balance user empathy, business goals, and technical feasibility.",
   statusText: "Available for Design Engineer & Product Designer Roles",
-
-  aboutBio: `I'm a Product Designer based in Delhi, India, bridging the space between UX design, frontend code, and human empathy. As the organizer of the PixelPeps design community, I actively mentor designers and host workshops. Currently, I am evolving into a Design Engineer—building production-grade user interfaces with precision, clarity, and AI-assisted workflows.`,
 
   corePrinciples: [
     {
@@ -112,17 +104,17 @@ export const PERSONA_DATA = {
     {
       id: "genesis-ai",
       title: "Genesis AI",
-      category: "AI & Healthcare",
-      tagline: "Reimagining enterprise product configuration & CPQ workflows with intent-driven AI guidance.",
-      role: "Sr. Product Designer",
+      category: "AI, Enterprise SaaS",
+      tagline: "Platform designed to help sales and operations teams efficiently create, manage, and present product configurations to enterprise clients.",
+      role: "Sr. Product Designer & Frontend Collaborator",
       roleDescription: "Product discovery with CEO & stakeholders • Creating clarity out of chaos (auditing legacy flows) • Designing a scalable system across End-User & Admin panels • Facilitating cross-functional workshops • Collaborating deeply with PM & VP of Design • Establishing feasibility with dev architects • Final handoff and implementation QA.",
-      period: "2024",
+      period: "2025",
       duration: "9 Months",
-      teamSize: "2 Designers & Engineers",
+      teamSize: "2 Designers",
       platform: "Desktop Web Application",
-      impactMetric: "Accelerated Enterprise Quote Generation",
+      impactMetric: "Configuration time from 45 mins → 20 mins",
       metrics: [
-        { label: "Faster Quote Assembly", value: "4.8x" },
+        { label: "Configuration time for complex products", value: "4.8x" },
         { label: "Pricing Rule Errors", value: "0" },
         { label: "Intent Flow Adoption", value: "100%" },
         { label: "Onboarding Latency", value: "-60%" }
@@ -131,14 +123,7 @@ export const PERSONA_DATA = {
       summary: "Genesis AI transforms dense enterprise CPQ (Configure, Price, Quote) software by auditing legacy systems, shifting from manual parameter grids to intent-based user flows, and crafting interactive Figma prototypes.",
       problem: "Legacy enterprise CPQ systems present overwhelming configuration matrices, opaque pricing rules, and rigid item forms that slow sales teams down when assembling custom enterprise quotes.",
       solution: "Partnered with executive leadership to replace static parameter forms with 'Ask Genesis AI' conversational guidance, automated list price calculations, and real-time guidance cards.",
-      keyFeatures: [
-        "Ask Genesis AI conversational quote assistant",
-        "Automated bandwidth & hardware pricing guidance",
-        "Dynamic CPQ quote list manager (e.g. QUOTE-006989)",
-        "Audit-driven UI simplification & Figma tokens"
-      ],
-      tools: ["Figma", "Next.js", "Tailwind CSS", "Expedite Commerce", "Framer"],
-      color: "from-emerald-500/20 to-teal-500/10",
+      tools: ["Figma", "Salesforce", "Figma Make", "Miro"],
       sections: [
         {
           title: "What broke — and why we had to rethink the configurator?",
@@ -188,25 +173,20 @@ export const PERSONA_DATA = {
           image: "/case-studies/genesis-ai-figma-iteration.png",
           imageCaption: "A Mockup of one of the screen from End User newly designed configurator."
         }
-      ],
-      highlights: [
-        "Audited legacy enterprise CPQ architecture across 15+ sub-modules",
-        "Created intent-driven UI patterns adopted for desktop web app",
-        "Designed real-time price calculator & Ask Genesis AI assistant"
       ]
     },
     {
       id: "commudle",
       title: "Commudle",
-      category: "SaaS & Community",
+      category: "Enterprise SaaS",
       tagline: "All-in-one community management and tech event hosting platform.",
       role: "UX Designer & Frontend Collaborator",
       roleDescription: "Served as UX Designer & Frontend Collaborator. Streamlined event ticketing, 1-click QR check-in flows, speaker schedule builders, and automated certificate generation engines supporting 120K+ event attendees across tech communities in India.",
       period: "2023 - 2024",
       duration: "12 Months",
-      teamSize: "4 Designers & Engineers",
+      teamSize: "Individual Contributor",
       platform: "Web & Mobile",
-      impactMetric: "120K+ Event Attendees Supported",
+      impactMetric: "80k to 380k+ Engagements",
       metrics: [
         { label: "Attendees Supported", value: "120K+" },
         { label: "Event Setup Time", value: "15 Min" },
@@ -217,32 +197,38 @@ export const PERSONA_DATA = {
       summary: "Streamlining event discovery, ticketing, speaker management, and attendee networking for tech communities across India.",
       problem: "Community leads relied on multiple fragmented tools for ticketing, speaker scheduling, attendance check-ins, and certificate generation.",
       solution: "Created a unified dashboard and registration flow that reduced event setup time from 3 hours to 15 minutes.",
-      keyFeatures: [
-        "1-click ticketing & QR check-in flow",
-        "Interactive speaker agenda builder",
-        "Automated certificate generation engine",
-        "Community engagement leaderboard"
-      ],
-      tools: ["Figma", "React", "Tailwind CSS", "Framer", "Notion"],
-      color: "from-blue-500/20 to-indigo-500/10",
-      highlights: [
-        "Redesigned event check-in experience cutting entry queues by 60%",
-        "Created scalable UI components adopted across 15+ sub-modules",
-        "Partnered directly with community leads from GDG & PixelPeps"
+      tools: ["Figma", "Lottiefiles", "Aftereffects"],
+      sections: [
+        {
+          title: "The Community Operations Bottleneck 🎟️",
+          description: "Analyzing why community organizers were spending 15+ hours managing fragmented event tools.",
+          paragraphs: [
+            "1. Fragmented Tooling Overhead:\n• Organizers used Google Forms for registration, Eventbrite for ticketing, WhatsApp for updates, and manual Mailchimp scripts for certificates.\n• Check-in bottlenecks at event venues created long 45-minute queues in crowded lobbies.",
+            "2. Experience Breakdown:\n• Speakers lacked real-time schedule confirmation portals.\n• Attendees frequently misplaced event PDF passes or confirmation emails."
+          ]
+        },
+        {
+          title: "Designing the 1-Click QR Check-In & Certificate Engine ⚡",
+          description: "Creating a seamless mobile-first scanner and dynamic certificate generator.",
+          paragraphs: [
+            "We built a native PWA scanner for venue volunteers that validated QR passes in under 400ms per attendee. Post-event, organizers could issue 1,000+ personalized certificates with a single click.",
+            "• Queue wait times dropped by 60% across flagship tech conferences in New Delhi and Bangalore.\n• Event setup time for organizers fell from 3 hours down to 15 minutes."
+          ]
+        }
       ]
     },
     {
       id: "prana-ai",
-      title: "Prana AI (StayFit AI)",
-      category: "AI & Healthcare",
-      tagline: "Empathetic health & wellness companion UI with predictive telemetry analytics.",
-      role: "Lead Product Designer & Prototyper",
+      title: "Prana AI",
+      category: "AI, Healthcare",
+      tagline: "AI-powered wellness platform designed to help users improve their physical and mental well-being through personalized insights, guided routines, and real-time feedback.",
+      role: "Lead Product Designer",
       roleDescription: "Lead Product Designer & Prototyper. Designed dark-mode native telemetry visualizers, real-time vital trend charts, and empathetic conversational AI interfaces.",
       period: "2024",
-      duration: "6 Months",
-      teamSize: "3 Designers & Engineers",
-      platform: "Mobile & Web",
-      impactMetric: "38% Increase in Daily Log Engagement",
+      duration: "15 Months",
+      teamSize: "Individual Contributor",
+      platform: "Mobile",
+      impactMetric: "10k+ downloads on Playstore",
       metrics: [
         { label: "Daily Log Engagement", value: "+38%" },
         { label: "User Interviews & Testers", value: "40+" },
@@ -253,32 +239,37 @@ export const PERSONA_DATA = {
       summary: "Prana AI translates complex biometric signals and health metrics into actionable, calm visual insights for everyday users.",
       problem: "Traditional health apps overwhelm users with dense medical numbers, causing user fatigue and abandonment.",
       solution: "Designed a minimalist telemetry interface featuring dark-mode native graphics, micro-animations, and AI-driven summary cards.",
-      keyFeatures: [
-        "Real-time vital trends visualizer",
-        "Empathetic conversational AI interface",
-        "Adaptive dark/light theme for morning vs night check-ins",
-        "Automated stress pattern alerts"
-      ],
-      tools: ["Figma", "Next.js", "Tailwind CSS", "LottieFiles", "ChatGPT API"],
-      color: "from-emerald-500/20 to-teal-500/10",
-      highlights: [
-        "Architected complete design system tokens for telemetry charts",
-        "Built interactive high-fidelity web prototype in Next.js",
-        "Conducted user interviews with 40+ beta testers"
+      tools: ["Figma", "Adobe Illustrator"],
+      sections: [
+        {
+          title: "Biometric Overload vs. Calm UX 🩺",
+          description: "Deconstructing medical telemetry data into digestible daily insights.",
+          paragraphs: [
+            "1. The Problem with Raw Data:\n• Wearables generate thousands of continuous health data points (HRV, SPO2, REM sleep cycles).\n• Raw medical charts induce anxiety rather than encouraging habit building.",
+            "2. The Empathetic Solution:\n• Introduced 'Calm Telemetry Cards' that highlight 1 primary insight per morning check-in.\n• Used adaptive ambient lighting themes that soften contrast during night-time reviews."
+          ]
+        },
+        {
+          title: "Prototyping & Beta Testing Results 📈",
+          description: "Validating conversational AI guidance with 40+ active beta testers.",
+          paragraphs: [
+            "Through iterative Next.js and Figma prototypes, we achieved a 94% clarity satisfaction score and boosted daily active telemetry logging by 38%."
+          ]
+        }
       ]
     },
     {
       id: "hunger-express",
       title: "Hunger Express",
       category: "Consumer Apps",
-      tagline: "Frictionless hyper-local food delivery application UX.",
+      tagline: "Food delivery platform designed to connect customers, restaurants, and delivery partners through a seamless, scalable ecosystem.",
       role: "Product Designer",
       roleDescription: "Product Designer. Conducted 15 contextual inquiry sessions with local riders and users, redesigned progressive checkout drawers, and crafted 12 micro-animations for live order tracking.",
       period: "2023",
       duration: "4 Months",
-      teamSize: "2 Designers",
-      platform: "Mobile Web & Native",
-      impactMetric: "22% Drop in Checkout Friction",
+      teamSize: "Individual Contributor",
+      platform: "Mobile",
+      impactMetric: "99% Client Satisfaction",
       metrics: [
         { label: "Drop in Checkout Friction", value: "-22%" },
         { label: "Rider Inquiry Sessions", value: "15" },
@@ -289,34 +280,32 @@ export const PERSONA_DATA = {
       summary: "Reimagining hyper-local meal delivery with micro-interactions, single-tap order customization, and real-time courier tracking.",
       problem: "High checkout abandonment rate due to cluttered multi-step cart options and slow payment options.",
       solution: "Redesigned the order flow around a progressive checkout drawer, reducing total screens required to complete an order.",
-      keyFeatures: [
-        "Single-swipe checkout confirmation",
-        "Real-time interactive live tracking map",
-        "Personalized fast-reorder carousel",
-        "Dietary & allergy smart filter badges"
-      ],
-      tools: ["Figma", "LottieFiles", "Adobe Creative Cloud", "Framer"],
-      color: "from-amber-500/20 to-orange-500/10",
-      highlights: [
-        "Conducted 15 contextual inquiry sessions with local riders and users",
-        "Designed accessible high-contrast UI for outdoor readability",
-        "Created 12 custom micro-animations for order status transitions"
+      tools: ["Figma"],
+      sections: [
+        {
+          title: "Contextual Inquiry & Rider Field Research 🛵",
+          description: "Riding along with delivery couriers and observing real-world ordering friction.",
+          paragraphs: [
+            "1. Field Discoveries:\n• Delivery riders struggled with small, low-contrast buttons on sunny days.\n• Users abandoned carts when forced to navigate 4 separate confirmation screens.",
+            "2. Progressive Checkout Redesign:\n• Replaced 4 full page steps with a 1-swipe modal drawer.\n• Added 12 custom Lottie micro-animations for instant visual status feedback."
+          ]
+        }
       ]
     },
     {
       id: "scalie",
-      title: "Scalie (MVP)",
-      category: "Design Systems",
-      tagline: "Enterprise B2B SaaS scaling tool for design systems & dev handoffs.",
+      title: "Scalie",
+      category: "Enterprise SaaS",
+      tagline: "Resource allocation platform designed to help organizations efficiently track, allocate, and utilize available talent across projects.",
       role: "Design Engineer",
       roleDescription: "Design Engineer. Built automated design token sync pipeline translating Figma variables to type-safe Tailwind and CSS variables for cross-platform engineering teams.",
       period: "2023",
-      duration: "5 Months",
-      teamSize: "3 Engineers & Designers",
-      platform: "Desktop & Web",
-      impactMetric: "4x Faster Design Token Handoff",
+      duration: "6 Months",
+      teamSize: "Individual Contributor",
+      platform: "Desktop",
+      impactMetric: "Cut allocation time by 40%",
       metrics: [
-        { label: "Token Handoff Speed", value: "4x" },
+        { label: "Time Saved Per Week", value: "6+ Hours" },
         { label: "Sync Errors Across Teams", value: "0" },
         { label: "Product Teams Adopted", value: "8" },
         { label: "WCAG AAA Compliance", value: "100%" }
@@ -325,18 +314,16 @@ export const PERSONA_DATA = {
       summary: "Automating the translation of Figma variables to production Tailwind and CSS variables for cross-platform engineering teams.",
       problem: "Designers and engineers spent dozens of hours manually syncing hex codes, typography scales, and spacing tokens.",
       solution: "Built a bridge application that parses Figma design files and automatically emits type-safe CSS and Tailwind theme configs.",
-      keyFeatures: [
-        "Automated token sync via Figma REST API",
-        "Visual diff checker between design & production code",
-        "WCAG 2.1 AAA color contrast checker",
-        "Multi-theme dark/light code exporter"
-      ],
-      tools: ["Figma", "Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
-      color: "from-purple-500/20 to-pink-500/10",
-      highlights: [
-        "Built custom parser engine in TypeScript",
-        "Reduced design token sync errors to zero",
-        "Adopted by 8 cross-functional product teams"
+      tools: ["Figma"],
+      sections: [
+        {
+          title: "Automating Design Token Handoffs 🎨 ⚡ 💻",
+          description: "Bridging the gap between Figma variables and production Tailwind CSS configs.",
+          paragraphs: [
+            "1. The Sync Pain Point:\n• Teams lost hours manually copying color hexes, shadow tokens, and spacing variables across repositories.\n• Drift between design and production caused unexpected UI bugs.",
+            "2. The TypeScript Pipeline Solution:\n• Built a REST API bridge that pulls Figma token updates and compiles type-safe Tailwind themes automatically.\n• Adopted across 8 engineering teams with zero token sync errors."
+          ]
+        }
       ]
     }
   ] as Project[],
@@ -439,7 +426,6 @@ export const PERSONA_DATA = {
     artistAvatar: "https://i.scdn.co/image/ab6761610000e5ebbcc755e1b8adc4348912b3e7",
     intro: "Beyond pixels and code, music is my creative sanctuary. Releasing music under the artist moniker Invin on Spotify.",
     genres: ["Indie", "Alternative", "Ambient"],
-    instruments: ["Guitar", "Vocals", "Logic Pro", "Acoustic Production"],
     sampleTracks: [
       {
         id: "track-time",
