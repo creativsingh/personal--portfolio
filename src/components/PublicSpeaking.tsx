@@ -15,18 +15,18 @@ export function PublicSpeaking({ isSpeakingPage = false }: PublicSpeakingProps) 
   return (
     <section id="speaking" className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80">
       <div className="max-w-4xl mx-auto px-6">
-        
+
         {/* Section Header */}
         <div className="flex items-center justify-between mb-8">
           <div>
             <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block mb-2">
-              {isSpeakingPage ? "PUBLIC SPEAKING & WORKSHOPS" : "04 / Public Speaking"}
+              {isSpeakingPage ? "PUBLIC SPEAKING & WORKSHOPS" : "04 / Sharing Knowledge"}
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-              Public Speaking &amp; Keynotes
+              Speaking about design, AI & frontend engineering.
             </h2>
             <p className="text-zinc-600 dark:text-zinc-400 mt-2 text-base max-w-xl">
-              Keynotes, design engineering workshops, and panel sessions across tech conferences in India.
+              From community meetups to tech conferences, I enjoy sharing practical insights on product design, design systems, AI, and building modern digital experiences.
             </p>
           </div>
 
