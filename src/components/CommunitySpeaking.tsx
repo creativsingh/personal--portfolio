@@ -3,20 +3,20 @@
 import React from "react";
 import Link from "next/link";
 import { PERSONA_DATA } from "../data/persona";
-import { MapPin, ArrowUpRight, ArrowRight, Sparkles } from "lucide-react";
+import { Calendar, ArrowUpRight, ArrowRight, Sparkles } from "lucide-react";
 
 interface CommunitySpeakingProps {
   isSpeakingPage?: boolean;
 }
 
 export function CommunitySpeaking({ isSpeakingPage = false }: CommunitySpeakingProps) {
-  const displayedTalks = isSpeakingPage ? PERSONA_DATA.talks : PERSONA_DATA.talks.slice(0, 3);
+  const displayedTalks = isSpeakingPage ? PERSONA_DATA.talks : PERSONA_DATA.talks.slice(0, 4);
 
   return (
-    <section id="community" className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80 overflow-x-hidden">
+    <section id="community" className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80">
       <div className="max-w-4xl mx-auto px-6 space-y-16">
-
-        {/* PixelPeps Community Section (Only shown on homepage, hidden on full /speaking page) */}
+        
+        {/* PixelPeps Community Section */}
         {!isSpeakingPage && (
           <div>
             <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block mb-2">
@@ -36,7 +36,7 @@ export function CommunitySpeaking({ isSpeakingPage = false }: CommunitySpeakingP
               </div>
 
               <a
-                href="https://www.commudle.com/communities/pixelpeps"
+                href={PERSONA_DATA.socials.pixelpeps}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-xs font-mono font-semibold hover:opacity-90 transition-opacity shrink-0"
@@ -74,28 +74,29 @@ export function CommunitySpeaking({ isSpeakingPage = false }: CommunitySpeakingP
                 </div>
               ))}
             </div>
-
-            {/* True Edge-to-Edge Viewport Full Width Horizontal Line */}
-            <div className="w-screen relative left-1/2 -translate-x-1/2 border-b border-zinc-200/80 dark:border-zinc-800/80 mt-16" />
           </div>
         )}
 
         {/* Public Speaking & Workshops Section */}
-        <div id="speaking">
-          <div className="mb-8">
-            <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block mb-2">
-              {isSpeakingPage ? "Keynotes & Workshops" : "04 / Keynotes & Workshops"}
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-              {isSpeakingPage ? "All Public Speaking & Workshops" : "Public Speaking & Knowledge Sharing"}
-            </h2>
-            <p className="text-zinc-600 dark:text-zinc-400 mt-2 text-base max-w-xl">
-              Delivered talks and interactive sessions at top tech communities &amp; academic institutes.
-            </p>
+        <div>
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+                Public Speaking &amp; Workshops
+              </h2>
+              <p className="text-zinc-600 dark:text-zinc-400 mt-2 text-base max-w-xl">
+                Keynotes, design engineering workshops, and panel sessions across tech conferences in India.
+              </p>
+            </div>
+
+            {isSpeakingPage && (
+              <span className="text-xs font-mono text-zinc-400">
+                All Speaking Engagements ({PERSONA_DATA.talks.length})
+              </span>
+            )}
           </div>
 
-          {/* Talks Table / List */}
-          <div className="space-y-4">
+          <div className="grid grid-cols-1 gap-4">
             {displayedTalks.map((talk) => (
               <div
                 key={talk.id}
@@ -103,7 +104,12 @@ export function CommunitySpeaking({ isSpeakingPage = false }: CommunitySpeakingP
               >
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div className="space-y-1 max-w-xl">
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
+                      {talk.community && (
+                        <span className="px-2 py-0.5 rounded text-[11px] font-mono font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                          {talk.community}
+                        </span>
+                      )}
                       <span className="px-2 py-0.5 rounded text-[11px] font-mono bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">
                         {talk.venue}
                       </span>
@@ -116,15 +122,17 @@ export function CommunitySpeaking({ isSpeakingPage = false }: CommunitySpeakingP
                     <h3 className="text-base sm:text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                       {talk.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 font-mono">
-                      Topic: {talk.topic}
-                    </p>
+                    {talk.eventName && (
+                      <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 font-mono">
+                        Event Name: {talk.eventName}
+                      </p>
+                    )}
                   </div>
 
                   <div className="text-left sm:text-right shrink-0 font-mono text-xs text-zinc-500 space-y-1">
                     <div className="flex items-center sm:justify-end gap-1">
-                      <MapPin className="w-3.5 h-3.5" />
-                      {talk.location} ({talk.date})
+                      <Calendar className="w-3.5 h-3.5" />
+                      {talk.date}
                     </div>
                     {talk.attendees && (
                       <div className="text-emerald-600 dark:text-emerald-400 font-medium">
@@ -139,12 +147,12 @@ export function CommunitySpeaking({ isSpeakingPage = false }: CommunitySpeakingP
 
           {/* View More Button (Secondary styling, only shown on homepage) */}
           {!isSpeakingPage && (
-            <div className="mt-10 flex justify-center">
+            <div className="mt-8 flex justify-center">
               <Link
                 href="/speaking"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-mono font-semibold bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200/80 dark:border-zinc-700/80 hover:bg-zinc-200 dark:hover:bg-zinc-700 hover:text-zinc-900 dark:hover:text-zinc-100 transition-all shadow-xs"
               >
-                View All Talks &amp; Workshops
+                View More Speaking Sessions
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>

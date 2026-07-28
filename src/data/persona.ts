@@ -42,10 +42,10 @@ export interface Project {
 export interface Talk {
   id: string;
   title: string;
+  eventName?: string;
   venue: string;
-  location: string;
+  community?: string;
   date: string;
-  topic: string;
   attendees?: string;
   badge?: string;
 }
@@ -104,17 +104,17 @@ export const PERSONA_DATA = {
     {
       id: "genesis-ai",
       title: "Genesis AI",
-      category: "Ecommerce",
-      tagline: "Platform designed to help sales and operations teams efficiently create, manage, and present product configurations to enterprise clients.",
+      category: "AI & Healthcare",
+      tagline: "Redesigned an AI-powered CPQ platform with conversational configuration and scalable admin workflows.",
       role: "Sr. Product Designer & Frontend Collaborator",
       roleDescription: "Product discovery with CEO & stakeholders • Creating clarity out of chaos (auditing legacy flows) • Designing a scalable system across End-User & Admin panels • Facilitating cross-functional workshops • Collaborating deeply with PM & VP of Design • Establishing feasibility with dev architects • Final handoff and implementation QA.",
-      period: "2025",
+      period: "2024",
       duration: "9 Months",
       teamSize: "2 Designers",
       platform: "Desktop Web Application",
-      impactMetric: "Configuration time from 45 mins → 20 mins",
+      impactMetric: "Accelerated Enterprise Quote Generation",
       metrics: [
-        { label: "Configuration time for complex products", value: "4.8x" },
+        { label: "Faster Quote Assembly", value: "4.8x" },
         { label: "Pricing Rule Errors", value: "0" },
         { label: "Intent Flow Adoption", value: "100%" },
         { label: "Onboarding Latency", value: "-60%" }
@@ -123,7 +123,7 @@ export const PERSONA_DATA = {
       summary: "Genesis AI transforms dense enterprise CPQ (Configure, Price, Quote) software by auditing legacy systems, shifting from manual parameter grids to intent-based user flows, and crafting interactive Figma prototypes.",
       problem: "Legacy enterprise CPQ systems present overwhelming configuration matrices, opaque pricing rules, and rigid item forms that slow sales teams down when assembling custom enterprise quotes.",
       solution: "Partnered with executive leadership to replace static parameter forms with 'Ask Genesis AI' conversational guidance, automated list price calculations, and real-time guidance cards.",
-      tools: ["Figma", "Salesforce", "Figma Make", "Miro"],
+      tools: ["Figma", "Next.js", "Tailwind CSS", "Expedite Commerce", "Framer"],
       sections: [
         {
           title: "What broke — and why we had to rethink the configurator?",
@@ -178,15 +178,15 @@ export const PERSONA_DATA = {
     {
       id: "commudle",
       title: "Commudle",
-      category: "Event Hosting",
+      category: "SaaS & Community",
       tagline: "All-in-one community management and tech event hosting platform.",
       role: "UX Designer & Frontend Collaborator",
       roleDescription: "Served as UX Designer & Frontend Collaborator. Streamlined event ticketing, 1-click QR check-in flows, speaker schedule builders, and automated certificate generation engines supporting 120K+ event attendees across tech communities in India.",
       period: "2023 - 2024",
       duration: "12 Months",
-      teamSize: "Individual Contributor",
+      teamSize: "4 Designers & Engineers",
       platform: "Web & Mobile",
-      impactMetric: "80k to 380k+ Engagements",
+      impactMetric: "120K+ Event Attendees Supported",
       metrics: [
         { label: "Attendees Supported", value: "120K+" },
         { label: "Event Setup Time", value: "15 Min" },
@@ -197,7 +197,7 @@ export const PERSONA_DATA = {
       summary: "Streamlining event discovery, ticketing, speaker management, and attendee networking for tech communities across India.",
       problem: "Community leads relied on multiple fragmented tools for ticketing, speaker scheduling, attendance check-ins, and certificate generation.",
       solution: "Created a unified dashboard and registration flow that reduced event setup time from 3 hours to 15 minutes.",
-      tools: ["Figma", "Lottiefiles", "Aftereffects"],
+      tools: ["Figma", "React", "Tailwind CSS", "Framer", "Notion"],
       sections: [
         {
           title: "The Community Operations Bottleneck 🎟️",
@@ -219,16 +219,16 @@ export const PERSONA_DATA = {
     },
     {
       id: "prana-ai",
-      title: "Prana AI",
-      category: "Healthcare",
-      tagline: "AI-powered wellness platform designed to help users improve their physical and mental well-being through personalized insights, guided routines, and real-time feedback.",
-      role: "Lead Product Designer",
+      title: "Prana AI (StayFit AI)",
+      category: "AI & Healthcare",
+      tagline: "Empathetic health & wellness companion UI with predictive telemetry analytics.",
+      role: "Lead Product Designer & Prototyper",
       roleDescription: "Lead Product Designer & Prototyper. Designed dark-mode native telemetry visualizers, real-time vital trend charts, and empathetic conversational AI interfaces.",
       period: "2024",
-      duration: "15 Months",
-      teamSize: "Individual Contributor",
-      platform: "Mobile",
-      impactMetric: "10k+ downloads on Playstore",
+      duration: "6 Months",
+      teamSize: "3 Designers & Engineers",
+      platform: "Mobile & Web",
+      impactMetric: "38% Increase in Daily Log Engagement",
       metrics: [
         { label: "Daily Log Engagement", value: "+38%" },
         { label: "User Interviews & Testers", value: "40+" },
@@ -239,7 +239,7 @@ export const PERSONA_DATA = {
       summary: "Prana AI translates complex biometric signals and health metrics into actionable, calm visual insights for everyday users.",
       problem: "Traditional health apps overwhelm users with dense medical numbers, causing user fatigue and abandonment.",
       solution: "Designed a minimalist telemetry interface featuring dark-mode native graphics, micro-animations, and AI-driven summary cards.",
-      tools: ["Figma", "Adobe Illustrator"],
+      tools: ["Figma", "Next.js", "Tailwind CSS", "LottieFiles", "ChatGPT API"],
       sections: [
         {
           title: "Biometric Overload vs. Calm UX 🩺",
@@ -261,15 +261,15 @@ export const PERSONA_DATA = {
     {
       id: "hunger-express",
       title: "Hunger Express",
-      category: "Food Delivery",
-      tagline: "Food delivery platform designed to connect customers, restaurants, and delivery partners through a seamless, scalable ecosystem.",
+      category: "Consumer Apps",
+      tagline: "Frictionless hyper-local food delivery application UX.",
       role: "Product Designer",
       roleDescription: "Product Designer. Conducted 15 contextual inquiry sessions with local riders and users, redesigned progressive checkout drawers, and crafted 12 micro-animations for live order tracking.",
       period: "2023",
       duration: "4 Months",
-      teamSize: "Individual Contributor",
-      platform: "Mobile",
-      impactMetric: "99% Client Satisfaction",
+      teamSize: "2 Designers",
+      platform: "Mobile Web & Native",
+      impactMetric: "22% Drop in Checkout Friction",
       metrics: [
         { label: "Drop in Checkout Friction", value: "-22%" },
         { label: "Rider Inquiry Sessions", value: "15" },
@@ -280,7 +280,7 @@ export const PERSONA_DATA = {
       summary: "Reimagining hyper-local meal delivery with micro-interactions, single-tap order customization, and real-time courier tracking.",
       problem: "High checkout abandonment rate due to cluttered multi-step cart options and slow payment options.",
       solution: "Redesigned the order flow around a progressive checkout drawer, reducing total screens required to complete an order.",
-      tools: ["Figma"],
+      tools: ["Figma", "LottieFiles", "Adobe Creative Cloud", "Framer"],
       sections: [
         {
           title: "Contextual Inquiry & Rider Field Research 🛵",
@@ -294,18 +294,18 @@ export const PERSONA_DATA = {
     },
     {
       id: "scalie",
-      title: "Scalie",
-      category: "HR Tech",
-      tagline: "Resource allocation platform designed to help organizations efficiently track, allocate, and utilize available talent across projects.",
+      title: "Scalie (MVP)",
+      category: "Design Systems",
+      tagline: "Enterprise B2B SaaS scaling tool for design systems & dev handoffs.",
       role: "Design Engineer",
       roleDescription: "Design Engineer. Built automated design token sync pipeline translating Figma variables to type-safe Tailwind and CSS variables for cross-platform engineering teams.",
       period: "2023",
-      duration: "6 Months",
-      teamSize: "Individual Contributor",
-      platform: "Desktop",
-      impactMetric: "Cut allocation time by 40%",
+      duration: "5 Months",
+      teamSize: "3 Engineers & Designers",
+      platform: "Desktop & Web",
+      impactMetric: "4x Faster Design Token Handoff",
       metrics: [
-        { label: "Time Saved Per Week", value: "6+ Hours" },
+        { label: "Token Handoff Speed", value: "4x" },
         { label: "Sync Errors Across Teams", value: "0" },
         { label: "Product Teams Adopted", value: "8" },
         { label: "WCAG AAA Compliance", value: "100%" }
@@ -314,7 +314,7 @@ export const PERSONA_DATA = {
       summary: "Automating the translation of Figma variables to production Tailwind and CSS variables for cross-platform engineering teams.",
       problem: "Designers and engineers spent dozens of hours manually syncing hex codes, typography scales, and spacing tokens.",
       solution: "Built a bridge application that parses Figma design files and automatically emits type-safe CSS and Tailwind theme configs.",
-      tools: ["Figma"],
+      tools: ["Figma", "Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
       sections: [
         {
           title: "Automating Design Token Handoffs 🎨 ⚡ 💻",
@@ -333,68 +333,168 @@ export const PERSONA_DATA = {
     role: "Founder & Community Lead",
     description: "A thriving design community focused on peer learning, design crits, workshops, and networking for designers & developers across India.",
     activities: [
-      "Collaboration Events",
-      "Networking Meetups",
-      "Expert Talks",
-      "Design Discussions"
+      "Monthly in-person design meetups & crits",
+      "Hands-on Figma & Framer workshops",
+      "Career transition & portfolio reviews",
+      "Guest speaker sessions & panel discussions"
     ],
     stats: [
-      { label: "Community Members", value: "8000+" },
-      { label: "Meetups & Workshops", value: "10+" },
-      { label: "Average Attendees", value: "100+" }
+      { label: "Community Members", value: "1,500+" },
+      { label: "Meetups & Workshops", value: "25+" },
+      { label: "Designers Mentored", value: "200+" }
     ]
   },
 
   talks: [
     {
       id: "talk-1",
-      title: "Bridging the Gap: Product Design to Design Engineering",
-      venue: "GDG New Delhi",
-      location: "New Delhi",
-      date: "2024",
-      topic: "Design Systems & Code Integration",
-      attendees: "250+ Attendees",
-      badge: "Keynote Speaker"
+      title: "Battle of Design: Users vs Stakeholders",
+      eventName: "Devfest New Delhi 2025",
+      venue: "Welcom hotel, Delhi",
+      community: "GDG New Delhi",
+      date: "2025",
+      attendees: "200+ Attendees",
+      badge: "Speaker"
     },
     {
       id: "talk-2",
-      title: "Designing for AI: Empathy Meets Telemetry",
-      venue: "IIIT Delhi",
-      location: "New Delhi",
-      date: "2024",
-      topic: "AI User Experience & Ethical UX",
-      attendees: "180+ Students & Designers",
-      badge: "Invited Talk"
+      title: "Less wires, More Logic",
+      eventName: "Design Fusion",
+      venue: "Jamia Humdard, Delhi",
+      community: "GDG New Delhi",
+      date: "2025",
+      attendees: "150+ Attendees",
+      badge: "Speaker"
     },
     {
       id: "talk-3",
-      title: "Crafting High-Performance UIs with Design Tokens",
-      venue: "GDG Noida",
-      location: "Noida",
-      date: "2023",
-      topic: "Design Tokens & Tailwind CSS",
-      attendees: "300+ Engineers & Designers",
-      badge: "Workshop Lead"
+      title: "Advanced Prototyping in Figma",
+      eventName: "Design Fusion 2k25",
+      venue: "GNIOT, Greater Noida",
+      community: "CodewithTechno x GDG GNIOT",
+      date: "2025",
+      attendees: "250+ Attendees",
+      badge: "Speaker"
     },
     {
       id: "talk-4",
-      title: "Design Thinking for Software Engineers",
-      venue: "Jamia Hamdard",
-      location: "New Delhi",
-      date: "2023",
-      topic: "Human-Centered Design Principles",
-      attendees: "150+ Attendees",
-      badge: "Guest Speaker"
+      title: "AI as your design assistant",
+      eventName: "GDG New Delhi Devfest 2024",
+      venue: "Vivanta by Taj, Delhi",
+      community: "GDG New Delhi",
+      date: "2024",
+      attendees: "500+ Attendees",
+      badge: "Speaker"
     },
     {
       id: "talk-5",
-      title: "Building Pixel-Perfect Products with Framer & Figma",
-      venue: "AKG Institute",
-      location: "Ghaziabad",
+      title: "What we are doing at Pixelpeps",
+      eventName: "Design Samwaad 2.0",
+      venue: "IIIT, Delhi",
+      community: "GDG Noida x PixelPeps",
+      date: "2024",
+      attendees: "100+ Attendees",
+      badge: "Event Host"
+    },
+    {
+      id: "talk-6",
+      title: "From Zero to UX Hero",
+      eventName: "Pixelpeps Online Event",
+      venue: "Google Meet",
+      community: "PixelPeps",
+      date: "2024",
+      attendees: "50+ Attendees",
+      badge: "Event Host"
+    },
+    {
+      id: "talk-7",
+      title: "Into the World of Freelance Designing",
+      eventName: "Pixelpeps Online Event",
+      venue: "Google Meet",
+      community: "PixelPeps",
+      date: "2024",
+      attendees: "50+ Attendees",
+      badge: "Event Host"
+    },
+    {
+      id: "talk-8",
+      title: "Get ready for your first job as a UX Designer",
+      eventName: "Delhi wala Wow",
+      venue: "IIIT, Delhi",
+      community: "WOW Delhi NCR",
+      date: "2024",
+      attendees: "250+ Attendees",
+      badge: "Speaker"
+    },
+    {
+      id: "talk-9",
+      title: "Pixelpeps Community Announcement",
+      eventName: "Impact the Future",
+      venue: "Google, Gurugram",
+      community: "Lottiefiles",
+      date: "2024",
+      attendees: "250+ Attendees",
+      badge: "Guest"
+    },
+    {
+      id: "talk-10",
+      title: "Optimize usability by minimizing design deficiencies",
+      eventName: "SyncDesign",
+      venue: "Microsoft, Noida",
+      community: "Lottiefiles",
+      date: "2024",
+      attendees: "250+ Attendees",
+      badge: "Speaker"
+    },
+    {
+      id: "talk-11",
+      title: "Beyond the Pixels: UI vs UX",
+      eventName: "Digital Fusion",
+      venue: "Thoughtworks, Gurugram",
+      community: "GDG New Delhi",
+      date: "2024",
+      attendees: "180+ Attendees",
+      badge: "Speaker"
+    },
+    {
+      id: "talk-12",
+      title: "Open Discussion on Design",
+      eventName: "GDG Noida Devfest 2023",
+      venue: "Holiday Inn, Noida",
+      community: "GDG Noida",
       date: "2023",
-      topic: "Modern Design Workflows",
+      attendees: "300+ Attendees",
+      badge: "Speaker"
+    },
+    {
+      id: "talk-13",
+      title: "Power of UX design in creating impactful user experiences",
+      eventName: "Week of Learning",
+      venue: "AKG Engineering College, Ghaziabad",
+      community: "GDG AKGEC",
+      date: "2023",
+      attendees: "100+ Attendees",
+      badge: "Speaker"
+    },
+    {
+      id: "talk-14",
+      title: "Optimize Usability by minimizing design deficiencies",
+      eventName: "GDG NewDelhi Devfest 2022",
+      venue: "Radisson Blu Plaza, Delhi",
+      community: "GDG New Delhi",
+      date: "2023",
       attendees: "200+ Attendees",
-      badge: "Workshop Host"
+      badge: "Speaker"
+    },
+    {
+      id: "talk-15",
+      title: "Designing better User Experiences",
+      eventName: "Cloud Study Jam 1.0",
+      venue: "Jamia Hamdard University, Delhi",
+      community: "GDG New Delhi",
+      date: "2023",
+      attendees: "150+ Attendees",
+      badge: "Speaker"
     }
   ] as Talk[],
 
