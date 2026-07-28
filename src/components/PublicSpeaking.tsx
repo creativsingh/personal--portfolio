@@ -10,7 +10,7 @@ interface PublicSpeakingProps {
 }
 
 export function PublicSpeaking({ isSpeakingPage = false }: PublicSpeakingProps) {
-  const displayedTalks = isSpeakingPage ? PERSONA_DATA.talks : PERSONA_DATA.talks.slice(0, 4);
+  const displayedTalks = isSpeakingPage ? PERSONA_DATA.talks : PERSONA_DATA.talks.slice(0, 3);
 
   return (
     <section id="speaking" className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80">

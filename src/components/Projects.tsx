@@ -19,7 +19,7 @@ export function Projects({ isWorkPage = false }: ProjectsProps) {
     ? PERSONA_DATA.projects
     : PERSONA_DATA.projects.filter(p => p.category === selectedCategory);
 
-  const displayedProjects = isWorkPage ? filteredProjects : filteredProjects.slice(0, 3);
+  const displayedProjects = isWorkPage ? filteredProjects : filteredProjects.slice(0, 2);
 
   return (
     <section id="work" className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80">
@@ -108,7 +108,7 @@ export function Projects({ isWorkPage = false }: ProjectsProps) {
                   {project.tools.map((tool) => (
                     <span
                       key={tool}
-                      className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800/60 border border-zinc-200/50 dark:border-zinc-700/50 text-[11px] text-zinc-600 dark:text-zinc-400"
+                      className="px-2 py-0.5 rounded bg-zinc-200/50 dark:bg-zinc-800/50 text-[11px] text-zinc-600 dark:text-zinc-400"
                     >
                       {tool}
                     </span>
@@ -119,14 +119,14 @@ export function Projects({ isWorkPage = false }: ProjectsProps) {
           ))}
         </div>
 
-        {/* View More Projects Button (Secondary styling, only shown on homepage) */}
+        {/* View More Button (Secondary styling, only shown on homepage) */}
         {!isWorkPage && (
-          <div className="mt-12 flex justify-center">
+          <div className="mt-8 flex justify-center">
             <Link
               href="/work"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-mono font-semibold bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200/80 dark:border-zinc-700/80 hover:bg-zinc-200 dark:hover:bg-zinc-700 hover:text-zinc-900 dark:hover:text-zinc-100 transition-all shadow-xs"
             >
-              View More Projects
+              View All Case Studies
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
