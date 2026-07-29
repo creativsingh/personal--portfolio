@@ -7,7 +7,7 @@ import { Play, Pause, Disc, ArrowUpRight, ExternalLink } from "lucide-react";
 function SpotifyIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.72 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.72 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
     </svg>
   );
 }
@@ -44,7 +44,7 @@ export function MusicPlayer() {
   return (
     <section id="music" className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80">
       <div className="max-w-4xl mx-auto px-6">
-        
+
         {/* Hidden Audio Element for Streaming MP3 preview */}
         <audio
           ref={audioRef}
@@ -84,7 +84,7 @@ export function MusicPlayer() {
 
         {/* Music Player Container */}
         <div className="p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] text-zinc-900 dark:text-zinc-100 border border-zinc-200/80 dark:border-zinc-800/80 shadow-xl relative overflow-hidden">
-          
+
           {/* Top Bar / Now Playing */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-zinc-200 dark:border-zinc-800">
             <div className="flex items-center gap-4">
@@ -98,7 +98,7 @@ export function MusicPlayer() {
                     className={`w-full h-full object-cover transition-transform ${isPlaying ? "scale-105" : ""}`}
                   />
                 ) : (
-                  <div className={`w-full h-full bg-gradient-to-tr from-emerald-500 to-teal-500 flex items-center justify-center ${isPlaying ? "animate-spin" : ""}`} style={{ animationDuration: "6s" }}>
+                  <div className={`w-full h-full bg-linear-to-tr from-emerald-500 to-teal-500 flex items-center justify-center ${isPlaying ? "animate-spin" : ""}`} style={{ animationDuration: "6s" }}>
                     <Disc className="w-7 h-7 text-zinc-900" />
                   </div>
                 )}
@@ -168,11 +168,10 @@ export function MusicPlayer() {
                   onClick={() => {
                     setActiveTrackId(track.id);
                   }}
-                  className={`cursor-pointer p-3.5 rounded-xl border flex items-center justify-between transition-all ${
-                    activeTrackId === track.id
+                  className={`cursor-pointer p-3.5 rounded-xl border flex items-center justify-between transition-all ${activeTrackId === track.id
                       ? "bg-white border-[#1DB954]/60 text-zinc-900 dark:bg-zinc-800/90 dark:border-[#1DB954]/50 dark:text-white shadow-xs"
                       : "bg-white/60 border-zinc-200/60 text-zinc-600 hover:text-zinc-900 hover:bg-white dark:bg-zinc-900/50 dark:border-zinc-800/60 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800/40"
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center gap-3">
                     <span className="font-mono text-xs text-[#1DB954] font-bold">

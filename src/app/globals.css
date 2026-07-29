@@ -51,16 +51,14 @@ body {
   justify-content: center;
   border-radius: 0.65rem;
   padding: 2px;
-  background-image: conic-gradient(
-    from var(--border-angle),
-    transparent 0%,
-    transparent 70%,
-    rgba(137, 255, 180, 0.08) 75%,
-    rgba(137, 255, 180, 0.35) 85%,
-    rgba(137, 255, 180, 0.75) 93%,
-    #ffffff 98%,
-    #89FFB4 100%
-  );
+  background-image: conic-gradient(from var(--border-angle),
+      transparent 0%,
+      transparent 70%,
+      rgba(137, 255, 180, 0.08) 75%,
+      rgba(137, 255, 180, 0.35) 85%,
+      rgba(137, 255, 180, 0.75) 93%,
+      #ffffff 98%,
+      #89FFB4 100%);
   animation: border-comet-orbit 4s linear infinite;
   isolation: isolate;
 }

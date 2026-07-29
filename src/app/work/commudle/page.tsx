@@ -22,7 +22,7 @@ export default function CommudlePage() {
 
       <main className="flex-1 pt-32 pb-20">
         <article className="max-w-4xl mx-auto px-6 space-y-12">
-          
+
           {/* Shared Header to Key Impact Section */}
           <ProjectHeaderSection
             project={project}
@@ -113,7 +113,7 @@ export default function CommudlePage() {
           <section className="pt-12 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <Link
               href={`/work/${nextProject.id}`}
-              className="group p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-center justify-between hover:border-zinc-300 dark:hover:border-zinc-700 transition-all block"
+              className="group p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-center justify-between hover:border-zinc-300 dark:hover:border-zinc-700 transition-all "
             >
               <div className="space-y-1">
                 <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest">

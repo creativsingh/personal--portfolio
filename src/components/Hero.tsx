@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section id="about" className="pt-32 pb-16 md:pt-40 md:pb-24 border-b border-zinc-200/80 dark:border-zinc-800/80">
       <div className="max-w-4xl mx-auto px-6">
-        
+
         {/* Availability Badge & Location */}
         <div className="flex flex-wrap items-center gap-3 mb-6">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
@@ -40,7 +40,7 @@ export function Hero() {
           <div className="border-comet-btn">
             <a
               href="#work"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-[calc(0.65rem-2px)] bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 font-bold text-sm hover:brightness-105 transition-all shadow-sm z-10"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-[calc(0.65rem-2px)] bg-linear-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 font-bold text-sm hover:brightness-105 transition-all shadow-sm z-10"
             >
               View Selected Work
               <ArrowDown className="w-4 h-4 text-zinc-950" />

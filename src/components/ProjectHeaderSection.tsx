@@ -70,7 +70,7 @@ export function ProjectHeaderSection({
           <img
             src={project.coverImage}
             alt={`${project.title} Case Study Visual`}
-            className="w-full h-auto object-cover max-h-[520px]"
+            className="w-full h-auto object-cover max-h-130"
           />
         </div>
       )}

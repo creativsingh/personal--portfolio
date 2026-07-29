@@ -24,7 +24,7 @@ export function Projects({ isWorkPage = false }: ProjectsProps) {
   return (
     <section id="work" className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80">
       <div className="max-w-4xl mx-auto px-6">
-        
+
         {/* Section Header */}
         <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
@@ -45,11 +45,10 @@ export function Projects({ isWorkPage = false }: ProjectsProps) {
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-mono transition-all ${
-                  selectedCategory === cat
-                    ? "bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 font-bold shadow-xs"
+                className={`px-3 py-1.5 rounded-lg text-xs font-mono transition-all ${selectedCategory === cat
+                    ? "bg-linear-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 font-bold shadow-xs"
                     : "bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 border border-zinc-200/60 dark:border-zinc-800/60"
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -83,7 +82,7 @@ export function Projects({ isWorkPage = false }: ProjectsProps) {
                   <span className="text-xs font-mono font-semibold px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
                     {project.impactMetric}
                   </span>
-                  
+
                   <Link
                     href={`/work/${project.id}`}
                     className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition-colors"

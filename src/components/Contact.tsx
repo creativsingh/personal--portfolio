@@ -108,7 +108,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-16 md:py-24 border-b border-zinc-200/80 dark:border-zinc-800/80">
       <div className="max-w-4xl mx-auto px-6">
-        
+
         {/* Section Header */}
         <div className="mb-12">
           <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block mb-2">
@@ -123,10 +123,10 @@ export function Contact() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          
+
           {/* Left Column: Direct Email & Social Links */}
           <div className="space-y-8">
-            
+
             {/* Quick Email Copy Box */}
             <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 space-y-3">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-wider block">
@@ -305,7 +305,7 @@ export function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-3 rounded-[calc(0.65rem-2px)] bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 text-sm font-bold hover:brightness-105 transition-all flex items-center justify-center gap-2 shadow-sm z-10 disabled:opacity-80 cursor-pointer"
+                    className="w-full py-3 rounded-[calc(0.65rem-2px)] bg-linear-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 text-sm font-bold hover:brightness-105 transition-all flex items-center justify-center gap-2 shadow-sm z-10 disabled:opacity-80 cursor-pointer"
                   >
                     {isSubmitting ? (
                       <>
