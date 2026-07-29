@@ -56,7 +56,7 @@ export function MusicPlayer() {
         <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
             <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block mb-2">
-              06 / Music &amp; Creative Sanctuary
+              05 / Music &amp; Creative Sanctuary
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-3">
               {PERSONA_DATA.music.artistName} on Spotify
@@ -169,8 +169,8 @@ export function MusicPlayer() {
                     setActiveTrackId(track.id);
                   }}
                   className={`cursor-pointer p-3.5 rounded-xl border flex items-center justify-between transition-all ${activeTrackId === track.id
-                      ? "bg-white border-[#1DB954]/60 text-zinc-900 dark:bg-zinc-800/90 dark:border-[#1DB954]/50 dark:text-white shadow-xs"
-                      : "bg-white/60 border-zinc-200/60 text-zinc-600 hover:text-zinc-900 hover:bg-white dark:bg-zinc-900/50 dark:border-zinc-800/60 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800/40"
+                    ? "bg-white border-[#1DB954]/60 text-zinc-900 dark:bg-zinc-800/90 dark:border-[#1DB954]/50 dark:text-white shadow-xs"
+                    : "bg-white/60 border-zinc-200/60 text-zinc-600 hover:text-zinc-900 hover:bg-white dark:bg-zinc-900/50 dark:border-zinc-800/60 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-800/40"
                     }`}
                 >
                   <div className="flex items-center gap-3">

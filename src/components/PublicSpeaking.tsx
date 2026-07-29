@@ -66,7 +66,7 @@ export function PublicSpeaking({ isSpeakingPage = false }: PublicSpeakingProps) 
                   </h3>
                   {talk.eventName && (
                     <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 font-mono">
-                      Event Name: {talk.eventName}
+                      Event: {talk.eventName}
                     </p>
                   )}
                 </div>

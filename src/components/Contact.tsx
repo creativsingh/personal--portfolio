@@ -112,7 +112,7 @@ export function Contact() {
         {/* Section Header */}
         <div className="mb-12">
           <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block mb-2">
-            07 / Get In Touch
+            06 / Get In Touch
           </span>
           <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
             Let&apos;s build something thoughtful together.
