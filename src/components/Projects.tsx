@@ -40,14 +40,14 @@ export function Projects({ isWorkPage = false }: ProjectsProps) {
           </div>
 
           {/* Filter Pills */}
-          <div className="flex flex-wrap w-fit gap-2 justify-end ">
+          <div className="flex justify-end flex-wrap gap-2">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-mono transition-all ${selectedCategory === cat
-                  ? "bg-linear-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 font-bold shadow-xs"
-                  : "bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 border border-zinc-200/60 dark:border-zinc-800/60"
+                    ? "bg-gradient-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 font-bold shadow-xs"
+                    : "bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 border border-zinc-200/60 dark:border-zinc-800/60"
                   }`}
               >
                 {cat}
@@ -59,9 +59,10 @@ export function Projects({ isWorkPage = false }: ProjectsProps) {
         {/* Projects Cards List */}
         <div className="space-y-6">
           {displayedProjects.map((project) => (
-            <div
+            <Link
               key={project.id}
-              className="p-6 sm:p-8 rounded-2xl bg-zinc-50/50 dark:bg-[#121215]/50 backdrop-blur-xs border border-zinc-200/80 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all group"
+              href={`/work/${project.id}`}
+              className="block p-6 sm:p-8 rounded-2xl bg-zinc-50/50 dark:bg-[#121215]/50 backdrop-blur-xs border border-zinc-200/80 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all group"
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                 <div className="space-y-1">
@@ -73,22 +74,23 @@ export function Projects({ isWorkPage = false }: ProjectsProps) {
                       {project.duration}
                     </span>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
-                    {project.title}
-                  </h3>
+
+                  <div className="flex flex-wrap items-center gap-2.5 pt-1">
+                    <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                      {project.title}
+                    </h3>
+
+                    {/* Hover indicator next to case study name */}
+                    <span className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400 opacity-0 group-hover:opacity-100 transition-all duration-200 transform -translate-x-1 group-hover:translate-x-0">
+                      Read Case Study <ArrowUpRight className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <span className="text-xs font-mono font-semibold px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
                     {project.impactMetric}
                   </span>
-
-                  <Link
-                    href={`/work/${project.id}`}
-                    className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition-colors"
-                  >
-                    View Case Study <ArrowUpRight className="w-4 h-4" />
-                  </Link>
                 </div>
               </div>
 
@@ -114,7 +116,7 @@ export function Projects({ isWorkPage = false }: ProjectsProps) {
                   ))}
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
