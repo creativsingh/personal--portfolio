@@ -121,8 +121,8 @@ export const PERSONA_DATA = {
       ],
       coverImage: "/case-studies/genesis-ai-cover.png",
       summary: "Genesis AI transforms dense enterprise CPQ (Configure, Price, Quote) software by auditing legacy systems, shifting from manual parameter grids to intent-based user flows, and crafting interactive Figma prototypes.",
-      problem: "Legacy enterprise CPQ systems present overwhelming configuration matrices, opaque pricing rules, and rigid item forms that slow sales teams down when assembling custom enterprise quotes.",
-      solution: "Partnered with executive leadership to replace static parameter forms with 'Ask Genesis AI' conversational guidance, automated list price calculations, and real-time guidance cards.",
+      problem: "The legacy CPQ was outdated, slow, and not aligned with the industry shift toward AI-assisted configuration. Users struggled with hidden complexity, disconnected admin logic, and workflows that demanded far more effort than necessary.",
+      solution: "I redesigned the whole system by reimagining the system from the ground up — auditing every legacy flow, co-creating with stakeholders, and designing a modern, AI-assisted experience that balances automation with human control.",
       tools: ["Figma", "Miro", "Figma Make", "Salesforce"],
       sections: [
         {
@@ -186,36 +186,18 @@ export const PERSONA_DATA = {
       duration: "6 Months",
       teamSize: "Individual Contributor",
       platform: "Web & Mobile",
-      impactMetric: "Engagement increased from 80k to 380k+ annually",
+      impactMetric: "380,000+ Homepage Engagements",
       metrics: [
-        { label: "Attendees Supported", value: "120K+" },
-        { label: "Event Setup Time", value: "15 Min" },
-        { label: "Check-in Queue Reduction", value: "60%" },
-        { label: "Sub-modules Adopted UI", value: "15+" }
+        { label: "Homepage Engagements", value: "380K+" },
+        { label: "Profile Engagements", value: "220K+" },
+        { label: "Active Freelancer Toggle Users", value: "10K+" },
+        { label: "About Page Visits", value: "5K+" }
       ],
-      coverImage: "/case-studies/commudle-cover.png",
-      summary: "Streamlining event discovery, ticketing, speaker management, and attendee networking for tech communities across India.",
-      problem: "Community leads relied on multiple fragmented tools for ticketing, speaker scheduling, attendance check-ins, and certificate generation.",
-      solution: "Created a unified dashboard and registration flow that reduced event setup time from 3 hours to 15 minutes.",
-      tools: ["Figma", "Lottiefiles", "Aftereffects", "Notion"],
-      sections: [
-        {
-          title: "The Community Operations Bottleneck 🎟️",
-          description: "Analyzing why community organizers were spending 15+ hours managing fragmented event tools.",
-          paragraphs: [
-            "1. Fragmented Tooling Overhead:\n• Organizers used Google Forms for registration, Eventbrite for ticketing, WhatsApp for updates, and manual Mailchimp scripts for certificates.\n• Check-in bottlenecks at event venues created long 45-minute queues in crowded lobbies.",
-            "2. Experience Breakdown:\n• Speakers lacked real-time schedule confirmation portals.\n• Attendees frequently misplaced event PDF passes or confirmation emails."
-          ]
-        },
-        {
-          title: "Designing the 1-Click QR Check-In & Certificate Engine ⚡",
-          description: "Creating a seamless mobile-first scanner and dynamic certificate generator.",
-          paragraphs: [
-            "We built a native PWA scanner for venue volunteers that validated QR passes in under 400ms per attendee. Post-event, organizers could issue 1,000+ personalized certificates with a single click.",
-            "• Queue wait times dropped by 60% across flagship tech conferences in New Delhi and Bangalore.\n• Event setup time for organizers fell from 3 hours down to 15 minutes."
-          ]
-        }
-      ]
+      coverImage: "/case-studies/commudle/hero1.avif",
+      summary: "As the sole Product Designer, I owned the experience from discovery to delivery. Redesigned Commudle's homepage, About page, and developer user profiles to drive community engagement and build trust.",
+      problem: "Because users couldn't immediately understand the platform's value, many left before exploring communities or participating. The interface communicated information, but it didn't communicate excitement.",
+      solution: "Redesigned Commudle into an entry point for the developer ecosystem with an animated Lottie hero, hand-drawn illustrations, community-first hierarchy, world map story cards, and interactive developer profile badges.",
+      tools: ["Figma", "Lottiefiles", "After Effects", "Notion"]
     },
     {
       id: "prana-ai",
@@ -546,6 +528,7 @@ export const PERSONA_DATA = {
     twitter: "https://x.com/creativsingh",
     linkedin: "https://linkedin.com/in/creativsingh",
     github: "https://github.com/creativsingh",
+    dribbble: "https://dribbble.com/creativsingh",
     figma: "https://figma.com/@creativsingh",
     medium: "https://medium.com/@creativsingh",
     commudle: "https://commudle.com/users/creativsingh",

@@ -37,6 +37,14 @@ function FigmaIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+function DribbbleIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm8.381 10.741c-.426-.065-2.671-.383-5.376.136-.339-.778-.711-1.579-1.121-2.383 3.376-1.394 4.792-3.181 4.957-3.4 1.1 1.543 1.637 3.481 1.54 5.647zm-3.044-7.067c-.156.195-1.464 1.83-4.664 3.098-1.516-2.73-3.178-5.06-3.411-5.385C10.34.613 11.162.48 12 .48c2.062 0 3.978.694 5.337 1.861zM7.348 2.502c.241.334 1.879 2.628 3.4 5.321-3.743 1.144-7.464 1.133-7.854 1.129C3.606 5.864 5.21 3.551 7.348 2.502zM1.986 11.238c.465.006 3.659.006 7.42-1.054.402.775.772 1.554 1.106 2.316-4.512 1.365-6.096 4.398-6.257 4.721-1.321-1.609-2.115-3.693-2.269-5.983zm3.766 7.159c.148-.288 1.488-2.997 5.857-4.321 1.201 3.256 1.706 6.002 1.796 6.541-2.909 1.018-6.046.216-7.653-2.22zm9.351 4.708c-.08-.475-.544-2.997-1.688-6.14 2.548-.485 4.607-.184 5.011-.118-.328 2.56-1.579 4.783-3.323 6.258z" />
+    </svg>
+  );
+}
+
 function MediumIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -197,6 +205,16 @@ export function Contact() {
                   className="flex items-center gap-2.5 p-3 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 text-xs font-mono text-zinc-700 dark:text-zinc-300 transition-colors"
                 >
                   <FigmaIcon className="w-4 h-4 text-purple-500" /> Figma Profile
+                  <ArrowUpRight className="w-3 h-3 text-zinc-400 ml-auto" />
+                </a>
+
+                <a
+                  href={PERSONA_DATA.socials.dribbble}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2.5 p-3 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 text-xs font-mono text-zinc-700 dark:text-zinc-300 transition-colors"
+                >
+                  <DribbbleIcon className="w-4 h-4 text-pink-500" /> Dribbble
                   <ArrowUpRight className="w-3 h-3 text-zinc-400 ml-auto" />
                 </a>
 

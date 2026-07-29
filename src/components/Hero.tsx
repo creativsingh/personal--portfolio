@@ -65,6 +65,10 @@ export function Hero() {
         {/* Quick Highlights Metrics Bar */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-zinc-200/60 dark:border-zinc-800/60 text-left">
           <div className="space-y-1">
+            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">5+</div>
+            <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Years of Experience</div>
+          </div>
+          <div className="space-y-1">
             <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">10+</div>
             <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Shipped Products</div>
           </div>
@@ -74,12 +78,9 @@ export function Hero() {
           </div>
           <div className="space-y-1">
             <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">20+</div>
-            <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Talks &amp; Workshops</div>
+            <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Talks &amp; Workshops Given</div>
           </div>
-          <div className="space-y-1">
-            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">8k+</div>
-            <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Community Members</div>
-          </div>
+
         </div>
 
       </div>
