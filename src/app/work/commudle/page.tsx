@@ -390,7 +390,7 @@ export default function CommudlePage() {
             {/* Doodles Placeholder */}
             <div className=" rounded-2xl border overflow-clip border-zinc-200 dark:border-zinc-800">
               <Image
-                src="/case-studies/commudle/doodle.png"
+                src="/case-studies/commudle/doodlepage1.png"
                 alt="Homepage"
                 width={1440}
                 height={5000}
