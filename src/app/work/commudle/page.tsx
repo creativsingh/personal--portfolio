@@ -312,7 +312,7 @@ export default function CommudlePage() {
             </p>
 
             <div className="space-y-4 pt-4">
-              <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100">
+              <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Design Decision 1: Creating a Hero Worth Looking At
               </h3>
               <p className="text-base text-zinc-600 dark:text-zinc-300 leading-relaxed">
@@ -340,7 +340,7 @@ export default function CommudlePage() {
           </section>
 
           {/* Technical Collaboration */}
-          <section className="space-y-6 pt-8 border-t border-zinc-200/80 dark:border-zinc-800/80">
+          <section className="space-y-6 border-zinc-200/80 dark:border-zinc-800/80">
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
               Technical Collaboration
             </h2>
@@ -471,7 +471,7 @@ export default function CommudlePage() {
             </div>
 
             <div className="space-y-3 pt-2">
-              <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
+              <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Design Decision
               </h3>
               <p className="text-base text-zinc-600 dark:text-zinc-300 leading-relaxed">
@@ -542,7 +542,7 @@ export default function CommudlePage() {
             </div>
 
             <div className="space-y-6 pt-2">
-              <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
+              <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Key Improvements
               </h3>
 
