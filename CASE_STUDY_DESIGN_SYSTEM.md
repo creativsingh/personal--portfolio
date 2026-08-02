@@ -20,7 +20,7 @@ Every detail page MUST render the shared `<ProjectHeaderSection />` component at
 
 - **Breadcrumb Navigation**: `<ArrowLeft /> Back to Selected Work` link back to `/#work`.
 - **Progress Counter**: `Case Study X of Y` dynamically calculated using `PERSONA_DATA.projects.length`.
-- **Interactive Hero Carousel**: Replaces static single images with a multi-slide carousel featuring auto-play (5s interval), pause-on-hover, previous/next arrow buttons, dot pagination, slide counter badge (`HERO SHOWCASE • SLIDE X OF Y`), and descriptive visual captions.
+- **Interactive Hero Showcase (Carousel & Video)**: Replaces static single images with a multi-slide image carousel or video demonstration. Includes a media mode switcher (`[ 🖼️ Carousel ]` / `[ 🎥 Video Demo ]`) when both are available, auto-play slideshow (3.5s interval, pause-on-hover), previous/next arrow buttons, dot pagination, and support for embedded (YouTube, Vimeo, Loom) or direct MP4/WebM videos.
 - **Project Meta Bar**: Grid displaying `Role`, `Duration`, `Platform`, `Team Size`, and a horizontal pill list for `Tool Stack & Technologies`.
 - **Challenge vs. Solution Cards**: Dual side-by-side callout cards (`The Challenge & Friction` in rose accent, `The Product Solution` in emerald accent).
 - **Impact Metrics Grid**: 4-column numeric stats cards (`Daily Log Engagement`, `Motivation Retention`, `Render Speed`, etc.).

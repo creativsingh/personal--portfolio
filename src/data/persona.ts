@@ -22,7 +22,16 @@ export interface HeroSlide {
   title: string;
   caption?: string;
   url?: string;
+  videoUrl?: string;
+  type?: "image" | "video";
   aspect?: "hero" | "wide" | "standard";
+}
+
+export interface HeroVideo {
+  url: string;
+  title?: string;
+  caption?: string;
+  poster?: string;
 }
 
 export interface Project {
@@ -44,6 +53,8 @@ export interface Project {
   tools: string[];
   coverImage?: string;
   heroSlides?: HeroSlide[];
+  heroVideo?: HeroVideo | string;
+  heroMediaType?: "carousel" | "video";
   sections?: SectionItem[];
 }
 
@@ -128,6 +139,12 @@ export const PERSONA_DATA = {
         { label: "Onboarding Latency", value: "-60%" }
       ],
       coverImage: "/case-studies/genesis-ai-cover.png",
+      heroMediaType: "carousel",
+      heroVideo: {
+        url: "https://www.youtube.com/embed/7vPgnFs6JYU?autoplay=1&mute=1&loop=1&playlist=7vPgnFs6JYU&controls=0&playsinline=1&rel=0",
+        title: "Genesis AI Configurator Walkthrough",
+        caption: "Interactive demonstration of AI intent flows and enterprise rule configurators."
+      },
       heroSlides: [
         {
           url: "/case-studies/genesis-ai-cover.png",
@@ -219,6 +236,12 @@ export const PERSONA_DATA = {
         { label: "About Page Visits", value: "5K+" }
       ],
       coverImage: "/case-studies/commudle/hero1.avif",
+      heroMediaType: "Slides",
+      heroVideo: {
+        url: "https://www.youtube.com/embed/7vPgnFs6JYU?autoplay=1&mute=1&loop=1&playlist=7vPgnFs6JYU&controls=0&playsinline=1&rel=0",
+        title: "Commudle Hero Animation Demo",
+        caption: "Animated Lottie hero showcase highlighting live events and active developer community interaction."
+      },
       heroSlides: [
         {
           url: "/case-studies/commudle/commudle cover01.png",
@@ -319,6 +342,12 @@ export const PERSONA_DATA = {
         { label: "Streamlined Checkout", value: "1 Screen" }
       ],
       coverImage: "/case-studies/hunger-express-cover.png",
+      heroMediaType: "video",
+      heroVideo: {
+        url: "https://youtu.be/_DstHo6abeI",
+
+
+      },
       heroSlides: [
         {
           url: "/case-studies/hunger-express-cover.png",
