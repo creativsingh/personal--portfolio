@@ -41,7 +41,7 @@ export default function CommudlePage() {
           {/* 01 / Overview Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 01 / Overview
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -118,7 +118,7 @@ export default function CommudlePage() {
           {/* 02 / Discovery Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 02 / Discovery
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -178,7 +178,7 @@ export default function CommudlePage() {
           {/* 03 / Audit Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 03 / Usability Audit
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -267,7 +267,7 @@ export default function CommudlePage() {
           {/* 04 / Execution Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 04 / Execution
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -329,7 +329,7 @@ export default function CommudlePage() {
           {/* 05 / Technical Collaboration Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 05 / Motion Engineering
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -378,7 +378,7 @@ export default function CommudlePage() {
           {/* 06 / Brand Personality Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 06 / Visual Identity
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -416,7 +416,7 @@ export default function CommudlePage() {
           {/* 07 / Core Feature: Prioritising Communities Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 07 / Core Focus
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -469,7 +469,7 @@ export default function CommudlePage() {
           {/* 08 / About Page Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 08 / Storytelling
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -538,7 +538,7 @@ export default function CommudlePage() {
           {/* 09 / User Profile Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 09 / Networking
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -649,7 +649,7 @@ export default function CommudlePage() {
           {/* 10 / Design Principles Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 10 / Principles
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -679,7 +679,7 @@ export default function CommudlePage() {
           {/* 11 / Retrospective Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 11 / Retrospective
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">

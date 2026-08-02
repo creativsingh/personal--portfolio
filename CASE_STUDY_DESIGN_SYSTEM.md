@@ -20,6 +20,7 @@ Every detail page MUST render the shared `<ProjectHeaderSection />` component at
 
 - **Breadcrumb Navigation**: `<ArrowLeft /> Back to Selected Work` link back to `/#work`.
 - **Progress Counter**: `Case Study X of Y` dynamically calculated using `PERSONA_DATA.projects.length`.
+- **Interactive Hero Carousel**: Replaces static single images with a multi-slide carousel featuring auto-play (5s interval), pause-on-hover, previous/next arrow buttons, dot pagination, slide counter badge (`HERO SHOWCASE • SLIDE X OF Y`), and descriptive visual captions.
 - **Project Meta Bar**: Grid displaying `Role`, `Duration`, `Platform`, `Team Size`, and a horizontal pill list for `Tool Stack & Technologies`.
 - **Challenge vs. Solution Cards**: Dual side-by-side callout cards (`The Challenge & Friction` in rose accent, `The Product Solution` in emerald accent).
 - **Impact Metrics Grid**: 4-column numeric stats cards (`Daily Log Engagement`, `Motivation Retention`, `Render Speed`, etc.).
@@ -50,7 +51,7 @@ Every case study detail page should follow this structured narrative flow:
 - **Typography Standards**:
   - Page Title: `text-3xl sm:text-5xl font-extrabold tracking-tight`
   - Section Headings: `text-2xl sm:text-3xl font-bold tracking-tight`
-  - Monospace Labels: `text-xs font-mono uppercase tracking-widest text-emerald-500`
+  - Monospace Section Labels: `text-xs font-mono uppercase tracking-widest text-zinc-500 dark:text-zinc-400 block font-semibold` (Muted Grey Color for numbered headings like `02 / Discovery`)
   - Subtitle Quotes: Left border 4px (`border-l-4 border-emerald-500`), ambient background gradient, italic font.
 
 ---

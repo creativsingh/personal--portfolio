@@ -118,7 +118,7 @@ export default function ScaliePage() {
           {/* 01 / Project Snapshot Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 01 / Snapshot
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -209,7 +209,7 @@ export default function ScaliePage() {
           {/* 02 / Impact Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 02 / Impact
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -259,7 +259,7 @@ export default function ScaliePage() {
           {/* 03 / The Opportunity Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 03 / Opportunity
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -321,7 +321,7 @@ export default function ScaliePage() {
           {/* 04 / The Challenge Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 04 / Interconnected System
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -372,7 +372,7 @@ export default function ScaliePage() {
           {/* 05 / My Role Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 05 / Scope
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -412,7 +412,7 @@ export default function ScaliePage() {
           {/* 06 / Understanding the Existing Workflow Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 06 / Workflow Analysis
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -460,7 +460,7 @@ export default function ScaliePage() {
           {/* 07 / Understanding Stakeholders Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 07 / Stakeholders
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -535,7 +535,7 @@ export default function ScaliePage() {
           {/* 08 / Discovery & Research Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 08 / User Research
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -610,7 +610,7 @@ export default function ScaliePage() {
           {/* 09 / Design Principles Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 09 / Core Principles
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -668,7 +668,7 @@ export default function ScaliePage() {
           {/* 10 / Information Architecture Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 10 / Architecture
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -696,7 +696,7 @@ export default function ScaliePage() {
           {/* 11 / Designing the Experience Section */}
           <section className="space-y-8 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 11 / End-to-End Flow
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -801,7 +801,7 @@ export default function ScaliePage() {
           {/* 12 / Designing the Client Experience Section */}
           <section className="space-y-8 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 12 / Client Portal
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -888,7 +888,7 @@ export default function ScaliePage() {
           {/* 13 / Designing the Admin Experience Section */}
           <section className="space-y-8 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 13 / Admin Control Center
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -1098,7 +1098,7 @@ export default function ScaliePage() {
           {/* 14 / Designing for Enterprise Workflows Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 14 / Workflow Philosophy
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -1155,7 +1155,7 @@ export default function ScaliePage() {
           {/* 15 / User Testing Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 15 / Validation
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -1223,7 +1223,7 @@ export default function ScaliePage() {
           {/* 16 / Results Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 16 / Measurable Metrics
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -1298,7 +1298,7 @@ export default function ScaliePage() {
           {/* 17 / Looking Back Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 17 / Lessons
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -1339,7 +1339,7 @@ export default function ScaliePage() {
           {/* 18 / Future Opportunities Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 18 / Product Roadmap
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -1399,7 +1399,7 @@ export default function ScaliePage() {
           {/* 19 / Reflection Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 19 / Retrospective
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">

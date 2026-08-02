@@ -33,7 +33,7 @@ export default function GenesisAiPage() {
           {/* 01 / Executive Overview */}
           <section className="space-y-4 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 01 / Executive Overview
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -83,7 +83,7 @@ export default function GenesisAiPage() {
           {project.roleDescription && (
             <section className="space-y-4 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
               <div className="space-y-1">
-                <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+                <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                   02 / My Role
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">

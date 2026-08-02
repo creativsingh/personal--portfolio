@@ -4,6 +4,7 @@ import Link from "next/link";
 import { PERSONA_DATA } from "../../../data/persona";
 import { Navbar } from "../../../components/Navbar";
 import { Footer } from "../../../components/Footer";
+import Image from "next/image";
 import { ProjectHeaderSection } from "../../../components/ProjectHeaderSection";
 import {
   ArrowLeft,
@@ -98,7 +99,7 @@ export default function PranaAiPage() {
 
       <main className="flex-1 pt-28 sm:pt-32 pb-20">
         <article className="max-w-4xl mx-auto px-6 space-y-16">
-          
+
           {/* Shared Header Section (Consistent across all case studies) */}
           <ProjectHeaderSection
             project={project}
@@ -116,7 +117,7 @@ export default function PranaAiPage() {
           {/* 01 / Executive Overview */}
           <section className="space-y-4 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 01 / Overview
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -136,7 +137,7 @@ export default function PranaAiPage() {
           {/* 02 / Project Snapshot Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 02 / Snapshot
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -218,7 +219,7 @@ export default function PranaAiPage() {
           {/* 03 / Impact Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 03 / Impact
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -245,9 +246,8 @@ export default function PranaAiPage() {
                 ].map((item, idx) => (
                   <div
                     key={idx}
-                    className={`p-4 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-start gap-3 ${
-                      idx === 4 ? "sm:col-span-2 border-emerald-500/30 bg-emerald-500/5" : ""
-                    }`}
+                    className={`p-4 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-start gap-3 ${idx === 4 ? "sm:col-span-2 border-emerald-500/30 bg-emerald-500/5" : ""
+                      }`}
                   >
                     <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <span className="text-sm font-medium text-zinc-800 dark:text-zinc-200 leading-snug">
@@ -259,16 +259,21 @@ export default function PranaAiPage() {
             </div>
 
             {/* HERO IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Hero mockup showing Home Dashboard + Wellness Score"
-              aspect="hero"
+            <Image
+              src="/case-studies/Prana AI/Image1.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
           </section>
 
           {/* 04 / The Opportunity Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 04 / Opportunity
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -315,7 +320,7 @@ export default function PranaAiPage() {
           {/* 05 / The Challenge Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 05 / Challenge
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -362,7 +367,7 @@ export default function PranaAiPage() {
           {/* 06 / My Role Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 06 / Responsibilities
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -408,16 +413,21 @@ export default function PranaAiPage() {
             </div>
 
             {/* TIMELINE IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Timeline showing Discovery → Research → UX → UI → Testing → Launch"
-              aspect="wide"
+            <Image
+              src="/case-studies/Prana AI/Image2.avif"
+              alt="Timeline showing Discovery → Research → UX → UI → Testing → Launch"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
           </section>
 
           {/* 07 / Defining Success Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 07 / Success Criteria
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -464,7 +474,7 @@ export default function PranaAiPage() {
           {/* 08 / Understanding the Product Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 08 / Product Documentation
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -501,17 +511,21 @@ export default function PranaAiPage() {
             </p>
 
             {/* DOCUMENTATION FOLDER IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Screenshot of project documentation folder"
-              caption="The client shared an extensive library of research, scoring logic, business requirements, and user journey documentation that informed early product decisions."
-              aspect="wide"
+            <Image
+              src="/case-studies/Prana AI/Image3.png"
+              alt="Documentation folder screenshot"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
           </section>
 
           {/* 09 / Understanding Users Section */}
           <section className="space-y-8 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 09 / User Research
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -578,16 +592,21 @@ export default function PranaAiPage() {
             </div>
 
             {/* PERSONAS IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Personas + Affinity Mapping + User Categories"
-              aspect="wide"
+            <Image
+              src="/case-studies/Prana AI/Image4.avif"
+              alt="Personas + Affinity Mapping + User Categories"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
           </section>
 
           {/* 10 / Research Questions Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 10 / Key Inquiries
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -628,7 +647,7 @@ export default function PranaAiPage() {
           {/* 11 / Design Principles Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 11 / Core Principles
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -700,7 +719,7 @@ export default function PranaAiPage() {
           {/* 12 / Experience Overview Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 12 / Journey Map
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -754,7 +773,7 @@ export default function PranaAiPage() {
           {/* 13 / Feature 1 Section */}
           <section className="space-y-8 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 13 / Feature 01
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -811,9 +830,14 @@ export default function PranaAiPage() {
             </p>
 
             {/* ASSESSMENT JOURNEY IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Assessment Journey (4-Step Flow)"
-              aspect="wide"
+            <Image
+              src="/case-studies/Prana AI/Image5.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
 
             {/* Designing Trust */}
@@ -854,9 +878,23 @@ export default function PranaAiPage() {
               </div>
 
               {/* FACE SCAN ONBOARDING IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Face Scan onboarding screens"
-                aspect="wide"
+              <Image
+                src="/case-studies/Prana AI/Image6.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain"
+              />
+              <Image
+                src="/case-studies/Prana AI/Image7.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain"
               />
             </div>
 
@@ -895,9 +933,23 @@ export default function PranaAiPage() {
               </p>
 
               {/* ERROR STATES IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Error states & Edge Cases"
-                aspect="wide"
+              <Image
+                src="/case-studies/Prana AI/Image8.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain"
+              />
+              <Image
+                src="/case-studies/Prana AI/Image9.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain"
               />
             </div>
           </section>
@@ -905,7 +957,7 @@ export default function PranaAiPage() {
           {/* 14 / Feature 2 Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 14 / Feature 02
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -952,16 +1004,21 @@ export default function PranaAiPage() {
             </p>
 
             {/* WELLNESS SCORE SCREENS IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Wellness Score Screens"
-              aspect="wide"
+            <Image
+              src="/case-studies/Prana AI/Image10.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
           </section>
 
           {/* 15 / Feature 3 Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 15 / Feature 03
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -1003,21 +1060,31 @@ export default function PranaAiPage() {
             </p>
 
             {/* CONSULTATION DISCOVERY + BOOKING FLOW IMAGE PLACEHOLDERS */}
-            <ImagePlaceholder
-              title="Consultation Discovery + Coach Profile"
-              aspect="wide"
+            <Image
+              src="/case-studies/Prana AI/Image11.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
 
-            <ImagePlaceholder
-              title="Booking Flow"
-              aspect="wide"
+            <Image
+              src="/case-studies/Prana AI/Image12.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
           </section>
 
           {/* 16 / Feature 4 Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 16 / Feature 04
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -1057,16 +1124,21 @@ export default function PranaAiPage() {
             </p>
 
             {/* ROUTINE RECOMMENDATION IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Routine Recommendation"
-              aspect="wide"
+            <Image
+              src="/case-studies/Prana AI/Image13.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
           </section>
 
           {/* 17 / Feature 5 Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 17 / Feature 05
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -1103,21 +1175,31 @@ export default function PranaAiPage() {
             </p>
 
             {/* ROUTINE TRACKER & REPORTS IMAGE PLACEHOLDERS */}
-            <ImagePlaceholder
-              title="Routine Tracker"
-              aspect="wide"
+            <Image
+              src="/case-studies/Prana AI/Image14.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
 
-            <ImagePlaceholder
-              title="Reports (Daily / Weekly / Monthly)"
-              aspect="wide"
+            <Image
+              src="/case-studies/Prana AI/Image15.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
           </section>
 
           {/* 18 / Brand Identity Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
                 18 / Visual Identity
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -1160,9 +1242,14 @@ export default function PranaAiPage() {
             </p>
 
             {/* BRANDING IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Logo Iterations + Branding Exploration"
-              aspect="wide"
+            <Image
+              src="/case-studies/Prana AI/Image16.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
           </section>
 

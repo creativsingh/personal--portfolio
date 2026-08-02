@@ -18,6 +18,13 @@ export interface ToolItem {
   category: 'Design' | 'Frontend' | 'Development';
 }
 
+export interface HeroSlide {
+  title: string;
+  caption?: string;
+  url?: string;
+  aspect?: "hero" | "wide" | "standard";
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -36,6 +43,7 @@ export interface Project {
   solution: string;
   tools: string[];
   coverImage?: string;
+  heroSlides?: HeroSlide[];
   sections?: SectionItem[];
 }
 
@@ -120,6 +128,23 @@ export const PERSONA_DATA = {
         { label: "Onboarding Latency", value: "-60%" }
       ],
       coverImage: "/case-studies/genesis-ai-cover.png",
+      heroSlides: [
+        {
+          url: "/case-studies/genesis-ai-cover.png",
+          title: "Enterprise AI Configurator Workspace",
+          caption: "Transforming dense enterprise CPQ tools into an intuitive, AI-assisted rule engine."
+        },
+        {
+          url: "/case-studies/genesis-ai-legacy-audit.png",
+          title: "Legacy System Forensic Miro Audit",
+          caption: "Mapping hundreds of legacy parameter flows into Miro with sales, ops, and admin teams."
+        },
+        {
+          url: "/case-studies/genesis-ai-figma-iteration.png",
+          title: "Figma Component & Screen Architecture",
+          caption: "High-fidelity end-user configurator screens built with type-safe design tokens."
+        }
+      ],
       summary: "Genesis AI transforms dense enterprise CPQ (Configure, Price, Quote) software by auditing legacy systems, shifting from manual parameter grids to intent-based user flows, and crafting interactive Figma prototypes.",
       problem: "The legacy CPQ was outdated, slow, and not aligned with the industry shift toward AI-assisted configuration. Users struggled with hidden complexity, disconnected admin logic, and workflows that demanded far more effort than necessary.",
       solution: "I redesigned the whole system by reimagining the system from the ground up — auditing every legacy flow, co-creating with stakeholders, and designing a modern, AI-assisted experience that balances automation with human control.",
@@ -194,6 +219,24 @@ export const PERSONA_DATA = {
         { label: "About Page Visits", value: "5K+" }
       ],
       coverImage: "/case-studies/commudle/hero1.avif",
+      heroSlides: [
+        {
+          url: "/case-studies/commudle/commudle cover01.png",
+          title: "Community-First Hero Showcase",
+          caption: "Animated Lottie hero highlighting live events and 120K+ active community members."
+        },
+
+        {
+          url: "/case-studies/commudle/commudle cover03.png",
+          title: "Interactive World Map Storytelling",
+          caption: "Connecting community photos into a human-centric story map."
+        },
+        {
+          url: "/case-studies/commudle/commudle cover04.png",
+          title: "Modular Event & Community Cards",
+          caption: "Reusable card components designed for fast developer handoff."
+        }
+      ],
       summary: "As the sole Product Designer, I owned the experience from discovery to delivery. Redesigned Commudle's homepage, About page, and developer user profiles to drive community engagement and build trust.",
       problem: "Because users couldn't immediately understand the platform's value, many left before exploring communities or participating. The interface communicated information, but it didn't communicate excitement.",
       solution: "Redesigned Commudle into an entry point for the developer ecosystem with an animated Lottie hero, hand-drawn illustrations, community-first hierarchy, world map story cards, and interactive developer profile badges.",
@@ -217,7 +260,24 @@ export const PERSONA_DATA = {
         { label: "Booking Experience", value: "2-Step" },
         { label: "End-to-End Journey", value: "100%" }
       ],
-      coverImage: "/case-studies/prana-ai-cover.png",
+      coverImage: "/case-studies/prana AI/prana cover01.avif",
+      heroSlides: [
+        {
+          url: "/case-studies/prana AI/prana cover01.avif",
+          title: "Mobile App Ecosystem — Facial Scan & Health Score",
+          caption: "Transforming complex telemetry data into single-action daily wellness guidance."
+        },
+        {
+          url: "/case-studies/Prana AI/prana cover02.avif",
+          title: "AI Health Plan & Daily Action Engine",
+          caption: "Personalized daily action cards based on biometric trends and AI analysis."
+        },
+        {
+          url: "/case-studies/prana AI/prana cover03.avif",
+          title: "2-Step Expert Consultation & Booking Flow",
+          caption: "Seamless scheduling experience connecting users directly with certified wellness advisors."
+        }
+      ],
       summary: "Prana AI is an AI-powered wellness platform that combines facial health scanning, personalized wellness scoring, AI-generated health plans, expert consultations, and habit tracking into one cohesive experience.",
       problem: "Most wellness applications collect enormous amounts of information (heart rate, sleep, nutrition, exercise, stress, blood pressure) but leave users asking 'What should I actually do next?'",
       solution: "Designed an end-to-end mobile experience that transforms raw health information into clear, personalized guidance with facial scanning, AI wellness scoring, and 2-step expert consultations.",
@@ -259,6 +319,21 @@ export const PERSONA_DATA = {
         { label: "Streamlined Checkout", value: "1 Screen" }
       ],
       coverImage: "/case-studies/hunger-express-cover.png",
+      heroSlides: [
+        {
+          url: "/case-studies/hunger-express-cover.png",
+          title: "Multi-Sided Ecosystem — Customer, Rider & Vendor",
+          caption: "Three interconnected mobile apps designed for the Nigerian food delivery market."
+        },
+        {
+          title: "Single-Screen Streamlined Checkout Flow",
+          caption: "Minimizing cart abandonment by consolidating payment, delivery method, and address selection."
+        },
+        {
+          title: "Live Order Status & Stage Tracking",
+          caption: "Building user trust post-payment through real-time courier and kitchen updates."
+        }
+      ],
       summary: "Hunger Express is a food delivery platform built for the Nigerian market that connects customers, restaurant owners, and delivery partners within a single ecosystem.",
       problem: "Designing a multi-sided food delivery ecosystem (Customer, Rider, Vendor) under a tight 3-month timeline while adapting familiar global interaction patterns for the Nigerian market.",
       solution: "Designed three interconnected applications with a single-screen checkout, progressive order tracking, rider speed clarity, and vendor operational efficiency.",
@@ -293,6 +368,21 @@ export const PERSONA_DATA = {
         { label: "Communication Delays", value: "-30%" }
       ],
       coverImage: "/case-studies/scalie-cover.png",
+      heroSlides: [
+        {
+          url: "/case-studies/scalie-cover.png",
+          title: "Enterprise Resource Management Workspace",
+          caption: "Centralizing bench resource tracking, vendor submissions, and client requirements into one workspace."
+        },
+        {
+          title: "Standardized Vendor Candidate Submission & Resume Builder",
+          caption: "Eliminating inconsistent candidate profiles with automated type-safe resume generation."
+        },
+        {
+          title: "Admin Control Panel & Resource Management Table",
+          caption: "High-density data tables with sorting, filtering, and rapid status verification."
+        }
+      ],
       summary: "Scalie centralizes fragmented hiring, bench resource allocation, vendor submissions, interview scheduling, and contract management into one enterprise operational workspace.",
       problem: "Staffing organizations rely on fragmented Excel spreadsheets, email threads, and phone calls, leaving recruiters struggling to find candidates and managers lacking visibility into available resources.",
       solution: "Designed a centralized enterprise resource management platform linking Vendors, Admins, and Clients with automated resume building, single-screen requirement submission, and contract management.",
