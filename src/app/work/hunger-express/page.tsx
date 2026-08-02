@@ -4,6 +4,7 @@ import Link from "next/link";
 import { PERSONA_DATA } from "../../../data/persona";
 import { Navbar } from "../../../components/Navbar";
 import { Footer } from "../../../components/Footer";
+import Image from "next/image";
 import { ProjectHeaderSection } from "../../../components/ProjectHeaderSection";
 import {
   ArrowLeft,
@@ -100,7 +101,7 @@ export default function HungerExpressPage() {
 
       <main className="flex-1 pt-28 sm:pt-32 pb-20">
         <article className="max-w-4xl mx-auto px-6 space-y-16">
-          
+
           {/* Shared Header Section (Consistent across all case studies) */}
           <ProjectHeaderSection
             project={project}
@@ -178,9 +179,14 @@ export default function HungerExpressPage() {
             </div>
 
             {/* HERO IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Hero Mockup (Current Hero Image)"
-              aspect="hero"
+            <Image
+              src="/case-studies/hungerexpress/cover2.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
           </section>
 
@@ -407,9 +413,14 @@ export default function HungerExpressPage() {
             </div>
 
             {/* CURRENT CUSTOMER APP MOCKUP IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Current Customer App Mockup"
-              aspect="wide"
+            <Image
+              src="/case-studies/hungerexpress/Image1.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain"
             />
           </section>
 
@@ -467,10 +478,25 @@ export default function HungerExpressPage() {
             </p>
 
             {/* UBER EATS COMPARISON IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Current Uber Eats Comparison Screens"
-              aspect="wide"
+            <Image
+              src="/case-studies/hungerexpress/Image2.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
+            <Image
+              src="/case-studies/hungerexpress/Image3.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
+            />
+
           </section>
 
           {/* 07 / Key Design Principles Section */}
@@ -553,9 +579,23 @@ export default function HungerExpressPage() {
               </p>
 
               {/* RESTAURANT DISCOVERY IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Restaurant Discovery Screens"
-                aspect="wide"
+              <Image
+                src="/case-studies/hungerexpress/Image4.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
+              />
+              <Image
+                src="/case-studies/hungerexpress/Image6.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
 
               <div className="p-5 rounded-2xl bg-emerald-500/5 border border-emerald-500/10 space-y-1.5">
@@ -589,9 +629,14 @@ export default function HungerExpressPage() {
               </div>
 
               {/* PRODUCT DETAIL IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Product Detail Screens"
-                aspect="wide"
+              <Image
+                src="/case-studies/hungerexpress/Image8.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
 
               <div className="p-5 rounded-2xl bg-emerald-500/5 border border-emerald-500/10 space-y-1.5">
@@ -623,9 +668,14 @@ export default function HungerExpressPage() {
               </div>
 
               {/* CHECKOUT FLOW IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Checkout Flow"
-                aspect="wide"
+              <Image
+                src="/case-studies/hungerexpress/Image5.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
 
               <div className="p-5 rounded-2xl bg-emerald-500/5 border border-emerald-500/10 space-y-1.5">
@@ -661,9 +711,14 @@ export default function HungerExpressPage() {
               </div>
 
               {/* ORDER TRACKING FLOW IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Order Tracking Flow"
-                aspect="wide"
+              <Image
+                src="/case-studies/hungerexpress/Image9.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
             </div>
 
@@ -680,9 +735,14 @@ export default function HungerExpressPage() {
               </p>
 
               {/* DELIVERY FAILURE IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Delivery Failure Screens"
-                aspect="wide"
+              <Image
+                src="/case-studies/hungerexpress/Image10.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
             </div>
 
@@ -699,9 +759,23 @@ export default function HungerExpressPage() {
               </p>
 
               {/* DELIVERY / PICKUP TOGGLE IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Delivery / Pickup Toggle"
-                aspect="wide"
+              <Image
+                src="/case-studies/hungerexpress/Image11.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
+              />
+              <Image
+                src="/case-studies/hungerexpress/Image12.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
             </div>
 
@@ -718,10 +792,16 @@ export default function HungerExpressPage() {
               </p>
 
               {/* ORDER STATUS LIBRARY IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Order Status Library"
-                aspect="wide"
+              <Image
+                src="/case-studies/hungerexpress/Image13.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
+
             </div>
           </section>
 
@@ -746,9 +826,14 @@ export default function HungerExpressPage() {
             </div>
 
             {/* DELIVERY PARTNER HERO IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Delivery Partner Hero"
-              aspect="wide"
+            <Image
+              src="/case-studies/hungerexpress/Image15.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
 
             {/* Rider Core Goals */}
@@ -784,9 +869,14 @@ export default function HungerExpressPage() {
             </div>
 
             {/* DELIVERY ACCEPTANCE FLOW IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Delivery Acceptance Flow"
-              aspect="wide"
+            <Image
+              src="/case-studies/hungerexpress/Image16.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
 
             {/* Availability Controls */}
@@ -799,9 +889,14 @@ export default function HungerExpressPage() {
               </p>
 
               {/* ONLINE / OFFLINE STATES IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Online / Offline States"
-                aspect="wide"
+              <Image
+                src="/case-studies/hungerexpress/Image17.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
             </div>
           </section>
@@ -824,9 +919,14 @@ export default function HungerExpressPage() {
             </div>
 
             {/* VENDOR APP HERO IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Vendor App Hero"
-              aspect="wide"
+            <Image
+              src="/case-studies/hungerexpress/Image18.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
 
             {/* Vendor Core Goals */}
@@ -861,9 +961,14 @@ export default function HungerExpressPage() {
             </div>
 
             {/* VENDOR ORDER FLOW IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Vendor Order Flow"
-              aspect="wide"
+            <Image
+              src="/public/case-studies/hungerexpress/Image19.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
           </section>
 
