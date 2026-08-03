@@ -116,149 +116,7 @@ export default function ScaliePage() {
             </p>
           </div>
 
-          {/* 01 / Project Snapshot Section */}
-          <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
-            <div className="space-y-1">
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                01 / Snapshot
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                Project Snapshot
-              </h2>
-            </div>
 
-            <div className="p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 space-y-8">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <User className="w-3.5 h-3.5 text-emerald-500" />
-                    Role
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    Lead Product Designer
-                  </div>
-                </div>
-
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <Clock className="w-3.5 h-3.5 text-emerald-500" />
-                    Duration
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    6 Months
-                  </div>
-                </div>
-
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <Monitor className="w-3.5 h-3.5 text-emerald-500" />
-                    Platform
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    Responsive Web Application
-                  </div>
-                </div>
-
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <Users className="w-3.5 h-3.5 text-emerald-500" />
-                    Team
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    PM · Devs · Stakeholders · Designer (Me)
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80 space-y-3">
-                <div className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-wider font-medium">
-                  Responsibilities
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Product Discovery",
-                    "User Research",
-                    "Stakeholder Workshops",
-                    "Information Architecture",
-                    "User Flows",
-                    "UX Design",
-                    "UI Design",
-                    "Interactive Prototypes",
-                    "User Testing",
-                    "Design System",
-                    "Developer Handoff",
-                  ].map((resp) => (
-                    <span
-                      key={resp}
-                      className="px-3 py-1 rounded-md text-xs font-mono bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-800 shadow-2xs"
-                    >
-                      {resp}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* HERO DASHBOARD IMAGE PLACEHOLDER */}
-            <Image
-              src="/case-studies/scalie/image1.webp"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
-
-              width={1600}
-              height={900}
-
-              className="object-contain rounded-2xl"
-            />
-          </section>
-
-          {/* 02 / Impact Section */}
-          <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
-            <div className="space-y-1">
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                02 / Impact
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                Impact
-              </h2>
-            </div>
-
-            <div className="space-y-4 text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
-              <p>
-                Scalie was designed to modernize how organizations manage bench resources, vendors, client requirements, candidate screening, interviews, contracts, and resource allocation.
-              </p>
-              <p className="font-semibold text-zinc-900 dark:text-zinc-100">
-                Instead of relying on disconnected spreadsheets, emails, and manual coordination, the platform centralizes the entire staffing lifecycle into one operational workspace.
-              </p>
-            </div>
-
-            {/* Project Highlights */}
-            <div className="space-y-4 pt-2">
-              <h3 className="text-sm font-mono text-emerald-600 dark:text-emerald-400 font-semibold uppercase tracking-wider">
-                Project Highlights
-              </h3>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  "Designed the MVP for an enterprise resource management platform.",
-                  "Created experiences for multiple stakeholder groups.",
-                  "Defined the information architecture for a highly interconnected workflow.",
-                  "Simplified manual hiring and allocation processes.",
-                  "Validated key workflows through usability testing before development.",
-                ].map((item, idx) => (
-                  <div
-                    key={idx}
-                    className={`p-4 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-start gap-3 ${idx === 4 ? "sm:col-span-2 border-emerald-500/30 bg-emerald-500/5" : ""
-                      }`}
-                  >
-                    <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
-                    <span className="text-sm font-medium text-zinc-800 dark:text-zinc-200 leading-snug">
-                      {item}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
 
           {/* 03 / The Opportunity Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
@@ -359,7 +217,7 @@ export default function ScaliePage() {
                       <div className="text-emerald-500 font-bold text-[10px]">0{idx + 1}</div>
                       <div className="font-bold text-zinc-900 dark:text-zinc-100 text-xs">{step}</div>
                     </div>
-                    {idx < arr.length - 1 && <span className="text-zinc-400 font-bold text-sm rotate-90 sm:rotate-0">↓</span>}
+                    {idx < arr.length - 1 && <span className="text-zinc-400 font-bold text-sm rotate-90 sm:rotate-0">→</span>}
                   </React.Fragment>
                 ))}
               </div>
@@ -969,9 +827,7 @@ export default function ScaliePage() {
 
             {/* Operational Visibility */}
             <div className="space-y-4 pt-2">
-              <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100">
-                Operational Visibility
-              </h3>
+
               <p className="text-base text-zinc-600 dark:text-zinc-300 leading-relaxed">
                 The dashboard provides a high-level overview of platform activity, allowing administrators to understand operational health without navigating across multiple pages.
               </p>
@@ -991,11 +847,7 @@ export default function ScaliePage() {
                 These metrics help teams quickly identify bottlenecks and monitor platform performance.
               </p>
 
-              {/* ANALYTICS DASHBOARD IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Analytics Dashboard"
-                aspect="wide"
-              />
+
 
               <div className="p-5 rounded-2xl bg-emerald-500/5 border border-emerald-500/10 space-y-1.5">
                 <div className="text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
@@ -1463,11 +1315,6 @@ export default function ScaliePage() {
               </div>
             </div>
 
-            {/* FUTURE ROADMAP IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Future Roadmap"
-              aspect="wide"
-            />
           </section>
 
           {/* 19 / Reflection Section */}
@@ -1510,12 +1357,7 @@ export default function ScaliePage() {
               </p>
             </div>
 
-            {/* FINAL PRODUCT SHOWCASE IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Final Product Showcase"
-              caption="A full-width composition featuring the Vendor, Admin, and Client experiences."
-              aspect="wide"
-            />
+
           </section>
 
           {/* Next Case Study Footer Navigation */}
