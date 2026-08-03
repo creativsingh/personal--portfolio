@@ -90,8 +90,9 @@ function ImagePlaceholder({ title, caption, aspect = "standard" }: ImagePlacehol
 }
 
 export default function PranaAiPage() {
-  const project = PERSONA_DATA.projects[2]; // Prana AI
-  const nextProject = PERSONA_DATA.projects[3]; // Hunger Express
+  const currentIndex = PERSONA_DATA.projects.findIndex((p) => p.id === "prana-ai");
+  const project = PERSONA_DATA.projects[currentIndex !== -1 ? currentIndex : 2] || PERSONA_DATA.projects[0];
+  const nextProject = PERSONA_DATA.projects[(currentIndex + 1) % PERSONA_DATA.projects.length] || PERSONA_DATA.projects[0];
 
   return (
     <div className="min-h-screen flex flex-col bg-white dark:bg-[#0a0a0c] text-zinc-900 dark:text-zinc-100 font-sans">

@@ -14,8 +14,9 @@ export const metadata: Metadata = {
 };
 
 export default function CommudlePage() {
-  const project = PERSONA_DATA.projects[1]; // Commudle
-  const nextProject = PERSONA_DATA.projects[2]; // Prana AI
+  const currentIndex = PERSONA_DATA.projects.findIndex((p) => p.id === "commudle");
+  const project = PERSONA_DATA.projects[currentIndex !== -1 ? currentIndex : 1] || PERSONA_DATA.projects[0];
+  const nextProject = PERSONA_DATA.projects[(currentIndex + 1) % PERSONA_DATA.projects.length] || PERSONA_DATA.projects[0];
 
   return (
     <div className="min-h-screen flex flex-col bg-white dark:bg-[#0a0a0c] text-zinc-900 dark:text-zinc-100 font-sans">

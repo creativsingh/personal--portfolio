@@ -36,6 +36,7 @@ export interface HeroVideo {
 
 export interface Project {
   id: string;
+  hidden?: boolean;
   title: string;
   category: string;
   tagline: string;
@@ -120,8 +121,9 @@ export const PERSONA_DATA = {
   ],
 
   projects: [
-    /*
+    {
       id: "genesis-ai",
+      hidden: true,
       title: "Genesis AI",
       category: "AI & Ecommerce",
       tagline: "Platform designed to help sales and operations teams efficiently create, manage, and present product configurations for enterprise clients.",
@@ -167,9 +169,6 @@ export const PERSONA_DATA = {
       solution: "I redesigned the whole system by reimagining the system from the ground up — auditing every legacy flow, co-creating with stakeholders, and designing a modern, AI-assisted experience that balances automation with human control.",
       tools: ["Figma", "Miro", "Figma Make", "Salesforce"],
     },
-
-*/
-
     {
       id: "commudle",
       title: "Commudle",

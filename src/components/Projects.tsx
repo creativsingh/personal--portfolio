@@ -12,12 +12,15 @@ interface ProjectsProps {
 export function Projects({ isWorkPage = false }: ProjectsProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
-  // Dynamically derive unique categories from persona.ts
-  const categories = ["All", ...Array.from(new Set(PERSONA_DATA.projects.map((p) => p.category)))];
+  // Active visible projects
+  const activeProjects = PERSONA_DATA.projects.filter((p) => !p.hidden);
+
+  // Dynamically derive unique categories from active projects
+  const categories = ["All", ...Array.from(new Set(activeProjects.map((p) => p.category)))];
 
   const filteredProjects = selectedCategory === "All"
-    ? PERSONA_DATA.projects
-    : PERSONA_DATA.projects.filter(p => p.category === selectedCategory);
+    ? activeProjects
+    : activeProjects.filter(p => p.category === selectedCategory);
 
   const displayedProjects = isWorkPage ? filteredProjects : filteredProjects.slice(0, 2);
 
