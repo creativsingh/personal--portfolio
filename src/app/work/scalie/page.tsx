@@ -254,10 +254,14 @@ export default function ScaliePage() {
             </div>
 
             {/* EXISTING MANUAL PROCESS IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Existing Manual Process"
-              caption="Current workflow illustration showing spreadsheets, emails, calls, and documents."
-              aspect="wide"
+            <Image
+              src="/case-studies/scalie/image19.png"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
           </section>
 
@@ -393,11 +397,7 @@ export default function ScaliePage() {
               Rather than designing isolated screens, the goal became designing a connected operational system.
             </p>
 
-            {/* CURRENT WORKFLOW DIAGRAM IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Current Workflow Diagram"
-              aspect="wide"
-            />
+
           </section>
 
           {/* 07 / Understanding Stakeholders Section */}
@@ -468,10 +468,21 @@ export default function ScaliePage() {
             </div>
 
             {/* STAKEHOLDER ECOSYSTEM IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Stakeholder Ecosystem"
-              caption="Diagram connecting Vendor → Admin → Client"
-              aspect="wide"
+            <h2 className="text-2xl pt-6 sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+              Systemic Dependencies after developing the MVP
+            </h2>
+            <div className="space-y-4 text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
+              <p>Scalie connects Vendors, Administrators, and Clients through a shared operational workflow. While the MVP streamlined most interactions, a few cross-panel dependencies continued to rely on manual coordination and were planned for future iterations.</p>
+
+            </div>
+            <Image
+              src="/case-studies/scalie/image20.png"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
           </section>
 
