@@ -7,6 +7,8 @@ import { Footer } from "../../components/Footer";
 import { PERSONA_DATA } from "../../data/persona";
 import { ArrowLeft } from "lucide-react";
 
+import { StickyBackHeader } from "../../components/StickyBackHeader";
+
 export const metadata: Metadata = {
   title: `Public Speaking & Workshops — ${PERSONA_DATA.name}`,
   description: "Explore all keynote talks, workshops, and community engagements by Ajeet Singh.",
@@ -16,6 +18,12 @@ export default function SpeakingPage() {
   return (
     <div className="min-h-screen flex flex-col bg-white dark:bg-[#0a0a0c] text-zinc-900 dark:text-zinc-100 font-sans transition-colors duration-200">
       <Navbar />
+
+      <StickyBackHeader
+        href="/#speaking"
+        label="Back to Home"
+        title="Public Speaking & Workshops"
+      />
 
       <main className="flex-1 pt-28 pb-16">
         {/* Back Link on Top */}

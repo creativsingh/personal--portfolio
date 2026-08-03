@@ -7,6 +7,8 @@ import { Footer } from "../../components/Footer";
 import { PERSONA_DATA } from "../../data/persona";
 import { ArrowLeft } from "lucide-react";
 
+import { StickyBackHeader } from "../../components/StickyBackHeader";
+
 export const metadata: Metadata = {
   title: `PixelPeps Community — ${PERSONA_DATA.name}`,
   description: "A thriving design community focused on peer learning, design crits, workshops, and networking across India.",
@@ -16,6 +18,12 @@ export default function PixelPepsPage() {
   return (
     <div className="min-h-screen flex flex-col bg-white dark:bg-[#0a0a0c] text-zinc-900 dark:text-zinc-100 font-sans transition-colors duration-200">
       <Navbar />
+
+      <StickyBackHeader
+        href="/#pixelpeps"
+        label="Back to Home"
+        title="PixelPeps Community"
+      />
 
       <main className="flex-1 pt-28 pb-16">
         {/* Back Link on Top */}

@@ -276,12 +276,12 @@ export const PERSONA_DATA = {
       duration: "12 Months",
       teamSize: "1 Designer · 3 Devs · Founder",
       platform: "iOS & Android",
-      impactMetric: "92% Motivation Retention",
+      impactMetric: "5k+ downloads on Playstore",
       metrics: [
+        { label: "Downloads on Playstore", value: "5k+" },
         { label: "Beta User Motivation", value: "92%" },
         { label: "Production Screens", value: "100+" },
-        { label: "Booking Experience", value: "2-Step" },
-        { label: "End-to-End Journey", value: "100%" }
+        { label: "Conversion Rate", value: "10%" }
       ],
       coverImage: "/case-studies/prana AI/prana cover01.avif",
       heroSlides: [
@@ -295,11 +295,7 @@ export const PERSONA_DATA = {
           title: "AI Health Plan & Daily Action Engine",
           caption: "Personalized daily action cards based on biometric trends and AI analysis."
         },
-        {
-          url: "/case-studies/prana AI/prana cover03.avif",
-          title: "2-Step Expert Consultation & Booking Flow",
-          caption: "Seamless scheduling experience connecting users directly with certified wellness advisors."
-        }
+
       ],
       summary: "Prana AI is an AI-powered wellness platform that combines facial health scanning, personalized wellness scoring, AI-generated health plans, expert consultations, and habit tracking into one cohesive experience.",
       problem: "Most wellness applications collect enormous amounts of information (heart rate, sleep, nutrition, exercise, stress, blood pressure) but leave users asking 'What should I actually do next?'",

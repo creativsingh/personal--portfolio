@@ -134,143 +134,23 @@ export default function PranaAiPage() {
             </div>
           </section>
 
-          {/* 02 / Project Snapshot Section */}
-          <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
-            <div className="space-y-1">
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                02 / Snapshot
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                Project Snapshot
-              </h2>
-            </div>
 
-            <div className="p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 space-y-8">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <User className="w-3.5 h-3.5 text-emerald-500" />
-                    Role
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    Lead Product Designer
-                  </div>
-                </div>
 
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <Clock className="w-3.5 h-3.5 text-emerald-500" />
-                    Duration
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    12 Months
-                  </div>
-                </div>
+          {/* HERO IMAGE PLACEHOLDER */}
+          <Image
+            src="/case-studies/Prana AI/Image1.avif"
+            alt="Hero mockup showing Home Dashboard + Wellness Score"
 
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <Monitor className="w-3.5 h-3.5 text-emerald-500" />
-                    Platform
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    iOS &amp; Android
-                  </div>
-                </div>
+            width={1600}
+            height={900}
 
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <Users className="w-3.5 h-3.5 text-emerald-500" />
-                    Team
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    1 Designer · 3 Developers · Product Founder
-                  </div>
-                </div>
-              </div>
+            className="object-contain"
+          />
 
-              <div className="pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80 space-y-3">
-                <div className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-wider font-medium">
-                  Responsibilities
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Product Discovery",
-                    "User Research",
-                    "UX Strategy",
-                    "User Flows",
-                    "Wireframing",
-                    "UI Design",
-                    "Prototyping",
-                    "Design QA",
-                    "Brand Identity",
-                  ].map((resp) => (
-                    <span
-                      key={resp}
-                      className="px-3 py-1 rounded-md text-xs font-mono bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-800 shadow-2xs"
-                    >
-                      {resp}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
 
-          {/* 03 / Impact Section */}
-          <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
-            <div className="space-y-1">
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                03 / Impact
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                Impact
-              </h2>
-            </div>
 
-            <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
-              Rather than simply creating another fitness application, the objective was to build a platform capable of translating complex health information into meaningful, personalized actions.
-            </p>
 
-            <div className="space-y-4 pt-2">
-              <h3 className="text-sm font-mono text-emerald-600 dark:text-emerald-400 font-semibold uppercase tracking-wider">
-                During beta testing:
-              </h3>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  "Designed 100+ production-ready mobile screens",
-                  "Built the complete end-to-end wellness journey",
-                  "Introduced AI-powered wellness scoring",
-                  "Reduced consultation booking to a two-step experience",
-                  "92% of beta users reported increased motivation to maintain healthier routines",
-                ].map((item, idx) => (
-                  <div
-                    key={idx}
-                    className={`p-4 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-start gap-3 ${idx === 4 ? "sm:col-span-2 border-emerald-500/30 bg-emerald-500/5" : ""
-                      }`}
-                  >
-                    <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
-                    <span className="text-sm font-medium text-zinc-800 dark:text-zinc-200 leading-snug">
-                      {item}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* HERO IMAGE PLACEHOLDER */}
-            <Image
-              src="/case-studies/Prana AI/Image1.avif"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
-
-              width={1600}
-              height={900}
-
-              className="object-contain"
-            />
-          </section>
-
-          {/* 04 / The Opportunity Section */}
+          {/* /* 04 / The Opportunity Section 
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
@@ -284,7 +164,7 @@ export default function PranaAiPage() {
             <div className="space-y-4 text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
               <p>Most wellness applications collect enormous amounts of information.</p>
 
-              {/* Data Metrics Pills */}
+              {/* Data Metrics Pills 
               <div className="flex flex-wrap gap-2.5 py-2">
                 {["Heart rate.", "Sleep.", "Nutrition.", "Exercise.", "Stress.", "Blood pressure."].map(
                   (metric) => (
@@ -317,7 +197,7 @@ export default function PranaAiPage() {
             </div>
           </section>
 
-          {/* 05 / The Challenge Section */}
+          {/* 05 / The Challenge Section 
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
@@ -358,11 +238,14 @@ export default function PranaAiPage() {
                 ))}
               </div>
             </div>
+            
 
             <p className="text-base sm:text-lg font-medium text-zinc-800 dark:text-zinc-200 pt-2">
               Rather than designing individual screens, the challenge was designing an entire wellness journey.
             </p>
           </section>
+
+          */}
 
           {/* 06 / My Role Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
@@ -412,16 +295,7 @@ export default function PranaAiPage() {
               </div>
             </div>
 
-            {/* TIMELINE IMAGE PLACEHOLDER */}
-            <Image
-              src="/case-studies/Prana AI/Image2.avif"
-              alt="Timeline showing Discovery → Research → UX → UI → Testing → Launch"
 
-              width={1600}
-              height={900}
-
-              className="object-contain"
-            />
           </section>
 
           {/* 07 / Defining Success Section */}
@@ -709,11 +583,7 @@ export default function PranaAiPage() {
               </div>
             </div>
 
-            {/* DESIGN PRINCIPLES IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Illustration of Design Principles"
-              aspect="wide"
-            />
+
           </section>
 
           {/* 12 / Experience Overview Section */}
@@ -757,7 +627,7 @@ export default function PranaAiPage() {
                     </div>
                     {idx < arr.length - 1 && (
                       <span className="text-zinc-400 dark:text-zinc-600 font-mono text-sm rotate-90 sm:rotate-0">
-                        ↓
+                        →
                       </span>
                     )}
                   </React.Fragment>
@@ -942,6 +812,13 @@ export default function PranaAiPage() {
 
                 className="object-contain"
               />
+              <h3 className="text-xl font-bold pt-8 tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
+
+                Giving user control & Freedom
+              </h3>
+              <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
+                Offering users the freedom and control to exit at any point ensures a stress-free experience.
+              </p>
               <Image
                 src="/case-studies/Prana AI/Image9.avif"
                 alt="Hero mockup showing Home Dashboard + Wellness Score"

@@ -16,6 +16,7 @@ import {
   Video,
   TrendingUp,
 } from "lucide-react";
+import { StickyBackHeader } from "./StickyBackHeader";
 
 interface ProjectHeaderSectionProps {
   project: Project;
@@ -133,6 +134,14 @@ export function ProjectHeaderSection({
 
   return (
     <div className="space-y-12">
+      {/* Sticky Header when scrolling up */}
+      <StickyBackHeader
+        href="/#work"
+        label="Back to Selected Work"
+        badge={`Case Study ${projectIndex + 1} of ${totalProjects}`}
+        title={project.title}
+      />
+
       {/* Back Link & Breadcrumb */}
       <div className="flex items-center justify-between">
         <Link

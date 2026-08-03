@@ -7,6 +7,8 @@ import { Projects } from "../../components/Projects";
 import { ArrowLeft } from "lucide-react";
 import { PERSONA_DATA } from "../../data/persona";
 
+import { StickyBackHeader } from "../../components/StickyBackHeader";
+
 export const metadata: Metadata = {
   title: `Selected Work & Case Studies — ${PERSONA_DATA.name}`,
   description: "Explore selected product design engineering case studies by Ajeet Singh (CreativSingh).",
@@ -16,6 +18,12 @@ export default function WorkPage() {
   return (
     <div className="min-h-screen flex flex-col bg-white dark:bg-[#0a0a0c] text-zinc-900 dark:text-zinc-100 font-sans">
       <Navbar />
+
+      <StickyBackHeader
+        href="/#work"
+        label="Back to Home"
+        title="Selected Work & Case Studies"
+      />
 
       <main className="flex-1 pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-6 mb-8">
