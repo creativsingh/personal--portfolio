@@ -120,7 +120,7 @@ export const PERSONA_DATA = {
   ],
 
   projects: [
-    {
+    /*
       id: "genesis-ai",
       title: "Genesis AI",
       category: "AI & Ecommerce",
@@ -166,57 +166,10 @@ export const PERSONA_DATA = {
       problem: "The legacy CPQ was outdated, slow, and not aligned with the industry shift toward AI-assisted configuration. Users struggled with hidden complexity, disconnected admin logic, and workflows that demanded far more effort than necessary.",
       solution: "I redesigned the whole system by reimagining the system from the ground up — auditing every legacy flow, co-creating with stakeholders, and designing a modern, AI-assisted experience that balances automation with human control.",
       tools: ["Figma", "Miro", "Figma Make", "Salesforce"],
-      sections: [
-        {
-          title: "What broke — and why we had to rethink the configurator?",
-          description: "An in-depth breakdown of the friction points across UX, Business, Technical, and Experience dimensions in legacy CPQ systems.",
-          paragraphs: [
-            "1. User Pain Points:\n• Too many clicks to configure even simple products\n• Attributes were hidden in separate tabs, breaking user flow\n• No clear distinction between product-level and option-level changes\n• Users lost context while scrolling through long option lists\n• Frequent back-and-forth just to validate pricing or configurations\n👉 Impact: Slower workflows, frustration, and lack of confidence during sales calls.",
-            "2. Business Challenges:\n• Sales teams struggled to create quotes quickly during live demos\n• Heavy dependency on designers or pre-made decks for presentations\n• Inconsistent configurations across teams led to errors\n• Increasing need for AI-assisted workflows to stay competitive\n• Product wasn’t scalable across industries (Manufacturing, SaaS, IoT, XaaS)\n👉 Impact: Lost efficiency, reduced conversion speed, and poor demo experience.",
-            "3. Technical Limitations:\n• Legacy tab-based architecture restricted flow redesign\n• Rules engine processed configurations sequentially → delays in feedback\n• Backend attribute structure limited dynamic UI rendering\n• UI components weren’t built for flexible admin configurations\n• No optimized data structure to support AI-driven suggestions\n👉 Impact: Slower system response, rigid UI, and limited innovation capability.",
-            "4. Experience Gaps (AI + UX Opportunity):\n• No intelligent guidance for configuration decisions\n• Users relied on manual validation instead of system assistance\n• No visibility into why conflicts occurred\n• Lack of real-time feedback while configuring\n• No assistive layer to reduce cognitive load\n👉 Opportunity: Introduce AI as a co-pilot to guide, validate, and accelerate decisions."
-          ]
-        },
-        {
-          title: "Workation Snapshot",
-          description: "Deep work & problem solving in Kerala.",
-          image: "/case-studies/genesis-ai-workation-placeholder.png",
-          imageCaption: "A snapshot of me working on this project during a workation in Kochi, Kerala.",
-          isPlaceholderImage: true
-        },
-        {
-          title: "Kickoff with the CEO",
-          description: "Our very first call was with the CEO. Not for approvals — but for alignment.",
-          quotes: [
-            "“Our Customer's sales cycle needs to shrink — reps should be able to configure and quote in minutes, not hours.”",
-            "“Right now, we lose time because reps manually adjust configurations. I want AI to eliminate 70–80% of that effort.”",
-            "“The AI should be smart enough to suggest the right bundles and warn users before they break a rule.”",
-            "“I want a UI we’re proud to demo to an enterprise customer without preparation. That’s the bar.”"
-          ],
-          paragraphs: [
-            "I approached this call like a strategist. Understanding the 'why' up front helped define the guardrails for every future decision:",
-            "• Why are sales reps spending more time configuring than selling?\n• Why do we believe AI is the right accelerator for this workflow now?\n• Why do configurations vary so much between different teams or regions?\n• Why do live demos require separate decks instead of using the product directly?\n• Why do admins rely on spreadsheets or external documents to manage rules?\n• Why are conflict messages unclear or easily missed by users?\n• Why do complex products still require manual review despite having rules?\n• Why is critical information hidden below the fold in the current UI?\n• Why do customers often need follow-up clarifications during configuration calls?\n• Why is the current configurator unable to scale to new industries or pricing models?"
-          ]
-        },
-        {
-          title: "Auditing the Legacy System (Becoming a Detective 🕵️)",
-          description: "So, I pulled every legacy screen into Miro — hundreds of flows. I treated this audit like forensic analysis.",
-          image: "/case-studies/genesis-ai-legacy-audit.png",
-          imageCaption: "A snapshot of Miro board while auditing legacy configurator designs.",
-          paragraphs: [
-            "Before proposing improvement, I needed to understand: What breaks? What slows users down? Where does cognitive overload occur? Which patterns contradict expectations?",
-            "We invited stakeholders from sales, ops, and admin into Miro workshops. We circled:\n• Must-keep features\n• Pain points\n• Missing use-cases\n• Opportunities for AI assistance",
-            "Stakeholders usually describe symptoms. My job was to uncover the root causes behind them. So I kept asking:\n• 'What’s happening here?'\n• 'What are you trying to achieve in this moment?'\n• 'What slows you down?'\nThose conversations shaped the foundation of our new system."
-          ]
-        },
-        {
-          title: "Shaping the Final Experience 👨🏻‍💻",
-          description: "Using our design system, Me and my colleague built the first full iteration.",
-          image: "/case-studies/genesis-ai-figma-iteration.png",
-          imageCaption: "A Mockup of one of the screen from End User newly designed configurator."
-        }
-      ]
     },
+
+*/
+
     {
       id: "commudle",
       title: "Commudle",
@@ -300,24 +253,8 @@ export const PERSONA_DATA = {
       summary: "Prana AI is an AI-powered wellness platform that combines facial health scanning, personalized wellness scoring, AI-generated health plans, expert consultations, and habit tracking into one cohesive experience.",
       problem: "Most wellness applications collect enormous amounts of information (heart rate, sleep, nutrition, exercise, stress, blood pressure) but leave users asking 'What should I actually do next?'",
       solution: "Designed an end-to-end mobile experience that transforms raw health information into clear, personalized guidance with facial scanning, AI wellness scoring, and 2-step expert consultations.",
-      tools: ["Figma", "User Research", "UX Strategy", "iOS & Android"],
-      sections: [
-        {
-          title: "Biometric Overload vs. Calm UX 🩺",
-          description: "Deconstructing medical telemetry data into digestible daily insights.",
-          paragraphs: [
-            "1. The Problem with Raw Data:\n• Wearables generate thousands of continuous health data points (HRV, SPO2, REM sleep cycles).\n• Raw medical charts induce anxiety rather than encouraging habit building.",
-            "2. The Empathetic Solution:\n• Introduced 'Calm Telemetry Cards' that highlight 1 primary insight per morning check-in.\n• Used adaptive ambient lighting themes that soften contrast during night-time reviews."
-          ]
-        },
-        {
-          title: "Prototyping & Beta Testing Results 📈",
-          description: "Validating conversational AI guidance with 40+ active beta testers.",
-          paragraphs: [
-            "Through iterative Next.js and Figma prototypes, we achieved a 94% clarity satisfaction score and boosted daily active telemetry logging by 38%."
-          ]
-        }
-      ]
+      tools: ["Figma", "Adobe Illustrator"],
+
     },
     {
       id: "hunger-express",
@@ -362,17 +299,8 @@ export const PERSONA_DATA = {
       summary: "Hunger Express is a food delivery platform built for the Nigerian market that connects customers, restaurant owners, and delivery partners within a single ecosystem.",
       problem: "Designing a multi-sided food delivery ecosystem (Customer, Rider, Vendor) under a tight 3-month timeline while adapting familiar global interaction patterns for the Nigerian market.",
       solution: "Designed three interconnected applications with a single-screen checkout, progressive order tracking, rider speed clarity, and vendor operational efficiency.",
-      tools: ["Figma", "UX Design", "UI Design", "Information Architecture"],
-      sections: [
-        {
-          title: "Contextual Inquiry & Rider Field Research 🛵",
-          description: "Riding along with delivery couriers and observing real-world ordering friction.",
-          paragraphs: [
-            "1. Field Discoveries:\n• Delivery riders struggled with small, low-contrast buttons on sunny days.\n• Users abandoned carts when forced to navigate 4 separate confirmation screens.",
-            "2. Progressive Checkout Redesign:\n• Replaced 4 full page steps with a 1-swipe modal drawer.\n• Added 12 custom Lottie micro-animations for instant visual status feedback."
-          ]
-        }
-      ]
+      tools: ["Figma"],
+
     },
     {
       id: "scalie",
@@ -410,7 +338,7 @@ export const PERSONA_DATA = {
       summary: "Scalie centralizes fragmented hiring, bench resource allocation, vendor submissions, interview scheduling, and contract management into one enterprise operational workspace.",
       problem: "Staffing organizations rely on fragmented Excel spreadsheets, email threads, and phone calls, leaving recruiters struggling to find candidates and managers lacking visibility into available resources.",
       solution: "Designed a centralized enterprise resource management platform linking Vendors, Admins, and Clients with automated resume building, single-screen requirement submission, and contract management.",
-      tools: ["Figma", "User Research", "Information Architecture", "Enterprise UX"],
+      tools: ["Figma", "Adobe Illustrator"],
       sections: [
         {
           title: "Automating Design Token Handoffs 🎨 ⚡ 💻",
