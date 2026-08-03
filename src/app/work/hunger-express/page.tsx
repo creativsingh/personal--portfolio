@@ -862,7 +862,7 @@ export default function HungerExpressPage() {
 
             {/* VENDOR ORDER FLOW IMAGE PLACEHOLDER */}
             <Image
-              src="/public/case-studies/hungerexpress/Image19.avif"
+              src="/case-studies/hungerexpress/Image19.png"
               alt="Hero mockup showing Home Dashboard + Wellness Score"
 
               width={1600}
@@ -913,11 +913,7 @@ export default function HungerExpressPage() {
               Rather than treating the first design as final, continuous iteration helped improve usability without extending project timelines.
             </p>
 
-            {/* ITERATION EXAMPLES IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Iteration Examples"
-              aspect="wide"
-            />
+
           </section>
 
           {/* 12 / Key Takeaways Section */}
