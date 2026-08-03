@@ -301,7 +301,7 @@ export default function CommudlePage() {
             </div>
 
             <div className="space-y-4 pt-4">
-              <h3 className="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+              <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Design Decision 1: Creating a Hero Worth Looking At
               </h3>
               <p className="text-base text-zinc-600 dark:text-zinc-300 leading-relaxed">
@@ -327,15 +327,8 @@ export default function CommudlePage() {
           </section>
 
           {/* 05 / Technical Collaboration Section */}
-          <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
-            <div className="space-y-1">
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                05 / Motion Engineering
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                Technical Collaboration
-              </h2>
-            </div>
+          <section className="space-y-6   border-zinc-200/80 dark:border-zinc-800/80">
+
 
             <div className="space-y-4 text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
               <p>
@@ -366,21 +359,13 @@ export default function CommudlePage() {
               </div>
             </div>
 
-            {/* Motion Process Card */}
-            <div className="p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-dashed border-zinc-300 dark:border-zinc-700 text-center space-y-2">
-              <ImageIcon className="w-6 h-6 text-emerald-500 mx-auto" />
-              <p className="text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                After Effects Lottie Animation Pipeline &amp; JSON Optimization
-              </p>
-            </div>
+
           </section>
 
           {/* 06 / Brand Personality Section */}
-          <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
+          <section className="space-y-6  border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                06 / Visual Identity
-              </span>
+
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Design Decision 2: Building Personality Through Illustration
               </h2>
@@ -414,11 +399,9 @@ export default function CommudlePage() {
           </section>
 
           {/* 07 / Core Feature: Prioritising Communities Section */}
-          <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
+          <section className="space-y-6   border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                07 / Core Focus
-              </span>
+
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Design Decision 3: Prioritising Communities
               </h2>
@@ -470,7 +453,7 @@ export default function CommudlePage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                08 / Storytelling
+                03 / About Page
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 About Page
@@ -494,7 +477,7 @@ export default function CommudlePage() {
             </div>
 
             <div className="space-y-3 pt-2">
-              <h3 className="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+              <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Design Decision
               </h3>
               <p className="text-base text-zinc-600 dark:text-zinc-300 leading-relaxed">
@@ -539,10 +522,10 @@ export default function CommudlePage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                09 / Networking
+                04 / User Profile Page
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                User Profile
+                User Profile Page
               </h2>
             </div>
 
@@ -563,7 +546,7 @@ export default function CommudlePage() {
             </div>
 
             <div className="space-y-8 pt-4">
-              <h3 className="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+              <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Key Improvements
               </h3>
 
@@ -650,7 +633,7 @@ export default function CommudlePage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                10 / Principles
+                05 / Design Principles
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Design Principles Behind Every Decision
@@ -680,7 +663,7 @@ export default function CommudlePage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                11 / Retrospective
+                06 / Retrospective
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 What I Learned

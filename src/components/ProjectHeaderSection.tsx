@@ -14,6 +14,7 @@ import {
   ChevronRight,
   ImageIcon,
   Video,
+  TrendingUp,
 } from "lucide-react";
 
 interface ProjectHeaderSectionProps {
@@ -390,6 +391,39 @@ export function ProjectHeaderSection({
           </p>
         </div>
       </section>
+
+      {/* Impact Metrics Grid */}
+      {project.metrics && project.metrics.length > 0 && (
+        <section className="space-y-4 pt-2">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-xs font-mono font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">
+              <TrendingUp className="w-4 h-4 text-emerald-500" />
+              Measurable Impact &amp; Key Metrics
+            </div>
+            {project.impactMetric && (
+              <span className="text-xs font-mono px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-bold">
+                {project.impactMetric}
+              </span>
+            )}
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {project.metrics.map((metric, idx) => (
+              <div
+                key={idx}
+                className="p-5 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 space-y-1 hover:border-emerald-500/40 transition-colors"
+              >
+                <div className="text-2xl sm:text-3xl font-extrabold font-mono text-emerald-600 dark:text-emerald-400 tracking-tight">
+                  {metric.value}
+                </div>
+                <div className="text-xs font-medium text-zinc-600 dark:text-zinc-400">
+                  {metric.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }
