@@ -190,107 +190,7 @@ export default function HungerExpressPage() {
             />
           </section>
 
-          {/* 02 / Project Snapshot Section */}
-          <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
-            <div className="space-y-1">
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                02 / Snapshot
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                Project Snapshot
-              </h2>
-            </div>
 
-            <div className="p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 space-y-8">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <User className="w-3.5 h-3.5 text-emerald-500" />
-                    Role
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    UX Designer
-                  </div>
-                </div>
-
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <Clock className="w-3.5 h-3.5 text-emerald-500" />
-                    Duration
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    3 Months
-                  </div>
-                </div>
-
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <Monitor className="w-3.5 h-3.5 text-emerald-500" />
-                    Platform
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    Mobile (Customer, Delivery Partner &amp; Vendor)
-                  </div>
-                </div>
-
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-500 dark:text-zinc-400">
-                    <Users className="w-3.5 h-3.5 text-emerald-500" />
-                    Team
-                  </div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    1 Designer
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80 space-y-3">
-                <div className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-wider font-medium">
-                  My Responsibilities
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Product Experience",
-                    "UX Design",
-                    "UI Design",
-                    "Information Architecture",
-                    "Interaction Design",
-                    "User Flow Design",
-                    "Design System",
-                    "Developer Handoff",
-                  ].map((resp) => (
-                    <span
-                      key={resp}
-                      className="px-3 py-1 rounded-md text-xs font-mono bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-800 shadow-2xs"
-                    >
-                      {resp}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* VIDEO PLACEHOLDER */}
-            <div className="my-8 space-y-3">
-              <div className="relative w-full rounded-2xl border border-dashed border-emerald-500/30 dark:border-emerald-500/25 bg-gradient-to-b from-emerald-950/10 via-zinc-900/60 to-zinc-950/80 p-8 sm:p-12 flex flex-col items-center justify-center text-center min-h-[300px] overflow-hidden group shadow-lg">
-                <div className="absolute inset-0 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:24px_24px] opacity-15 pointer-events-none" />
-                <div className="relative z-10 space-y-3 max-w-lg mx-auto flex flex-col items-center">
-                  <div className="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center shadow-lg group-hover:scale-105 transition-all">
-                    <Play className="w-6 h-6 fill-current ml-0.5" />
-                  </div>
-                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold tracking-wider text-emerald-400 bg-emerald-950/80 border border-emerald-500/40">
-                    [VIDEO PLACEHOLDER]
-                  </div>
-                  <h4 className="text-base sm:text-lg font-semibold text-zinc-100">
-                    Product Walkthrough
-                  </h4>
-                  <p className="text-xs sm:text-sm text-zinc-400 italic">
-                    (Existing YouTube Video)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
 
           {/* 03 / The Opportunity Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
@@ -1105,11 +1005,7 @@ export default function HungerExpressPage() {
               </p>
             </div>
 
-            {/* FINAL PRODUCT SHOWCASE IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Final Product Showcase"
-              aspect="wide"
-            />
+
           </section>
 
           {/* Next Case Study Footer Navigation */}

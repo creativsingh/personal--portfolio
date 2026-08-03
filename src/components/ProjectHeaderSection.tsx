@@ -185,7 +185,7 @@ export function ProjectHeaderSection({
       >
         {/* Video Mode Display (Author selected video) */}
         {showVideo && heroVideoObj ? (
-          <div className="relative w-full flex flex-col items-center justify-center bg-black min-h-[300px] sm:min-h-[520px]">
+          <div className="relative w-full flex flex-col items-center justify-center bg-black ">
             {isEmbedVideo(heroVideoObj.url) ? (
               <iframe
                 src={getEmbedUrl(heroVideoObj.url)}
@@ -207,20 +207,7 @@ export function ProjectHeaderSection({
               />
             )}
 
-            {/* Video Caption & Info Badge */}
-            {(heroVideoObj.title || heroVideoObj.caption) && (
-              <div className="w-full p-4 bg-zinc-950/90 border-t border-zinc-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs font-mono text-zinc-300">
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="font-bold text-white">{heroVideoObj.title || "Video Demo"}</span>
-                </div>
-                {heroVideoObj.caption && (
-                  <span className="text-zinc-400 italic text-xs max-w-xl">
-                    {heroVideoObj.caption}
-                  </span>
-                )}
-              </div>
-            )}
+
           </div>
         ) : (
           /* Carousel Display Mode */
@@ -299,8 +286,8 @@ export function ProjectHeaderSection({
                       onClick={() => setCurrentIndex(idx)}
                       aria-label={`Go to slide ${idx + 1}`}
                       className={`h-2 rounded-full transition-all cursor-pointer ${idx === currentIndex
-                          ? "w-6 bg-emerald-400"
-                          : "w-2 bg-zinc-400/60 hover:bg-white"
+                        ? "w-6 bg-emerald-400"
+                        : "w-2 bg-zinc-400/60 hover:bg-white"
                         }`}
                     />
                   ))}
