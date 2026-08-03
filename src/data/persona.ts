@@ -321,6 +321,7 @@ export const PERSONA_DATA = {
         { label: "Communication Delays", value: "-30%" }
       ],
       coverImage: "/case-studies/scalie-cover.png",
+      heroMediaType: "slides",
       heroSlides: [
         {
           url: "/case-studies/scalie/cover1.webp",
