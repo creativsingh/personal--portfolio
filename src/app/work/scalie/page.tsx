@@ -118,6 +118,87 @@ export default function ScaliePage() {
 
 
 
+          {/* 01 / Project Overview */}
+          <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
+            <div className="space-y-1">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
+                01 / Project Overview
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+                Executive Overview
+              </h2>
+            </div>
+
+            <div className="space-y-4 text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
+              <p>
+                Many staffing organizations still rely on fragmented tools such as{" "}
+                <span className="px-2 py-0.5 rounded bg-rose-500/10 text-rose-600 dark:text-rose-400 font-mono text-sm border border-rose-500/20">spreadsheets</span>,{" "}
+                <span className="px-2 py-0.5 rounded bg-rose-500/10 text-rose-600 dark:text-rose-400 font-mono text-sm border border-rose-500/20">emails</span>,{" "}
+                <span className="px-2 py-0.5 rounded bg-rose-500/10 text-rose-600 dark:text-rose-400 font-mono text-sm border border-rose-500/20">shared documents</span>, and{" "}
+                <span className="px-2 py-0.5 rounded bg-rose-500/10 text-rose-600 dark:text-rose-400 font-mono text-sm border border-rose-500/20">phone calls</span>{" "}
+                to manage their workforce. As operations scale, these disconnected workflows create delays, reduce visibility, and make it increasingly difficult to track resources throughout the hiring lifecycle.
+              </p>
+              <p>
+                Scalie was built to replace these manual processes with a centralized enterprise platform that streamlines resource management from end to end. Instead of managing information across multiple systems, the platform brings together every stakeholder into a single operational workspace where resources, requirements, interviews, contracts, and deployments can be managed collaboratively.
+              </p>
+              <p className="font-semibold text-zinc-900 dark:text-zinc-100 pt-2">
+                The platform consists of three interconnected panels, each designed to support a different stage of the staffing workflow:
+              </p>
+            </div>
+
+            {/* Three Interconnected Panels Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              {/* Vendor Panel */}
+              <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 space-y-3 flex flex-col justify-between hover:border-emerald-500/40 transition-colors">
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                      Vendor Panel
+                    </span>
+                    <UserCheck className="w-4 h-4 text-emerald-500" />
+                  </div>
+                  <h3 className="text-base font-bold text-zinc-900 dark:text-zinc-100 pt-1">
+                    Resource Submissions &amp; Bench
+                  </h3>
+
+                </div>
+              </div>
+
+              {/* Client Panel */}
+              <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 space-y-3 flex flex-col justify-between hover:border-teal-500/40 transition-colors">
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-teal-500/10 text-teal-600 dark:text-teal-400 border border-teal-500/20">
+                      Client Panel
+                    </span>
+                    <Users className="w-4 h-4 text-teal-500" />
+                  </div>
+                  <h3 className="text-base font-bold text-zinc-900 dark:text-zinc-100 pt-1">
+                    Requirements &amp; Talent Evaluation
+                  </h3>
+
+                </div>
+              </div>
+
+              {/* Admin Panel */}
+              <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 space-y-3 flex flex-col justify-between hover:border-indigo-500/40 transition-colors">
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+                      Admin Panel
+                    </span>
+                    <Building className="w-4 h-4 text-indigo-500" />
+                  </div>
+                  <h3 className="text-base font-bold text-zinc-900 dark:text-zinc-100 pt-1">
+                    Operational Hub &amp; Governance
+                  </h3>
+
+                </div>
+              </div>
+            </div>
+          </section>
+
+
           {/* 03 / The Opportunity Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
@@ -461,12 +542,7 @@ export default function ScaliePage() {
               </div>
             </div>
 
-            {/* RESEARCH SUMMARY IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Research Summary"
-              caption="Affinity map, interview notes, or insight cards."
-              aspect="wide"
-            />
+
           </section>
 
           {/* 09 / Design Principles Section */}
@@ -1021,62 +1097,7 @@ export default function ScaliePage() {
             </div>
           </section>
 
-          {/* 14 / Designing for Enterprise Workflows Section */}
-          <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
-            <div className="space-y-1">
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                14 / Workflow Philosophy
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                Designing for Enterprise Workflows
-              </h2>
-            </div>
 
-            <div className="space-y-4 text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
-              <p>Unlike consumer products, enterprise platforms rarely revolve around individual screens.</p>
-              <p className="font-semibold text-zinc-900 dark:text-zinc-100">
-                Their success depends on how effectively information flows between people.
-              </p>
-              <p>Scalie was designed around this philosophy.</p>
-              <p>Every module supports a larger operational workflow:</p>
-            </div>
-
-            {/* End-to-End Workflow Grid */}
-            <div className="p-6 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 space-y-4">
-              <div className="text-xs font-mono text-zinc-500 uppercase tracking-widest font-semibold">
-                Complete Enterprise Lifecycle
-              </div>
-
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 font-mono text-xs text-center">
-                {[
-                  "Client Requirement",
-                  "Admin Review",
-                  "Vendor Submission",
-                  "Resource Verification",
-                  "Resume Generation",
-                  "Interview Scheduling",
-                  "Contract Creation",
-                  "Resource Deployment",
-                  "Analytics",
-                ].map((node, idx) => (
-                  <div key={node} className="p-3 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
-                    <div className="text-emerald-500 font-bold text-[10px]">0{idx + 1}</div>
-                    <div className="font-bold text-zinc-900 dark:text-zinc-100">{node}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl pt-2">
-              Rather than thinking in terms of pages, the product was designed around business processes.
-            </p>
-
-            {/* END-TO-END WORKFLOW DIAGRAM IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="End-to-End Workflow Diagram"
-              aspect="wide"
-            />
-          </section>
 
           {/* 15 / User Testing Section */}
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
@@ -1103,9 +1124,14 @@ export default function ScaliePage() {
             </div>
 
             {/* USER TESTING PHOTOS IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="User Testing Photos / Notes"
-              aspect="wide"
+            <Image
+              src="/case-studies/scalie/image17.png"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
 
             {/* Key Improvements After Testing */}
@@ -1138,11 +1164,7 @@ export default function ScaliePage() {
                 Rather than treating testing as validation, it became an opportunity to strengthen the product before implementation.
               </p>
 
-              {/* BEFORE & AFTER IMPROVEMENTS IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Before & After Improvements"
-                aspect="wide"
-              />
+
             </div>
           </section>
 
@@ -1214,11 +1236,7 @@ export default function ScaliePage() {
               </div>
             </div>
 
-            {/* RESULTS DASHBOARD IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Results Dashboard"
-              aspect="wide"
-            />
+
           </section>
 
           {/* 17 / Looking Back Section */}
