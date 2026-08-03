@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { useTheme } from "./ThemeProvider";
 import { Sun, Moon, Menu, X, ArrowUpRight } from "lucide-react";
 import { PERSONA_DATA } from "../data/persona";
@@ -19,13 +20,13 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: "About", href: "#about" },
-    { label: "Work", href: "#work" },
-    // { label: "Philosophy", href: "#philosophy" },
-    // { label: "Community", href: "#community" },
-    //  { label: "Speaking", href: "#speaking" },
-    // { label: "Music", href: "#music" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", href: "/#about" },
+    { label: "Work", href: "/#work" },
+    // { label: "Philosophy", href: "/#philosophy" },
+    // { label: "Community", href: "/#community" },
+    //  { label: "Speaking", href: "/#speaking" },
+    // { label: "Music", href: "/#music" },
+    { label: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -37,8 +38,8 @@ export function Navbar() {
     >
       <div className="max-w-4xl mx-auto px-6 flex items-center justify-between">
         {/* Brand */}
-        <a
-          href="#"
+        <Link
+          href="/"
           className="group flex items-center gap-2.5 text-zinc-900 dark:text-zinc-100 font-semibold tracking-tight text-base"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -53,18 +54,18 @@ export function Navbar() {
               {PERSONA_DATA.name}
             </span>
           </div>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors py-1"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -107,14 +108,14 @@ export function Navbar() {
         <div className="md:hidden border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0a0a0c] px-6 py-6 space-y-4">
           <div className="flex flex-col space-y-3 font-medium text-base text-zinc-800 dark:text-zinc-200">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className="py-1 hover:text-zinc-900 dark:hover:text-zinc-100"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/60 flex items-center justify-between">
