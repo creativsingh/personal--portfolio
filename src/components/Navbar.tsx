@@ -20,7 +20,7 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: "About", href: "/#about" },
+    { label: "Home", href: "/#about" },
     { label: "Work", href: "/#work" },
     // { label: "Philosophy", href: "/#philosophy" },
     // { label: "Community", href: "/#community" },
@@ -82,7 +82,7 @@ export function Navbar() {
               <Moon className="w-4 h-4 text-zinc-700" />
             )}
           </button>
-
+          {/*
           <a
             href={PERSONA_DATA.socials.pixelpeps}
             target="_blank"
@@ -91,7 +91,7 @@ export function Navbar() {
           >
             PixelPeps <ArrowUpRight className="w-3 h-3 text-zinc-400" />
           </a>
-
+*/}
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

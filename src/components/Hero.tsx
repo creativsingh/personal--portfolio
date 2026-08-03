@@ -55,7 +55,7 @@ export function Hero() {
           </a>
 
           <a
-            href="#community"
+            href="#pixelpeps"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 text-sm font-mono transition-colors"
           >
             PixelPeps Community &rarr;
