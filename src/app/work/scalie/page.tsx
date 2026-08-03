@@ -4,6 +4,7 @@ import Link from "next/link";
 import { PERSONA_DATA } from "../../../data/persona";
 import { Navbar } from "../../../components/Navbar";
 import { Footer } from "../../../components/Footer";
+import Image from "next/image";
 import { ProjectHeaderSection } from "../../../components/ProjectHeaderSection";
 import {
   ArrowLeft,
@@ -100,7 +101,7 @@ export default function ScaliePage() {
 
       <main className="flex-1 pt-28 sm:pt-32 pb-20">
         <article className="max-w-4xl mx-auto px-6 space-y-16">
-          
+
           {/* Shared Header Section (Consistent across all case studies) */}
           <ProjectHeaderSection
             project={project}
@@ -199,10 +200,14 @@ export default function ScaliePage() {
             </div>
 
             {/* HERO DASHBOARD IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Hero Dashboard"
-              caption="Large dashboard overview showing Vendor, Client and Admin ecosystem."
-              aspect="hero"
+            <Image
+              src="/case-studies/scalie/image1.webp"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
           </section>
 
@@ -242,9 +247,8 @@ export default function ScaliePage() {
                 ].map((item, idx) => (
                   <div
                     key={idx}
-                    className={`p-4 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-start gap-3 ${
-                      idx === 4 ? "sm:col-span-2 border-emerald-500/30 bg-emerald-500/5" : ""
-                    }`}
+                    className={`p-4 rounded-xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-start gap-3 ${idx === 4 ? "sm:col-span-2 border-emerald-500/30 bg-emerald-500/5" : ""
+                      }`}
                   >
                     <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <span className="text-sm font-medium text-zinc-800 dark:text-zinc-200 leading-snug">
@@ -687,9 +691,32 @@ export default function ScaliePage() {
             </div>
 
             {/* INFORMATION ARCHITECTURE DIAGRAM IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Information Architecture Diagram"
-              aspect="wide"
+            <Image
+              src="/case-studies/scalie/image2.webp"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
+            />
+            <Image
+              src="/case-studies/scalie/image3.webp"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
+            />
+            <Image
+              src="/case-studies/scalie/image4.webp"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
           </section>
 
@@ -750,17 +777,20 @@ export default function ScaliePage() {
               </p>
 
               {/* VENDOR DASHBOARD IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Vendor Dashboard"
-                aspect="wide"
+              <Image
+                src="/case-studies/scalie/image5.webp"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
             </div>
 
             {/* Requirement Management */}
             <div className="space-y-4 pt-4">
-              <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100">
-                Requirement Management
-              </h3>
+
               <p className="text-base text-zinc-600 dark:text-zinc-300 leading-relaxed">
                 Vendors can browse active client requirements, understand skill expectations, and submit suitable resources directly through the platform.
               </p>
@@ -768,11 +798,7 @@ export default function ScaliePage() {
                 The interface prioritizes clarity by presenting only the information required to make submission decisions.
               </p>
 
-              {/* REQUIREMENTS LISTING IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Requirements Listing"
-                aspect="wide"
-              />
+
             </div>
 
             {/* Resume Builder */}
@@ -791,9 +817,23 @@ export default function ScaliePage() {
               </p>
 
               {/* RESUME BUILDER IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Resume Builder"
-                aspect="wide"
+              <Image
+                src="/case-studies/scalie/image6.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
+              />
+              <Image
+                src="/case-studies/scalie/image7.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
             </div>
           </section>
@@ -849,10 +889,14 @@ export default function ScaliePage() {
               </p>
 
               {/* CLIENT REQUIREMENT FLOW IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Client Requirement Flow"
-                caption="Multi-step requirement submission screens."
-                aspect="wide"
+              <Image
+                src="/case-studies/scalie/image9.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
 
               <div className="p-5 rounded-2xl bg-emerald-500/5 border border-emerald-500/10 space-y-1.5">
@@ -878,9 +922,14 @@ export default function ScaliePage() {
               </p>
 
               {/* REQUIREMENT SUBMITTED IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Requirement Submitted"
-                aspect="wide"
+              <Image
+                src="/case-studies/scalie/image10.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
             </div>
           </section>
@@ -908,9 +957,14 @@ export default function ScaliePage() {
             </div>
 
             {/* ADMIN DASHBOARD IMAGE PLACEHOLDER */}
-            <ImagePlaceholder
-              title="Admin Dashboard"
-              aspect="wide"
+            <Image
+              src="/case-studies/scalie/image11.avif"
+              alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+              width={1600}
+              height={900}
+
+              className="object-contain rounded-2xl"
             />
 
             {/* Operational Visibility */}
@@ -976,9 +1030,14 @@ export default function ScaliePage() {
               </p>
 
               {/* RESOURCE MANAGEMENT TABLE IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Resource Management Table"
-                aspect="wide"
+              <Image
+                src="/case-studies/scalie/image13.png"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
 
               <div className="p-5 rounded-2xl bg-emerald-500/5 border border-emerald-500/10 space-y-1.5">
@@ -1007,9 +1066,14 @@ export default function ScaliePage() {
               </p>
 
               {/* CONTRACT CREATION IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Contract Creation"
-                aspect="wide"
+              <Image
+                src="/case-studies/scalie/image14.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
 
               <div className="p-5 rounded-2xl bg-emerald-500/5 border border-emerald-500/10 space-y-1.5">
@@ -1048,9 +1112,14 @@ export default function ScaliePage() {
               </p>
 
               {/* INTERVIEW SCHEDULING IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Interview Scheduling"
-                aspect="wide"
+              <Image
+                src="/case-studies/scalie/image15.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
 
               <div className="p-5 rounded-2xl bg-emerald-500/5 border border-emerald-500/10 space-y-1.5">
@@ -1088,9 +1157,14 @@ export default function ScaliePage() {
               </p>
 
               {/* LEAD MANAGEMENT DASHBOARD IMAGE PLACEHOLDER */}
-              <ImagePlaceholder
-                title="Lead Management Dashboard"
-                aspect="wide"
+              <Image
+                src="/case-studies/scalie/image16.avif"
+                alt="Hero mockup showing Home Dashboard + Wellness Score"
+
+                width={1600}
+                height={900}
+
+                className="object-contain rounded-2xl"
               />
             </div>
           </section>

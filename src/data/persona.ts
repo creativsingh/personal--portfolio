@@ -399,18 +399,17 @@ export const PERSONA_DATA = {
       coverImage: "/case-studies/scalie-cover.png",
       heroSlides: [
         {
-          url: "/case-studies/scalie-cover.png",
+          url: "/case-studies/scalie/cover1.webp",
           title: "Enterprise Resource Management Workspace",
           caption: "Centralizing bench resource tracking, vendor submissions, and client requirements into one workspace."
         },
         {
-          title: "Standardized Vendor Candidate Submission & Resume Builder",
-          caption: "Eliminating inconsistent candidate profiles with automated type-safe resume generation."
-        },
-        {
-          title: "Admin Control Panel & Resource Management Table",
-          caption: "High-density data tables with sorting, filtering, and rapid status verification."
+          url: "/case-studies/scalie/cover2.avif",
+          title: "Enterprise Resource Management Workspace",
+          caption: "Centralizing bench resource tracking, vendor submissions, and client requirements into one workspace."
         }
+
+
       ],
       summary: "Scalie centralizes fragmented hiring, bench resource allocation, vendor submissions, interview scheduling, and contract management into one enterprise operational workspace.",
       problem: "Staffing organizations rely on fragmented Excel spreadsheets, email threads, and phone calls, leaving recruiters struggling to find candidates and managers lacking visibility into available resources.",
