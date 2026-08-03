@@ -251,7 +251,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                06 / Responsibilities
+                02 / Responsibilities
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 My Role
@@ -302,7 +302,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                07 / Success Criteria
+                03 / Success Criteria
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Defining Success
@@ -349,7 +349,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                08 / Product Documentation
+                04 / Product Documentation
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Understanding the Product
@@ -400,7 +400,7 @@ export default function PranaAiPage() {
           <section className="space-y-8 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                09 / User Research
+                05 / User Research
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Understanding Users
@@ -481,7 +481,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                10 / Key Inquiries
+                06 / Key Inquiries
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Research Questions
@@ -522,7 +522,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                11 / Core Principles
+                07 / Core Principles
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Design Principles
@@ -590,7 +590,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                12 / Journey Map
+                08 / Journey Map
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Experience Overview
@@ -644,7 +644,7 @@ export default function PranaAiPage() {
           <section className="space-y-8 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                13 / Feature 01
+                09 / Feature 01
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 AI Wellness Assessment
@@ -835,7 +835,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                14 / Feature 02
+                10 / Feature 02
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 AI Wellness Score
@@ -896,7 +896,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                15 / Feature 03
+                11 / Feature 03
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Expert Consultations
@@ -962,7 +962,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                16 / Feature 04
+                12 / Feature 04
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 AI Generated Health Plans
@@ -1016,7 +1016,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                17 / Feature 05
+                13 / Feature 05
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Routine Tracking
@@ -1077,7 +1077,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest block font-semibold">
-                18 / Visual Identity
+                14 / Visual Identity
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Brand Identity
@@ -1134,7 +1134,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
-                19 / Outcomes
+                15 / Outcomes
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Results
@@ -1178,7 +1178,7 @@ export default function PranaAiPage() {
           <section className="space-y-6 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <div className="space-y-1">
               <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block font-semibold">
-                20 / Retrospective
+                16 / Retrospective
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                 Reflection
