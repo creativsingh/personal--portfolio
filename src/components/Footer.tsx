@@ -28,7 +28,7 @@ export function Footer() {
             Built with Next.js, Tailwind CSS &amp; TypeScript.
           </div>
           <div className="text-[11px] text-zinc-400">
-            © {new Date().getFullYear()} {PERSONA_DATA.name}. All rights reserved.
+            © {new Date().getFullYear()} {PERSONA_DATA.name}
           </div>
         </div>
 

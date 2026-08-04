@@ -85,7 +85,7 @@ export interface Track {
 export const PERSONA_DATA = {
   name: "Ajeet Singh",
   brand: "CreativSingh",
-  role: "Product Designer & Community Builder",
+  role: "Product Designer & Design Engineer",
   subheading: "Evolving toward Design Engineering",
   location: "Delhi, India",
   website: "https://creativsingh.com",

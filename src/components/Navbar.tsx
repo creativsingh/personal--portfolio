@@ -23,10 +23,7 @@ export function Navbar() {
     { label: "Home", href: "/#about" },
     { label: "Work", href: "/work" },
     { label: "Talks", href: "/speaking" },
-    // { label: "Philosophy", href: "/#philosophy" },
-    // { label: "Community", href: "/#community" },
-    //  { label: "Speaking", href: "/#speaking" },
-    // { label: "Music", href: "/#music" },
+    // { label: "Resume", href: "/resume" },
     { label: "Contact", href: "/#contact" },
   ];
 
