@@ -1,0 +1,38 @@
+# Ajeet Singh (CreativSingh) — Portfolio & System Overview
+
+> Product Designer, Design Engineer & Community Builder based in Delhi, India.
+
+## Summary
+
+Ajeet Singh (CreativSingh) is a Lead Product Designer & Design Engineer who designs & builds digital products, leads design communities, and mentors designers across India.
+
+- **Name**: Ajeet Singh
+- **Brand**: CreativSingh
+- **Location**: Delhi, India
+- **Website**: https://creativsingh.com
+- **Role**: Lead Product Designer & Design Engineer
+- **Community**: Founder at PixelPeps (2,000+ members)
+
+## Core Capabilities & Specializations
+
+- **Product Design**: Enterprise SaaS, AI-assisted workflows, multi-sided platforms, complex system design, and information architecture.
+- **Design Engineering**: Translating UI/UX design systems into production-ready React, Next.js, and TypeScript frontend components.
+- **Community Leadership**: Building & scaling design communities, facilitating workshops, and mentoring designers.
+
+## Selected Case Studies & Work
+
+- [Scalie](https://creativsingh.com/work/scalie): Enterprise Resource Management Platform replacing spreadsheet-driven operations with a centralized workspace across Vendor, Client, and Admin panels.
+- [Commudle](https://creativsingh.com/work/commudle): All-in-one community management and tech event hosting platform serving 120K+ event attendees.
+- [Prana AI](https://creativsingh.com/work/prana-ai): AI-powered health & wellness platform transforming biometric telemetry data into personalized daily action guidance.
+- [Hunger Express](https://creativsingh.com/work/hunger-express): Multi-sided food delivery ecosystem for the Nigerian market spanning Customer, Delivery Partner, and Vendor mobile apps.
+- [Genesis AI](https://creativsingh.com/work/genesis-ai): Enterprise CPQ (Configure, Price, Quote) AI-assisted rule configurator.
+
+## Community & Speaking
+
+- [PixelPeps Community](https://creativsingh.com/pixelpeps): Design community focused on peer crits, mentorship, design systems, and workshops.
+- [Public Speaking & Talks](https://creativsingh.com/speaking): 20+ talks and workshops delivered across India on Product Design, UI/UX, and Design Engineering.
+
+## Core Tech & Tools Stack
+
+- **Design**: Figma, Miro, Lottie, Adobe Creative Suite, Design Systems, Wireframing.
+- **Frontend**: React, Next.js, TypeScript, Tailwind CSS, HTML5, CSS3, Git.
