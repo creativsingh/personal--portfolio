@@ -32,7 +32,7 @@ export function Hero() {
 
         {/* Hero Subtitle / Editorial Bio */}
         <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-300 max-w-3xl leading-relaxed mb-8">
-          Hi, I&apos;m <span className="font-semibold text-zinc-900 dark:text-zinc-100">{PERSONA_DATA.name}</span> ({PERSONA_DATA.brand}) <span className="font-mono text-sm px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 font-medium">Design Engineer</span> based in Delhi, India. I design &amp; build products that look good, work beautifully, and scale effortlessly.
+          Hi, I&apos;m <span className="font-semibold text-zinc-900 dark:text-zinc-100">{PERSONA_DATA.name}</span> ({PERSONA_DATA.brand}) <span className="font-mono text-sm px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 font-medium">Design Engineer</span>living between Figma and Antigravity. I design &amp; build products that look good, work beautifully, and scale effortlessly.
         </p>
 
         {/* Primary CTA Buttons */}

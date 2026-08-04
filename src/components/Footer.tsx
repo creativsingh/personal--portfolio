@@ -12,14 +12,14 @@ export function Footer() {
   return (
     <footer className="py-12 bg-white dark:bg-[#0a0a0c] text-zinc-600 dark:text-zinc-400 font-sans">
       <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-        
+
         <div className="space-y-1 text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start gap-2 font-bold text-zinc-900 dark:text-zinc-100">
             <span>{PERSONA_DATA.brand}</span>
             <span className="text-xs font-mono text-zinc-400 font-normal">({PERSONA_DATA.name})</span>
           </div>
           <p className="text-xs font-mono text-zinc-500">
-            Product Designer &amp; Community Lead • Delhi, India
+            Product Designer &amp; Design Engineer
           </p>
         </div>
 

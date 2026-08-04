@@ -155,7 +155,7 @@ export function Contact() {
                     </>
                   ) : (
                     <>
-                      <Copy className="w-3.5 h-3.5" /> Copy Email
+                      <Copy className="w-3.5 h-3.5" />
                     </>
                   )}
                 </button>
