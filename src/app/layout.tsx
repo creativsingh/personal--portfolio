@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${PERSONA_DATA.brand} — Product Designer & Design Engineer`,
     description: PERSONA_DATA.oneLiner,
-    url: "/OG.png",
+    url: "https://creativsingh.com/OG.png",
     siteName: PERSONA_DATA.brand,
     locale: "en_US",
     type: "website",
