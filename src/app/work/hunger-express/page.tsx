@@ -315,7 +315,7 @@ export default function HungerExpressPage() {
 
             {/* CURRENT CUSTOMER APP MOCKUP IMAGE PLACEHOLDER */}
             <Image
-              src="/case-studies/hungerexpress/Image1.avif"
+              src="/case-studies/hungerexpress/image1.avif"
               alt="Hero mockup showing Home Dashboard + Wellness Score"
 
               width={1600}
@@ -380,7 +380,7 @@ export default function HungerExpressPage() {
 
             {/* UBER EATS COMPARISON IMAGE PLACEHOLDER */}
             <Image
-              src="/case-studies/hungerexpress/Image2.avif"
+              src="/case-studies/hungerexpress/image2.avif"
               alt="Hero mockup showing Home Dashboard + Wellness Score"
 
               width={1600}
@@ -389,7 +389,7 @@ export default function HungerExpressPage() {
               className="object-contain rounded-2xl"
             />
             <Image
-              src="/case-studies/hungerexpress/Image3.avif"
+              src="/case-studies/hungerexpress/image3.avif"
               alt="Hero mockup showing Home Dashboard + Wellness Score"
 
               width={1600}
@@ -481,7 +481,7 @@ export default function HungerExpressPage() {
 
               {/* RESTAURANT DISCOVERY IMAGE PLACEHOLDER */}
               <Image
-                src="/case-studies/hungerexpress/Image4.avif"
+                src="/case-studies/hungerexpress/image4.avif"
                 alt="Hero mockup showing Home Dashboard + Wellness Score"
 
                 width={1600}
@@ -490,7 +490,7 @@ export default function HungerExpressPage() {
                 className="object-contain rounded-2xl"
               />
               <Image
-                src="/case-studies/hungerexpress/Image6.avif"
+                src="/case-studies/hungerexpress/image6.avif"
                 alt="Hero mockup showing Home Dashboard + Wellness Score"
 
                 width={1600}
@@ -531,7 +531,7 @@ export default function HungerExpressPage() {
 
               {/* PRODUCT DETAIL IMAGE PLACEHOLDER */}
               <Image
-                src="/case-studies/hungerexpress/Image8.avif"
+                src="/case-studies/hungerexpress/image8.avif"
                 alt="Hero mockup showing Home Dashboard + Wellness Score"
 
                 width={1600}
@@ -570,7 +570,7 @@ export default function HungerExpressPage() {
 
               {/* CHECKOUT FLOW IMAGE PLACEHOLDER */}
               <Image
-                src="/case-studies/hungerexpress/Image5.avif"
+                src="/case-studies/hungerexpress/image5.avif"
                 alt="Hero mockup showing Home Dashboard + Wellness Score"
 
                 width={1600}
@@ -613,7 +613,7 @@ export default function HungerExpressPage() {
 
               {/* ORDER TRACKING FLOW IMAGE PLACEHOLDER */}
               <Image
-                src="/case-studies/hungerexpress/Image9.avif"
+                src="/case-studies/hungerexpress/image9.avif"
                 alt="Hero mockup showing Home Dashboard + Wellness Score"
 
                 width={1600}
@@ -637,7 +637,7 @@ export default function HungerExpressPage() {
 
               {/* DELIVERY FAILURE IMAGE PLACEHOLDER */}
               <Image
-                src="/case-studies/hungerexpress/Image10.avif"
+                src="/case-studies/hungerexpress/image10.avif"
                 alt="Hero mockup showing Home Dashboard + Wellness Score"
 
                 width={1600}
@@ -661,7 +661,7 @@ export default function HungerExpressPage() {
 
               {/* DELIVERY / PICKUP TOGGLE IMAGE PLACEHOLDER */}
               <Image
-                src="/case-studies/hungerexpress/Image11.avif"
+                src="/case-studies/hungerexpress/image11.avif"
                 alt="Hero mockup showing Home Dashboard + Wellness Score"
 
                 width={1600}
@@ -670,7 +670,7 @@ export default function HungerExpressPage() {
                 className="object-contain rounded-2xl"
               />
               <Image
-                src="/case-studies/hungerexpress/Image12.avif"
+                src="/case-studies/hungerexpress/image12.avif"
                 alt="Hero mockup showing Home Dashboard + Wellness Score"
 
                 width={1600}
@@ -694,7 +694,7 @@ export default function HungerExpressPage() {
 
               {/* ORDER STATUS LIBRARY IMAGE PLACEHOLDER */}
               <Image
-                src="/case-studies/hungerexpress/Image13.avif"
+                src="/case-studies/hungerexpress/image13.avif"
                 alt="Hero mockup showing Home Dashboard + Wellness Score"
 
                 width={1600}
@@ -728,7 +728,7 @@ export default function HungerExpressPage() {
 
             {/* DELIVERY PARTNER HERO IMAGE PLACEHOLDER */}
             <Image
-              src="/case-studies/hungerexpress/Image15.avif"
+              src="/case-studies/hungerexpress/image15.avif"
               alt="Hero mockup showing Home Dashboard + Wellness Score"
 
               width={1600}
@@ -771,7 +771,7 @@ export default function HungerExpressPage() {
 
             {/* DELIVERY ACCEPTANCE FLOW IMAGE PLACEHOLDER */}
             <Image
-              src="/case-studies/hungerexpress/Image16.avif"
+              src="/case-studies/hungerexpress/image16.avif"
               alt="Hero mockup showing Home Dashboard + Wellness Score"
 
               width={1600}
@@ -791,7 +791,7 @@ export default function HungerExpressPage() {
 
               {/* ONLINE / OFFLINE STATES IMAGE PLACEHOLDER */}
               <Image
-                src="/case-studies/hungerexpress/Image17.avif"
+                src="/case-studies/hungerexpress/image17.avif"
                 alt="Hero mockup showing Home Dashboard + Wellness Score"
 
                 width={1600}
@@ -821,7 +821,7 @@ export default function HungerExpressPage() {
 
             {/* VENDOR APP HERO IMAGE PLACEHOLDER */}
             <Image
-              src="/case-studies/hungerexpress/Image18.avif"
+              src="/case-studies/hungerexpress/image18.avif"
               alt="Hero mockup showing Home Dashboard + Wellness Score"
 
               width={1600}
@@ -863,7 +863,7 @@ export default function HungerExpressPage() {
 
             {/* VENDOR ORDER FLOW IMAGE PLACEHOLDER */}
             <Image
-              src="/case-studies/hungerexpress/Image19.png"
+              src="/case-studies/hungerexpress/image19.png"
               alt="Hero mockup showing Home Dashboard + Wellness Score"
 
               width={1600}

@@ -257,7 +257,7 @@ export default function ScaliePage() {
             {/* EXISTING MANUAL PROCESS IMAGE PLACEHOLDER */}
             <Image
               src="/case-studies/scalie/image19.png"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Legacy manual staffing workflow relying on disconnected spreadsheets and emails"
 
               width={1600}
               height={900}
@@ -478,7 +478,7 @@ export default function ScaliePage() {
             </div>
             <Image
               src="/case-studies/scalie/image20.png"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Scalie systemic dependencies map connecting Vendors, Administrators, and Clients"
 
               width={1600}
               height={900}
@@ -639,7 +639,7 @@ export default function ScaliePage() {
             {/* INFORMATION ARCHITECTURE DIAGRAM IMAGE PLACEHOLDER */}
             <Image
               src="/case-studies/scalie/image2.webp"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Scalie platform information architecture and data entity relationships"
 
               width={1600}
               height={900}
@@ -648,7 +648,7 @@ export default function ScaliePage() {
             />
             <Image
               src="/case-studies/scalie/image3.webp"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Scalie navigation structure and user mental model mapping"
 
               width={1600}
               height={900}
@@ -657,7 +657,7 @@ export default function ScaliePage() {
             />
             <Image
               src="/case-studies/scalie/image4.webp"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Scalie cross-panel operational workflow diagram"
 
               width={1600}
               height={900}
@@ -725,7 +725,7 @@ export default function ScaliePage() {
               {/* VENDOR DASHBOARD IMAGE PLACEHOLDER */}
               <Image
                 src="/case-studies/scalie/image5.webp"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Scalie vendor panel dashboard overview showing candidate submission pipelines"
 
                 width={1600}
                 height={900}
@@ -765,7 +765,7 @@ export default function ScaliePage() {
               {/* RESUME BUILDER IMAGE PLACEHOLDER */}
               <Image
                 src="/case-studies/scalie/image6.avif"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Scalie standardized resume builder interface for staffing partners"
 
                 width={1600}
                 height={900}
@@ -774,7 +774,7 @@ export default function ScaliePage() {
               />
               <Image
                 src="/case-studies/scalie/image7.avif"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Scalie candidate profile generator and skill tag formatting tool"
 
                 width={1600}
                 height={900}
@@ -837,7 +837,7 @@ export default function ScaliePage() {
               {/* CLIENT REQUIREMENT FLOW IMAGE PLACEHOLDER */}
               <Image
                 src="/case-studies/scalie/image9.avif"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Scalie client panel multi-step requirement creation wizard"
 
                 width={1600}
                 height={900}
@@ -870,7 +870,7 @@ export default function ScaliePage() {
               {/* REQUIREMENT SUBMITTED IMAGE PLACEHOLDER */}
               <Image
                 src="/case-studies/scalie/image10.avif"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Scalie client requirement submission confirmation and available bench preview"
 
                 width={1600}
                 height={900}
@@ -905,7 +905,7 @@ export default function ScaliePage() {
             {/* ADMIN DASHBOARD IMAGE PLACEHOLDER */}
             <Image
               src="/case-studies/scalie/image11.avif"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Scalie admin control center dashboard overview showing enterprise operational metrics"
 
               width={1600}
               height={900}
@@ -972,7 +972,7 @@ export default function ScaliePage() {
               {/* RESOURCE MANAGEMENT TABLE IMAGE PLACEHOLDER */}
               <Image
                 src="/case-studies/scalie/image13.png"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Scalie admin resource management data table with filtering and status controls"
 
                 width={1600}
                 height={900}
@@ -1008,7 +1008,7 @@ export default function ScaliePage() {
               {/* CONTRACT CREATION IMAGE PLACEHOLDER */}
               <Image
                 src="/case-studies/scalie/image14.avif"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Scalie contract management and legal documentation generation workflow"
 
                 width={1600}
                 height={900}
@@ -1054,7 +1054,7 @@ export default function ScaliePage() {
               {/* INTERVIEW SCHEDULING IMAGE PLACEHOLDER */}
               <Image
                 src="/case-studies/scalie/image15.avif"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Scalie interview scheduling module with calendar integration and status tracking"
 
                 width={1600}
                 height={900}
@@ -1099,7 +1099,7 @@ export default function ScaliePage() {
               {/* LEAD MANAGEMENT DASHBOARD IMAGE PLACEHOLDER */}
               <Image
                 src="/case-studies/scalie/image16.avif"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Scalie lead management dashboard tracking client hiring requests"
 
                 width={1600}
                 height={900}
@@ -1138,7 +1138,7 @@ export default function ScaliePage() {
             {/* USER TESTING PHOTOS IMAGE PLACEHOLDER */}
             <Image
               src="/case-studies/scalie/image17.png"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Scalie user testing and prototype validation session photos"
 
               width={1600}
               height={900}

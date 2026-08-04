@@ -235,10 +235,10 @@ export const PERSONA_DATA = {
         { label: "Production Screens", value: "100+" },
         { label: "Conversion Rate", value: "10%" }
       ],
-      coverImage: "/case-studies/prana AI/prana cover01.avif",
+      coverImage: "/case-studies/Prana AI/prana cover01.avif",
       heroSlides: [
         {
-          url: "/case-studies/prana AI/prana cover01.avif",
+          url: "/case-studies/Prana AI/prana cover01.avif",
           title: "Mobile App Ecosystem — Facial Scan & Health Score",
           caption: "Transforming complex telemetry data into single-action daily wellness guidance."
         },

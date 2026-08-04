@@ -140,7 +140,7 @@ export default function PranaAiPage() {
           {/* HERO IMAGE PLACEHOLDER */}
           <Image
             src="/case-studies/Prana AI/Image1.avif"
-            alt="Hero mockup showing Home Dashboard + Wellness Score"
+            alt="Prana AI mobile application hero showcase highlighting facial scanning and wellness score"
 
             width={1600}
             height={900}
@@ -703,7 +703,7 @@ export default function PranaAiPage() {
             {/* ASSESSMENT JOURNEY IMAGE PLACEHOLDER */}
             <Image
               src="/case-studies/Prana AI/Image5.avif"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Prana AI step-by-step health assessment onboarding journey"
 
               width={1600}
               height={900}
@@ -751,7 +751,7 @@ export default function PranaAiPage() {
               {/* FACE SCAN ONBOARDING IMAGE PLACEHOLDER */}
               <Image
                 src="/case-studies/Prana AI/Image6.avif"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Prana AI facial scan privacy consent and camera permission screen"
 
                 width={1600}
                 height={900}
@@ -760,7 +760,7 @@ export default function PranaAiPage() {
               />
               <Image
                 src="/case-studies/Prana AI/Image7.avif"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Prana AI live facial scan guidance and scanning interface"
 
                 width={1600}
                 height={900}
@@ -806,7 +806,7 @@ export default function PranaAiPage() {
               {/* ERROR STATES IMAGE PLACEHOLDER */}
               <Image
                 src="/case-studies/Prana AI/Image8.avif"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Prana AI facial scan error handling and retry guidance screens"
 
                 width={1600}
                 height={900}
@@ -822,7 +822,7 @@ export default function PranaAiPage() {
               </p>
               <Image
                 src="/case-studies/Prana AI/Image9.avif"
-                alt="Hero mockup showing Home Dashboard + Wellness Score"
+                alt="Prana AI user control and cancellation flow screens"
 
                 width={1600}
                 height={900}
@@ -884,7 +884,7 @@ export default function PranaAiPage() {
             {/* WELLNESS SCORE SCREENS IMAGE PLACEHOLDER */}
             <Image
               src="/case-studies/Prana AI/Image10.avif"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Prana AI health breakdown and AI wellness score metrics dashboard"
 
               width={1600}
               height={900}
@@ -940,7 +940,7 @@ export default function PranaAiPage() {
             {/* CONSULTATION DISCOVERY + BOOKING FLOW IMAGE PLACEHOLDERS */}
             <Image
               src="/case-studies/Prana AI/Image11.avif"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Prana AI expert health coach discovery and smart filtering list"
 
               width={1600}
               height={900}
@@ -950,7 +950,7 @@ export default function PranaAiPage() {
 
             <Image
               src="/case-studies/Prana AI/Image12.avif"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Prana AI two-step expert consultation booking and calendar integration"
 
               width={1600}
               height={900}
@@ -1004,7 +1004,7 @@ export default function PranaAiPage() {
             {/* ROUTINE RECOMMENDATION IMAGE PLACEHOLDER */}
             <Image
               src="/case-studies/Prana AI/Image13.avif"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Prana AI personalized AI health routine recommendations"
 
               width={1600}
               height={900}
@@ -1055,7 +1055,7 @@ export default function PranaAiPage() {
             {/* ROUTINE TRACKER & REPORTS IMAGE PLACEHOLDERS */}
             <Image
               src="/case-studies/Prana AI/Image14.avif"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Prana AI daily routine habit tracker and completion logs"
 
               width={1600}
               height={900}
@@ -1065,7 +1065,7 @@ export default function PranaAiPage() {
 
             <Image
               src="/case-studies/Prana AI/Image15.avif"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Prana AI weekly wellness reports and mood trend visualizations"
 
               width={1600}
               height={900}
@@ -1122,7 +1122,7 @@ export default function PranaAiPage() {
             {/* BRANDING IMAGE PLACEHOLDER */}
             <Image
               src="/case-studies/Prana AI/Image16.avif"
-              alt="Hero mockup showing Home Dashboard + Wellness Score"
+              alt="Prana AI brand identity system showing logo design, color palette, and typography"
 
               width={1600}
               height={900}
