@@ -51,15 +51,17 @@ export default function ResumePage() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex items-center gap-3">
-              <a
-                href={resumePdfPath}
-                download="Ajeet_Singh_Resume.pdf"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-500 text-zinc-950 font-bold hover:bg-emerald-400 transition-all shadow-md text-xs font-mono"
-              >
-                <Download className="w-4 h-4" />
-                Download PDF
-              </a>
+            <div className="flex flex-wrap items-center gap-3">
+              <div className="border-comet-btn">
+                <a
+                  href={resumePdfPath}
+                  download="Ajeet_Singh_Resume.pdf"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-[calc(0.65rem-2px)] bg-linear-to-r from-[#89FFB4] to-[#80FFC6] text-zinc-950 font-bold text-xs font-mono hover:brightness-105 transition-all shadow-sm z-10"
+                >
+                  <Download className="w-4 h-4 text-zinc-950" />
+                  Download PDF
+                </a>
+              </div>
 
               <a
                 href={resumePdfPath}
