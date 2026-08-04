@@ -55,6 +55,7 @@ export const metadata: Metadata = {
     title: `${PERSONA_DATA.brand} — Product Designer & Design Engineer`,
     description: PERSONA_DATA.oneLiner,
     creator: "@creativsingh",
+    images: ["/OG.png"],
   },
   robots: {
     index: true,
