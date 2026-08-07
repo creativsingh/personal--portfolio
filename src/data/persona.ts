@@ -365,7 +365,7 @@ export const PERSONA_DATA = {
     stats: [
       { label: "Community Members", value: "8000+" },
       { label: "Meetups & Workshops", value: "10+" },
-      { label: "Designers Mentored", value: "200+" }
+      { label: "Designers Mentored", value: "2000+" }
     ]
   },
 

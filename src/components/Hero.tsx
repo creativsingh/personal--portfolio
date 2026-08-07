@@ -73,7 +73,7 @@ export function Hero() {
             <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Shipped Products</div>
           </div>
           <div className="space-y-1">
-            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">2000+</div>
+            <div className="text-2xl font-bold font-mono text-zinc-900 dark:text-zinc-100">50+</div>
             <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">People Mentored</div>
           </div>
           <div className="space-y-1">
