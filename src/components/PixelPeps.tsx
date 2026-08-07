@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import { PERSONA_DATA } from "../data/persona";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { PERSONA_DATA } from "../data/persona";
-import { ArrowUp, Heart } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 
 export function Footer() {
   const scrollToTop = () => {

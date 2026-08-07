@@ -5,7 +5,7 @@ import { PERSONA_DATA } from "../../../data/persona";
 import { Navbar } from "../../../components/Navbar";
 import { Footer } from "../../../components/Footer";
 import { ProjectHeaderSection } from "../../../components/ProjectHeaderSection";
-import { ArrowRight, Image as ImageIcon, Sparkles, CheckCircle2, Target, TrendingUp, Compass, Heart, Users } from "lucide-react";
+import { ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function CommudlePage() {
           />
 
           {/* Featured Core Dilemma Quote */}
-          <div className="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-transparent border-l-4 border-emerald-500 bg-zinc-50 dark:bg-[#121215]">
+          <div className="p-5 sm:p-6 rounded-2xl bg-linear-to-r from-emerald-500/10 via-teal-500/5 to-transparent border-l-4 border-emerald-500 bg-zinc-50 dark:bg-[#121215]">
             <p className="text-base sm:text-lg italic font-medium text-emerald-950 dark:text-emerald-200">
               &ldquo;Because users couldn&apos;t immediately understand the platform&apos;s value, many left before exploring communities or participating. The interface communicated information—it didn&apos;t communicate excitement.&rdquo;
             </p>
@@ -688,7 +688,7 @@ export default function CommudlePage() {
           <section className="pt-12 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <Link
               href={`/work/${nextProject.id}`}
-              className="group p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-center justify-between hover:border-zinc-300 dark:hover:border-zinc-700 transition-all block"
+              className="group p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-center justify-between hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
             >
               <div className="space-y-1">
                 <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest">

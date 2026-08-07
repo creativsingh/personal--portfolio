@@ -7,30 +7,13 @@ import { Footer } from "../../../components/Footer";
 import Image from "next/image";
 import { ProjectHeaderSection } from "../../../components/ProjectHeaderSection";
 import {
-  ArrowLeft,
   ArrowRight,
-  User,
-  Clock,
-  Monitor,
   Users,
   CheckCircle2,
-  Sparkles,
-  ShieldCheck,
-  TrendingUp,
-  Target,
-  FileText,
-  Activity,
   Briefcase,
   Building,
   UserCheck,
-  Compass,
-  Layers,
   HelpCircle,
-  Image as ImageIcon,
-  Check,
-  Zap,
-  TrendingDown,
-  Layout,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -38,58 +21,6 @@ export const metadata: Metadata = {
   description:
     "Designing an Enterprise Resource Management Platform to Replace Spreadsheet-Driven Operations.",
 };
-
-interface ImagePlaceholderProps {
-  title: string;
-  caption?: string;
-  aspect?: "hero" | "wide" | "standard" | "tall";
-}
-
-function ImagePlaceholder({ title, caption, aspect = "standard" }: ImagePlaceholderProps) {
-  const aspectStyles = {
-    hero: "min-h-[320px] sm:min-h-[420px]",
-    wide: "min-h-[260px] sm:min-h-[340px]",
-    standard: "min-h-[220px] sm:min-h-[280px]",
-    tall: "min-h-[300px] sm:min-h-[380px]",
-  };
-
-  return (
-    <figure className="my-8 space-y-3">
-      <div
-        className={`relative w-full rounded-2xl border border-dashed border-emerald-500/30 dark:border-emerald-500/25 bg-gradient-to-b from-emerald-950/10 via-zinc-900/60 to-zinc-950/80 p-6 sm:p-8 flex flex-col items-center justify-center text-center overflow-hidden group shadow-lg ${aspectStyles[aspect]}`}
-      >
-        {/* Subtle Decorative Grid Pattern & Glow Background */}
-        <div className="absolute inset-0 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:24px_24px] opacity-15 pointer-events-none" />
-        <div className="absolute -top-24 -right-24 w-60 h-60 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-emerald-500/20 transition-all duration-500" />
-        <div className="absolute -bottom-24 -left-24 w-60 h-60 bg-teal-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-teal-500/20 transition-all duration-500" />
-
-        {/* Content Container */}
-        <div className="relative z-10 space-y-3 max-w-lg mx-auto flex flex-col items-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold tracking-wider text-emerald-400 bg-emerald-950/80 border border-emerald-500/40 shadow-sm">
-            <ImageIcon className="w-3.5 h-3.5 text-emerald-400" />
-            [IMAGE PLACEHOLDER]
-          </div>
-
-          <h4 className="text-base sm:text-lg font-semibold text-zinc-100 tracking-tight">
-            {title}
-          </h4>
-
-          {caption && (
-            <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed font-sans max-w-md italic">
-              {caption}
-            </p>
-          )}
-
-          {/* Wireframe Mockup Visual Accents */}
-          <div className="pt-2 flex items-center gap-2 text-[11px] font-mono text-zinc-500 uppercase tracking-widest">
-            <Layers className="w-3.5 h-3.5 text-emerald-500/70" />
-            Visual Design Slot • Enterprise Web App
-          </div>
-        </div>
-      </div>
-    </figure>
-  );
-}
 
 export default function ScaliePage() {
   const currentIndex = PERSONA_DATA.projects.findIndex((p) => p.id === "scalie");
@@ -110,8 +41,8 @@ export default function ScaliePage() {
             totalProjects={PERSONA_DATA.projects.length}
           />
 
-          {/* Featured Core Dilemma Quote */}
-          <div className="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-indigo-500/5 to-transparent border-l-4 border-emerald-500 bg-zinc-50 dark:bg-[#121215]">
+          {/* Featured Dilemma Quote */}
+          <div className="p-5 sm:p-6 rounded-2xl bg-linear-to-r from-emerald-500/10 via-indigo-500/5 to-transparent border-l-4 border-emerald-500 bg-zinc-50 dark:bg-[#121215]">
             <p className="text-base sm:text-lg italic font-medium text-emerald-950 dark:text-emerald-200">
               &ldquo;How do you transform fragmented hiring, resource allocation, and vendor management workflows into one centralized platform that serves multiple stakeholders?&rdquo;
             </p>
@@ -1394,7 +1325,7 @@ export default function ScaliePage() {
           <section className="pt-12 border-t border-zinc-200/80 dark:border-zinc-800/80">
             <Link
               href={`/work/${nextProject.id}`}
-              className="group p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-center justify-between hover:border-zinc-300 dark:hover:border-zinc-700 transition-all block"
+              className="group p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 flex items-center justify-between hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
             >
               <div className="space-y-1">
                 <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest">

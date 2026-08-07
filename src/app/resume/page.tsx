@@ -11,7 +11,6 @@ import {
   Copy,
   Check,
   FileText,
-  Sparkles,
 } from "lucide-react";
 
 export default function ResumePage() {
@@ -27,7 +26,7 @@ export default function ResumePage() {
   return (
     <div className="relative min-h-screen flex flex-col bg-white dark:bg-[#0a0a0c] text-zinc-900 dark:text-zinc-100 font-sans transition-colors duration-200 overflow-x-hidden">
       {/* Background Ambient Gradient & Dot Grid */}
-      <div className="fixed inset-0 bg-gradient-to-br from-emerald-500/[0.06] via-transparent to-teal-500/[0.04] dark:from-emerald-950/30 dark:via-[#0a0a0c] dark:to-teal-950/20 pointer-events-none z-0" />
+      <div className="fixed inset-0 bg-linear-to-br from-emerald-500/6 via-transparent to-teal-500/4 dark:from-emerald-950/30 dark:via-[#0a0a0c] dark:to-teal-950/20 pointer-events-none z-0" />
 
 
       <div className="relative z-10 flex flex-col min-h-screen">
@@ -84,11 +83,11 @@ export default function ResumePage() {
           </div>
 
           {/* Clean Full-Width PDF Document Preview */}
-          <div className="relative w-full rounded-2xl bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800/80 shadow-2xl overflow-hidden min-h-[480px] flex flex-col">
+          <div className="relative w-full rounded-2xl bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800/80 shadow-2xl overflow-hidden min-h-120 flex flex-col">
             <iframe
               src={`${resumePdfPath}#toolbar=0&navpanes=0`}
               title="Ajeet Singh Resume PDF"
-              className="w-full flex-1 min-h-[480px] border-0"
+              className="w-full flex-1 min-h-120 border-0"
             />
 
             {/* Simple Footer Link */}

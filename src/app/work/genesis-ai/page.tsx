@@ -13,19 +13,12 @@ import {
   Image as ImageIcon,
   Video,
   Play,
-  User,
-  Clock,
-  Monitor,
   Users,
   Wrench,
-  HelpCircle,
-  TrendingUp,
   Target,
   ShieldCheck,
   Building,
   Heart,
-  Cpu,
-  Brain,
 } from "lucide-react";
 
 export const metadata: Metadata = {

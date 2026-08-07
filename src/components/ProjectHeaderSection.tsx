@@ -13,7 +13,6 @@ import {
   ChevronLeft,
   ChevronRight,
   ImageIcon,
-  Video,
   TrendingUp,
 } from "lucide-react";
 import { StickyBackHeader } from "./StickyBackHeader";
@@ -190,7 +189,7 @@ export function ProjectHeaderSection({
               <iframe
                 src={getEmbedUrl(heroVideoObj.url)}
                 title={heroVideoObj.title || `${project.title} Video`}
-                className="w-full aspect-video max-h-[520px] rounded-2xl"
+                className="w-full aspect-video max-h-130 rounded-2xl"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
@@ -203,7 +202,7 @@ export function ProjectHeaderSection({
                 muted
                 loop
                 playsInline
-                className="w-full max-h-[520px] object-contain rounded-2xl bg-zinc-950"
+                className="w-full max-h-130 object-contain rounded-2xl bg-zinc-950"
               />
             )}
 
@@ -211,7 +210,7 @@ export function ProjectHeaderSection({
           </div>
         ) : (
           /* Carousel Display Mode */
-          <div className="relative w-full flex items-center justify-center min-h-[300px] sm:min-h-[520px]">
+          <div className="relative w-full flex items-center justify-center min-h-75 sm:min-h-130">
             {/* Active Slide Rendering (Supports Images and Video Slides) */}
             {activeSlide.type === "video" || activeSlide.videoUrl || isVideoUrl(activeSlide.url) ? (
               (() => {
@@ -220,7 +219,7 @@ export function ProjectHeaderSection({
                   <iframe
                     src={getEmbedUrl(videoSrc)}
                     title={activeSlide.title}
-                    className="w-full aspect-video max-h-[520px] rounded-2xl"
+                    className="w-full aspect-video max-h-130 rounded-2xl"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
@@ -232,7 +231,7 @@ export function ProjectHeaderSection({
                     muted
                     loop
                     playsInline
-                    className="w-full max-h-[520px] object-contain rounded-2xl bg-zinc-950"
+                    className="w-full max-h-130 object-contain rounded-2xl bg-zinc-950"
                   />
                 );
               })()
@@ -241,10 +240,10 @@ export function ProjectHeaderSection({
               <img
                 src={activeSlide.url}
                 alt={activeSlide.title}
-                className="w-full h-auto object-cover max-h-[520px] transition-all duration-500"
+                className="w-full h-auto object-cover max-h-130 transition-all duration-500"
               />
             ) : (
-              <div className="w-full min-h-[320px] sm:min-h-[400px] border border-dashed border-emerald-500/30 bg-gradient-to-b from-emerald-950/20 via-zinc-900/60 to-zinc-950 p-8 flex flex-col items-center justify-center text-center space-y-3">
+              <div className="w-full min-h-80 sm:min-h-100 border border-dashed border-emerald-500/30 bg-linear-to-b from-emerald-950/20 via-zinc-900/60 to-zinc-950 p-8 flex flex-col items-center justify-center text-center space-y-3">
                 <div className="w-12 h-12 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                   <ImageIcon className="w-6 h-6" />
                 </div>
