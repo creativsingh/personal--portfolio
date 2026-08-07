@@ -1,4 +1,4 @@
-# Ajeet Singh (CreativSingh) — Portfolio & Design Engineering System
+# Ajeet Singh (CreativSingh) — Portfolio
 
 > **Lead Product Designer & Design Engineer based in Delhi, India.**  
 > *Designing & building enterprise SaaS, AI-assisted workflows, design systems, and growing design communities.*
